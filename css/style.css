@@ -1,0 +1,354 @@
+/*ATRIBUTOS GLOBALES*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Mukta", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/****************************************body y nav*******************************/
+body {
+    background-color: #eee8f4;
+}
+
+.navbar {
+    background-color: #08364ac5;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li a {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    /* Ajusta esta medida para cambiar la distancia del subrayado */
+    height: 2px;
+    /* Ajusta esta medida para cambiar el grosor del subrayado */
+    width: 0;
+    background-color: #ffffff;
+    /* Cambia el color del subrayado */
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.banner{
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top:0;
+   left: 0;
+   object-fit: cover;
+   z-index: -1;
+}
+.buscador{
+    margin-top: 1.7rem;
+}
+
+.buscador input{
+    border-radius: 0.3rem !important;
+}
+
+.fondo-buscador{
+    background-color: #02736895;
+    color:#ffffff;
+  
+}
+
+.navbar-scrolled {
+    background-color: #08364A; /* Color pleno para usar con js*/
+    /*codigo para usar luego en js:
+    window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  if (window.scrollY > 50) { // Ajusta el valor 50 según tus necesidades
+    navbar.classList.add('navbar-scrolled');
+  } else {
+    navbar.classList.remove('navbar-scrolled');
+  }
+});
+*/
+    
+
+/*********************************estilos texto***********************************/
+  }
+
+h1 {
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    font-weight: 700;
+    color: #e8f4f4;
+}
+
+
+.bienvenido {
+    color: #ffffff;
+    font-size: 3rem;
+    font-family: "Seymour One", sans-serif;
+    position: absolute;
+    /* Posiciona el texto de forma absoluta dentro del contenedor */
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centra el texto horizontal y verticalmente */
+    padding: 10px;
+}
+
+.descubri {
+    color: #ffffff;
+    font-weight: 500;
+    font-family: montserrat;
+    position: absolute;
+    /* Posiciona el texto de forma absoluta dentro del contenedor */
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centra el texto horizontal y verticalmente */
+}
+
+
+/**/
+
+.descuento p {
+    color: #ffffff;    
+    border-radius: 10px;
+    height:auto;
+    font-size: 1.5rem;
+    position: absolute;
+    /* Posiciona el texto de forma absoluta dentro del contenedor */
+    top: 40%;
+    left: 40%; 
+}
+
+.descuento:hover{
+   color:#04ADBF ;
+}
+
+.ahora {
+    color: #F26444;
+    font-weight: 700;
+}
+
+
+.actividades {
+    position: absolute;
+    /* Posiciona el texto de forma absoluta dentro del contenedor */
+    top: 25%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    /* Centra el texto horizontal y verticalmente */
+    padding: 10px;
+}
+
+
+footer {
+    background-color: #08364A;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    height: 15rem;
+    margin-top: 1.5rem;
+
+}
+
+.list-inline-item {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/****************************buscador de actividaddes index******************/
+
+
+
+.disfruta {
+    font-weight: 900;
+    font-family: montserrat;
+    color: #fa5604;
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-family: 'Lucida Sans',
+        'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+/*
+.newsletter {
+    padding: 2rem;
+}
+
+.suscripcion {
+    text-align: center;
+    margin-top: 50px;
+}
+
+input[type="email"] {
+    padding: 5px 20px;
+    background-color: #d0ccbf;
+    color: #ffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.newsletter button {
+    border-radius: 5px;
+    border: none !important;
+
+}
+
+*/
+
+
+.form-contacto {
+    background-color: #027368;
+    height: auto;
+}
+
+/***********************Estilos galeria de fotos de "destinos"***************/
+aside .card-title {
+    background-color: #08364A;
+    color: #ccc; 
+} 
+
+.container .title {
+    font-family: montserrat;
+    font-weight: 900;
+    color: #08364A;
+}
+
+.explora .card-text {
+    font-size: 4.5rem !important;
+    font-weight: 800;
+    height: auto;
+}
+
+.card {
+    transition: transform 0.5s;
+    overflow: hidden;
+    border-color: #ccc;
+    border-width: 0.3rem;
+    border-radius: 0%;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .card-img-overlay {
+    opacity: 0.7;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    /* Efecto de zoom sutil */
+    visibility: visible;
+    /* Mostramos el overlay al pasar el mouse */
+}
+
+.card-img-overlay {
+    /* ... otros estilos ... */
+    visibility: hidden;
+    /* Ocultamos el overlay por defecto */
+}
+
+
+
+
+ .title {
+    font-size: 3rem !important;
+    color: #08364A;
+    font-weight: 800;
+   
+}
+
+
+
+
+/*********************colores hexadecimales*********************/
+/* Color Theme Swatches in Hex */
+.Woman-swimming-in-clear-sea-water-in-Asia-1-hex {
+    color: #D91438;
+}
+
+.Woman-swimming-in-clear-sea-water-in-Asia-2-hex {
+    color: #014040;
+}
+
+.Woman-swimming-in-clear-sea-water-in-Asia-3-hex {
+    color: #027368;
+}
+
+.Woman-swimming {
+    color: #038C73;
+}
+
+.Woman-swimming {
+    color: #D9AD2B;
+}
+
+.Woman-swimming {
+    color: #1876b0;
+}
+
+
+
+/* Color Theme Swatches in Hex */
+.Traveler-asian-woman-relax-and-travel {
+    color: #A7CBD9;
+}
+
+.Traveler-asian-woman-relax-and-travel {
+    color: #0388A6;
+}
+
+.Traveler-asian-woman-relax-and-travel {
+    color: #04ADBF;
+}
+
+.Traveler-asian-woman-relax-and-travel {
+    color: #F27C38;
+}
+
+.Traveler-asian-woman-relax-and-travel {
+    color: #F26444;
+}
+
+.Traveler-asian-woman-relax-and-travel {
+    color: #08364A;
+}
+
+
+.seymour-one-regular {
+    font-family: "Seymour One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
