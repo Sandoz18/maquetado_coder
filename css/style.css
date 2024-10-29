@@ -67,11 +67,12 @@ nav li a {
     z-index: -1;
 }
 
-
-
-.buscador {
-    margin-top: 1.7rem;
+.newsletter{
+    background-color: #D9AD2B;
+    padding-top: 0 !important;
 }
+
+
 
 .buscador input {
     border-radius: 0.3rem !important;
@@ -211,32 +212,7 @@ h2 {
     margin-top: 2rem;
 }
 
-/*
-.newsletter {
-    padding: 2rem;
-}
 
-.suscripcion {
-    text-align: center;
-    margin-top: 50px;
-}
-
-input[type="email"] {
-    padding: 5px 20px;
-    background-color: #d0ccbf;
-    color: #ffff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.newsletter button {
-    border-radius: 5px;
-    border: none !important;
-
-}
-
-*/
 
 
 .form-contacto {
@@ -384,16 +360,12 @@ aside .card-title{
 
 
     .navbar .container-fluid{
-        background-color: #000000;
+        background-color: #c81414;
         display: flex;
         justify-content: space-around;
     }
 
-    .buscador{
-        margin:0;
-        background-color: #fa5604;
-    }
-
+  
 }
 
 
