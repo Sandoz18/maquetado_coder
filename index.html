@@ -29,50 +29,50 @@
 </head>
 
 <body>
+ 
+     <header>
 
-    <header>
-
-        <nav class="navbar navbar-expand-lg fixed-top nabvar-scrolled">
-            <div class="container-fluid d-flex justify-content-center px-5 mx-5">
-                <a href="#" class="navbar-brand">
-                    <!--------itemprop e itemtype para SEO------->
-                    <img class="logo img-fluid pb-3" src="assets/logo-01.png" alt="logo-wunderlust" itemprop="logo"
-                        itemscope itemtype="http://schema.org/Organization"></a>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 mx-auto">
-                        <li class="nav-item"><a class="nav-link nav-link-active text-white" href="index.html">inicio</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link text-white" href="html/destinos.html">destinos</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="html/actividades.html">actividades</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link text-white" href="html/nosotros.html">nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="html/contacto.html">contacto</a></li>
-                    </ul>
+            <nav class="navbar navbar-expand-lg fixed-top nabvar-scrolled">
+                <div class="container-fluid d-flex justify-content-center px-5 mx-5">
+                    <a href="#" class="navbar-brand">
+                        <!--------itemprop e itemtype para SEO------->
+                        <img class="logo img-fluid pb-3" src="assets/logo-01.png" alt="logo-wunderlust" itemprop="logo"
+                            itemscope itemtype="http://schema.org/Organization"></a>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 mx-auto">
+                            <li class="nav-item"><a class="nav-link nav-link-active text-white"
+                                    href="index.html">inicio</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link text-white" href="html/destinos.html">destinos</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link text-white"
+                                    href="html/actividades.html">actividades</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link text-white" href="html/nosotros.html">nosotros</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link text-white" href="html/contacto.html">contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!---->
+                    <form class="d-flex mt-1" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success fondo-buscador" type="submit">Search</button>
+                    </form>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
-                <!---->
-                <form class="d-flex mt-1" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success fondo-buscador" type="submit">Search</button>
-                </form>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </nav>
+            </nav>
 
-    </header>
-
-    <main>
-        <section>
-            <div class="banner"></div>
-            <video autoplay loop muted>
-                <source src="assets/banner_1920x1080.mp4" type="video/mp4">
-            </video>
-            <div class="container">
+     </header>
+      
+        <main>
+            <section class="container-fluid  px-0 mx-0">
                 <div class="row">
-                    <div class="col">
-                        <div class="flex-container">
+                    <div class="col-12 flex-column align-items-center">
+                        <div class="container">
                             <h1 class="bienvenido">
                                 Bienvenido
                             </h1>
@@ -80,95 +80,141 @@
                                 Descubrí Argentina
                             </H3>
                             <!--agregar modal bootstrap-->
+
+
+
                             <div class="descuento">
-                                <p>Reservá <span class="ahora">ahora</span> y obtené un descuento</p>
+                                <p>Obtené descuentos exclusivos<span><button type="button" class="btn btn-primary"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                            data-bs-whatever="@fat">contactanos AHORA</button></span></p>
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="recipient-name"
+                                                            class="col-form-label">Recipient:</label>
+                                                        <input type="text" class="form-control" id="recipient-name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="message-text"
+                                                            class="col-form-label">Message:</label>
+                                                        <textarea class="form-control" id="message-text"></textarea>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Send message</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                     
-            
+
+
                     </div>
                 </div>
-            </div>
-            
 
-          
+
+                <video autoplay loop muted class="background_video">
+                    <source src="assets/banner_1920x1080.mp4" type="video/mp4">
+                </video>
+
+            </section>
+        </main>
+
+        <section class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="disfruta"> ¡¡Argentina te espera!!</h2>
+                    <h4 class=" fs-5 text-center">Viví aventuras inolvidables.</h4>
+                    <div class="container">
+                        <p>Explora glaciares milenarios, escala volcanes, navega por ríos caudalosos y descubre la rica
+                            biodiversidad de nuestros bosques. Con guías expertos y equipos de última generación, cada
+                            excursión
+                            es una oportunidad única para conectar con la naturaleza. Desde trekking en la Cordillera de
+                            los
+                            Andes hasta buceo en las aguas cristalinas de la Patagonia, te ofrecemos experiencias
+                            inolvidables
+                            en destinos únicos. ¡Reservá ahora y viví Argentina como nunca antes! #ArgentinaAventura
+                            #ViveLaNaturaleza #ExploraArgentina #Patagonia #Andes #Mendoza #Salta #TierraDelFuego
+                            #TurismoSostenible</p>
+                    </div>
+                </div>
         </section>
 
-        <section>
-            <h2 class="disfruta"> ¡¡Argentina te espera!!</h2>
-            <h4 class=" fs-5 text-center">Viví aventuras inolvidables.</h4>
-            <div class="container">
-                <p>Explora glaciares milenarios, escala volcanes, navega por ríos caudalosos y descubre la rica
-                    biodiversidad de nuestros bosques. Con guías expertos y equipos de última generación, cada excursión
-                    es una oportunidad única para conectar con la naturaleza. Desde trekking en la Cordillera de los
-                    Andes hasta buceo en las aguas cristalinas de la Patagonia, te ofrecemos experiencias inolvidables
-                    en destinos únicos. ¡Reservá ahora y viví Argentina como nunca antes! #ArgentinaAventura
-                    #ViveLaNaturaleza #ExploraArgentina #Patagonia #Andes #Mendoza #Salta #TierraDelFuego
-                    #TurismoSostenible</p>
-            </div>
 
 
-            <div class="container pasos d-flex justify-content-around pt-5 pb-5">
-                <div class="row">
 
-                    <div class="col">
-                        <div class="card border-0">
-                            <img src="assets/viajeros2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Descubre tu destino ideal</h5>
-                                <p class="card-text">Argentina te llama. ¿Montañas majestuosas,
-                                    playas paradisíacas o ciudades vibrantes? Descubre los
-                                    rincones más fascinantes de nuestro país.
-                                </p>
-                                <a href="#" class="btn btn-secondary fondo-buscador border-0">Explora destinos</a>
-                            </div>
+
+        <div class="container d-flex justify-content-around pt-5 pb-5">
+            <div class="row">
+
+                <div class="col-12 col-md-4">
+                    <div class="card border-0">
+                        <img src="assets/viajeros2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Descubre tu destino ideal</h5>
+                            <p class="card-text">Argentina te llama. ¿Montañas majestuosas,
+                                playas paradisíacas o ciudades vibrantes? Descubre los
+                                rincones más fascinantes de nuestro país.
+                            </p>
+                            <a href="#" class="btn btn-secondary fondo-buscador border-0">Explora destinos</a>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card border-0">
-                            <img src="assets/experiencias.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Disfruta experiencias únicas</h5>
-                                <p class="card-text">
-                                    .Desde trekking en la Cordillera de los Andes hasta un tango en Buenos Aires,
-                                    tenemos la actividad
-                                    perfecta para ti.</p>
-                                <a href="#" class="btn btn-secondary fondo-buscador border-0">Selecciona tu
-                                    actividad</a>
-                            </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card border-0">
+                        <img src="assets/experiencias.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Disfruta experiencias únicas</h5>
+                            <p class="card-text">
+                                .Desde trekking en la Cordillera de los Andes hasta un tango en Buenos Aires,
+                                tenemos la actividad
+                                perfecta para ti.</p>
+                            <a href="#" class="btn btn-secondary fondo-buscador border-0">Selecciona tu
+                                actividad</a>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col">
-                        <div class="card border-0">
-                            <img src="assets/traveler-chatting-with-hostel-staff-about-local-attractions.jpg"
-                                class="card-img-top" alt="..imagen_viajeros">
-                            <div class="card-body">
-                                <h5 class="card-title">¡Únete a nuestra comunidad!</h5>
-                                <p class="card-text">Suscríbete a nuestro newsletter y recibe
-                                    las mejores ofertas, consejos de viaje y mucho más.</p>
-                                <form class="buscador d-flex p-2 ms-3">
-                                    <input type="email" placeholder="Tu correo electrónico">
-                                    <button type="submit"
-                                        class="fondo-buscador rounded-2 p-1 ms-1 px-2 border-0">Suscribirse</button>
-                                </form>
-                            </div>
+                <div class="col-12 col-md-4">
+                    <div class="card border-0">
+                        <img src="assets/traveler-chatting-with-hostel-staff-about-local-attractions.jpg"
+                            class="card-img-top" alt="..imagen_viajeros">
+                        <div class="card-body">
+                            <h5 class="card-title">¡Únete a nuestra comunidad!</h5>
+                            <p class="card-text">Suscríbete a nuestro newsletter y recibe
+                                las mejores ofertas, consejos de viaje y mucho más.</p>
+                            <form class="buscador d-flex p-2 ms-3">
+                                <input type="email" placeholder="Tu correo electrónico">
+                                <button type="submit"
+                                    class="fondo-buscador rounded-2 p-1 ms-1 px-2 border-0">Suscribirse</button>
+                            </form>
                         </div>
-
                     </div>
-
 
                 </div>
+
+
             </div>
+        </div>
 
 
 
 
 
 
-
-
-        </section>
 
         <!---newsletter
         <div class="newsletter">
@@ -176,36 +222,36 @@
             <input type="email" id="email" placeholder="Ingrese su correo aquí">
             <button type="submit">Suscribirse</button>
         </div>-->
-    </main>
 
-    <footer>
 
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5>Nuestros Sponsors</h5>
-                    <ul class="list-unstyled">
-                        <li><img src="logo_sponsor1.png" alt="Logo sponsor 1"></li>
-                        <li><img src="logo_sponsor2.png" alt="Logo sponsor 2"></li>
-                    </ul>
+        <footer>
+
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>Nuestros Sponsors</h5>
+                        <ul class="list-unstyled">
+                            <li><img src="logo_sponsor1.png" alt="Logo sponsor 1"></li>
+                            <li><img src="logo_sponsor2.png" alt="Logo sponsor 2"></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Enlaces de Interés</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Acerca de Nosotros</a></li>
+                            <li><a href="#">Contacto</a></li>
+                            <li><a href="#">Términos y Condiciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Síguenos en Redes Sociales</h5>
+
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h5>Enlaces de Interés</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Acerca de Nosotros</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">Términos y Condiciones</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Síguenos en Redes Sociales</h5>
-                   
-            </div>
-        </div>
-    </footer>
+        </footer>
 
 
-
+   
     <!-----------bundle de bootstrap-------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

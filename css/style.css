@@ -13,6 +13,8 @@ body {
     background-color: #eee8f4;
 }
 
+
+
 .navbar {
     background-color: #08364ac5;
 }
@@ -54,31 +56,36 @@ nav li a {
     width: 100%;
 }
 
-.banner{
-   position: fixed;
-   width: 100%;
-   height: 100%;
-   top:0;
-   left: 0;
-   object-fit: cover;
-   z-index: -1;
+/**/
+.background_video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
 }
-.buscador{
+
+
+
+.buscador {
     margin-top: 1.7rem;
 }
 
-.buscador input{
+.buscador input {
     border-radius: 0.3rem !important;
 }
 
-.fondo-buscador{
+.fondo-buscador {
     background-color: #02736895;
-    color:#ffffff;
-  
+    color: #ffffff;
+
 }
 
 .navbar-scrolled {
-    background-color: #08364A; /* Color pleno para usar con js*/
+    background-color: #08364A;
+    /* Color pleno para usar con js*/
     /*codigo para usar luego en js:
     window.addEventListener('scroll', function() {
   const navbar = document.querySelector('.navbar');
@@ -89,10 +96,10 @@ nav li a {
   }
 });
 */
-    
 
-/*********************************estilos texto***********************************/
-  }
+
+    /*********************************estilos texto***********************************/
+}
 
 h1 {
     font-weight: 900;
@@ -106,7 +113,7 @@ h3 {
 
 
 .bienvenido {
-    color: #ffffff;
+    color: #e8f4f4;
     font-size: 3rem;
     font-family: "Seymour One", sans-serif;
     position: absolute;
@@ -121,6 +128,7 @@ h3 {
 .descubri {
     color: #ffffff;
     font-weight: 500;
+    font-size: 2rem;
     font-family: montserrat;
     position: absolute;
     /* Posiciona el texto de forma absoluta dentro del contenedor */
@@ -134,24 +142,26 @@ h3 {
 /**/
 
 .descuento p {
-    color: #ffffff;    
+    color: #ffffff;
     border-radius: 10px;
-    height:auto;
+    height: auto;
     font-size: 1.5rem;
     position: absolute;
     /* Posiciona el texto de forma absoluta dentro del contenedor */
     top: 40%;
-    left: 40%; 
+    left: 40%;
 }
 
-.descuento:hover{
-   color:#04ADBF ;
+.descuento:hover {
+    color: #04ADBF;
 }
 
 .ahora {
     color: #F26444;
     font-weight: 700;
 }
+
+
 
 
 .actividades {
@@ -237,8 +247,8 @@ input[type="email"] {
 /***********************Estilos galeria de fotos de "destinos"***************/
 aside .card-title {
     background-color: #08364A;
-    color: #ccc; 
-} 
+    color: #ccc;
+}
 
 .container .title {
     font-family: montserrat;
@@ -283,12 +293,107 @@ aside .card-title {
 
 
 
- .title {
+.title {
     font-size: 3rem !important;
     color: #08364A;
     font-weight: 800;
-   
+
 }
+
+.seccion_principal {
+    margin: 0rem;
+
+}
+
+/*********************************************Mediaqueries********************************************/
+
+@media (max-width: 768px) {
+
+    .navbar {
+        position: sticky;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .title {
+        font-size: 1.2rem !important;
+        background-color: #0388A6;
+
+    }
+
+
+    .logo {
+        width: 60%;
+
+    }
+
+
+    .mt-5 {
+        margin-top: 0rem !important;
+        padding-top: 0rem !important;
+    }
+
+
+    .explora .card-text {
+        font-size: 2.2rem !important;
+        font-weight: 800;
+        height: auto;      
+
+}
+
+
+aside .card-title{
+    font-size: 1.1rem !important;
+}
+
+}
+
+
+.navbar .container-fluid{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+    .navbar {
+        position: sticky;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .title {
+        font-size: 1.2rem !important;     
+
+    }
+
+
+    .logo {
+        width: 60%;
+
+    }
+
+    .mt-5 {
+        margin-top: 0rem !important;
+        padding-top: 0rem !important;
+    }
+
+
+    .navbar .container-fluid{
+        background-color: #000000;
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+
+}
+
+
 
 
 
@@ -346,7 +451,7 @@ aside .card-title {
     color: #08364A;
 }
 
-
+/*google fonts***********************************************/
 .seymour-one-regular {
     font-family: "Seymour One", sans-serif;
     font-weight: 400;
