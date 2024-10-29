@@ -389,7 +389,10 @@ aside .card-title{
         justify-content: space-around;
     }
 
-
+    .buscador{
+        margin:0;
+        background-color: #fa5604;
+    }
 
 }
 
