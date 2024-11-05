@@ -98,9 +98,14 @@ nav li a {
 });
 */
 
-
-    /*********************************estilos texto***********************************/
 }
+    /*********************************estilos texto***********************************/
+
+  main{
+  margin-top: 8.5rem;
+  }  
+
+
 
 h1 {
     font-weight: 900;
@@ -285,7 +290,9 @@ aside .card-title {
     /* Ocultamos el overlay por defecto */
 }
 
-
+.btn-social-icons{
+    width:5rem;
+}
 
 
 .title {
