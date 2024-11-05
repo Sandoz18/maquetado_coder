@@ -68,8 +68,9 @@ nav li a {
 }
 
 .newsletter{
-    background-color: #D9AD2B;
+  
     padding-top: 0 !important;
+    
 }
 
 
@@ -99,11 +100,16 @@ nav li a {
 */
 
 }
+
+
+
     /*********************************estilos texto***********************************/
 
   main{
   margin-top: 8.5rem;
   }  
+
+ 
 
 
 
@@ -240,7 +246,7 @@ padding: 5rem;
 }
 
 .form-contacto {
-    background-color: #027368;
+  
     height: auto;
 }
 
@@ -320,7 +326,7 @@ aside .card-title {
 
     .title {
         font-size: 1.2rem !important;
-        background-color: #0388A6;
+     
 
     }
 
