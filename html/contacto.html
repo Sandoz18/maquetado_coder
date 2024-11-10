@@ -10,8 +10,9 @@
     <meta name="author" content="Irene Imbriani">
     <!--------google fonts-------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!------fontawesome---------->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <!--------------bootstrap------------>
@@ -19,6 +20,9 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--------css------>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!--scrpit para el mapa-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <title>contacto</title>
     <!------favicon
     <link rel="shortcut icon" href="" type="image/x-icon">
@@ -48,7 +52,7 @@
                 <!---->
                 <form class="d-flex mt-1" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-success fondo-buscador" type="submit">Buscar</button>
                 </form>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,34 +61,117 @@
             </div>
         </nav>
 
-
     </header>
     <main>
-        <section >
-            <H3>
-                dejanos tus datos y nos contactaremos a la brevedad
-            </H3>
-            <div class="container formulario-contacto d-flex">
-                <form class="contacto" action="post" id="">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-    
-    
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-    
-                    <label for="mensaje">Mensaje:</label>
-    
-                    <textarea id="mensaje" name="mensaje" required></textarea>
-    
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
-          
-        </section>
-        <aside>
+        <section class="my-5 py-5">
 
-        </aside>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mt-2">
+                        <p class="fs-2 fw-bold fs-1 text-center">Conéctate con nosotros</p>
+                        <p class="fs-3 text-secondary fw-semibold text-decoration-underline text-center">Contactanos por
+                            los siguientes medios o dejanos tus datos y te responderemos a la brevedad</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body text-center mt-3">
+                                <img src="../assets/redes/contacto-01.png" class="img-fluid" alt="icono_telefono">
+                            </div>
+
+                            <h5 class="card-title text-center">TELÉFONO</h5>
+                            <p class="card-text text-center fs-5 lh-1 text-secondary mb-4">011 50545435</p>
+                            <p class="card-text text-center fs-5 lh-1 text-secondary mb-4">0911 4589-8775</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body text-center mt-3">
+                                <img src="../assets/redes/contacto-03.png" class="img-fluid" alt="icono_email">
+                            </div>
+                            <h5 class="card-title text-center">EMAIL</h5>
+                            <p class="card-text text-center fs-5 lh-1 text-secondary mb-4">info@wunderlust.com</p>
+                            <p class="card-text text-center fs-5 lh-1 text-secondary mb-4">contacto@wunderlust.com</p>
+
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body text-center mt-3">
+                                <img src="../assets/redes/contacto-01.png" class="img-fluid" alt="icono_telefono">
+                            </div>
+
+                            <h5 class="card-title text-center">UBICACIÓN</h5>
+                            <p class="card-text text-center fs-5 lh-1 text-secondary">Av. 9 de Julio s/n Plaza de la
+                                República</p>
+                            <p class="card-text text-center fs-5  text-secondary mb-4">Ciudad Autónoma de Buenos
+                                Aires, Argentina</p>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <div class="container-fluid  justify-content-around align-items-start d-flex gx-3">
+
+                <div class="col-12 col-md-5">
+                    <div class="contact-form-area bg-warning">
+                        <div class="contact-form">
+                            <form action="#">
+                                <input type="text" placeholder="Nombre">
+                                <input class="margin-top-lb-30 margin-top-sb-30" type="text" placeholder="Apellido">
+                                <input type="email" placeholder="Ingresá tu email">
+                                <textarea placeholder="Escribe tu mensaje" spellcheck="false"></textarea>
+                                <div class="send-btn">
+                                    <input type="submit" value="enviar" id="formsend">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="col-md-5">
+
+                    <div id="map"></div>
+                    <script>
+                        var map = L.map('map').setView([-34.603722, -58.381556], 15);
+
+                        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        }).addTo(map);
+
+                        var marker = L.marker([-34.603722, -58.381556]).addTo(map)
+                            .bindPopup('Obelisco de Buenos Aires');
+                    </script>
+
+
+
+                </div>
+            </div>
+
+
+        </section>
     </main>
 
     <footer>
@@ -100,7 +187,7 @@
                 <div class="col-md-6 text-center">
                     <h5>Mapa del sitio</h5>
                     <ul class="list-unstyled text-white">
-                        
+
                         <li><a href="#">Términos y Condiciones</a></li>
                         <li><a href="#">Términos y Condiciones</a></li>
                         <li><a href="#">Términos y Condiciones</a></li>
