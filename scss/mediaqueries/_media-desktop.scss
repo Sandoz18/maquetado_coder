@@ -1,49 +1,11 @@
-@media (max-width: 768px) {
+//desde 1024 a 1800
 
-    .navbar {
-        position: sticky;
-        display: flex;
-        justify-content: space-around;
-    }
+@media only screen and (min-width:992) and (max-width:1800) {
 
 
-    .title {
-        font-size: 1.2rem !important;
-     
-
-    }
 
 
-    .logo {
-        width: 60%;
-
-    }
 
 
-    .mt-5 {
-        margin-top: 0rem !important;
-        padding-top: 0rem !important;
-    }
-
-
-    .explora .card-text {
-        font-size: 2.2rem !important;
-        font-weight: 800;
-        height: auto;      
-
+    
 }
-
-
-aside .card-title{
-    font-size: 1.1rem !important;
-}
-
-}
-
-
-.navbar .container-fluid{    
-    display: flex;
-    justify-content: space-around;
-}
-
-

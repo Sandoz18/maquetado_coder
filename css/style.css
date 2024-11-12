@@ -218,7 +218,6 @@ main h1 {
 }
 main .bienvenido {
   color: #e8f4f4;
-  font-size: 3rem;
   font-family: "Seymour One", sans-serif;
   position: absolute;
   /* Posiciona el texto de forma absoluta dentro del contenedor */
@@ -272,7 +271,15 @@ main .descuento p span:hover {
   color: #d6e0e1 important;
 }
 main .background_video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: -100;
+  width: 100%;
+}
+main .background_video video {
+  flex-grow: 1;
+  width: 100% !important;
 }
 
 section .disfruta {
@@ -364,62 +371,89 @@ aside {
   font-size: 1rem;
 }
 
+/*********************************************Mediaqueries********************************************/
+@media (max-width: 768px) {
+  main {
+    position: absolute;
+  }
+  main .bienvenido {
+    background-color: blueviolet;
+    position: absolute;
+    font-size: 1.2rem !important;
+    padding: auto;
+  }
+  main .descubri {
+    margin-top: 1rem !important;
+    font-size: 0.8rem !important;
+    background-color: aqua;
+  }
+  .seccion_principal .seccion_principal {
+    text-align: center;
+    font-weight: 800;
+    color: #ffffff;
+    padding: 0;
+  }
+  .seccion_principal .fs-5 {
+    color: #040746;
+    font-size: 0.6rem;
+    font-weight: 300;
+  }
+  .seccion_principal .explora {
+    flex-direction: column;
+    display: flex;
+    background-color: #08364A;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none !important;
+    padding-left: 0;
+    font-size: 3.5rem;
+  }
+  .seccion_principal .explora .btn {
+    width: 5.5rem;
+  }
+  .seccion_principal .explora ul {
+    list-style-type: none !important;
+  }
+  aside {
+    text-align: center;
+  }
+}
 @media (max-width: 768px) {
   .navbar {
     position: sticky;
     display: flex;
     justify-content: space-around;
   }
-  .title {
+  .navbar .title {
     font-size: 1.2rem !important;
   }
-  .logo {
+  .navbar .logo {
     width: 60%;
   }
-  .mt-5 {
+  .navbar .mt-5 {
     margin-top: 0rem !important;
     padding-top: 0rem !important;
   }
-  .explora .card-text {
+  .navbar .explora .card-text {
     font-size: 2.2rem !important;
     font-weight: 800;
     height: auto;
   }
-  aside .card-title {
+  .navbar aside .card-title {
     font-size: 1.1rem !important;
-  }
-}
-.navbar .container-fluid {
-  display: flex;
-  justify-content: space-around;
-}
-
-/*********************************************Mediaqueries********************************************/
-@media (max-width: 767px) {
-  .navbar {
-    position: sticky;
-    display: flex;
-    justify-content: space-around;
-  }
-  .title {
-    font-size: 1rem !important;
-  }
-  .logo {
-    width: 6rem;
-  }
-  .mt-5 {
-    margin-top: 0rem !important;
-    padding-top: 0rem !important;
   }
   .navbar .container-fluid {
     display: flex;
     justify-content: space-around;
   }
 }
-.background-video {
-  height: 50%;
-}
-
 @media (min-width: 768px) and (max-width: 991px) {
   .navbar {
     position: sticky;

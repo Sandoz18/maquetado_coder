@@ -1,45 +1,81 @@
 /*********************************************Mediaqueries********************************************/
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
 
-    .navbar {
-        position: sticky;
-        display: flex;
-        justify-content: space-around;
+main{
+
+position: absolute;
+    .bienvenido { 
+        background-color: blueviolet;
+        position: absolute;        
+        font-size: 1.2rem !important;
+       padding: auto;
     }
 
-
-    .title {
-        font-size: 1rem !important;     
-
-    }
-
-
-    .logo {
-        width: 6rem;
-
-    }
-
-    .mt-5 {
-        margin-top: 0rem !important;
-        padding-top: 0rem !important;
-    }
-
-
-    .navbar .container-fluid{    
-        display: flex;
-        justify-content: space-around;
-    }
-
-  
-}
-
-.background-video{
-    height: 50%;
-
+.descubri{
+   margin-top: 1rem !important;
+    font-size: 0.8rem !important;
+    background-color: aqua;
 }
 
 
+}
 
+    
+      
+
+
+
+
+
+
+
+    .seccion_principal {
+
+        .seccion_principal {
+            text-align: center;
+            font-weight: 800;
+            color: #ffffff;
+            padding: 0;
+
+
+
+
+
+        }
+
+
+        .fs-5 {
+            color: #040746;
+            font-size: 0.6rem;
+            font-weight: 300;
+
+        }
+
+
+
+
+
+
+        .explora {
+            flex-direction: column;
+            display: flex;
+            @include estilo-footer;
+            @include estilo-redes;
+            font-size: 3.5rem;
+
+            ul {
+                list-style-type: none !important;
+            }
+        }
+
+
+
+    }
+
+    aside {
+        text-align: center;
+    }
+}
