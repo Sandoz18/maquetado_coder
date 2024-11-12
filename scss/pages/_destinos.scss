@@ -1,0 +1,52 @@
+
+@import "../utilities/mixins";
+@import"../utilities/variables";
+.seccion_principal{
+    text-align: center;
+    font-weight: 800;
+    color:#ffffff;
+   padding: 0;
+
+    h1{
+        color:#040746;
+        .p-4{
+     font-weight: 600;
+   
+        }
+    
+     
+
+    }
+
+   
+    .fs-5{
+        color: #040746;
+        font-size: 1.2rem;
+        font-weight: 300;
+    
+    }
+
+  
+    
+
+   
+    
+    .explora{  
+        flex-direction: column;
+        display: flex;             
+        @include estilo-footer;
+        @include estilo-redes;
+        font-size: 3.5rem;        
+       
+        ul{
+           list-style-type:none !important;
+        }
+}
+
+
+
+}
+
+aside{
+text-align: center;
+}

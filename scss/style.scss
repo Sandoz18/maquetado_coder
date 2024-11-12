@@ -17,8 +17,20 @@
 @import "./components/form";
 @import "./components/modal";
 
-//
+//pages
+@import "./pages/index";
+@import "./pages/contacto";
+@import "./pages/destinos";
+@import "./pages/informacion";
+@import"./pages/actividades";
 
 
+//mediaqueries
+@import"./mediaqueries/media-desktop";
+@import"./mediaqueries/media-mobile";
+@import"./mediaqueries/media-tablet";
 
+
+//utilities
+@import "./utilities/mixins";
 

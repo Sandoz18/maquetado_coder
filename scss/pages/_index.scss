@@ -1,0 +1,95 @@
+//estilos sobre el video
+
+main {
+    h1 {
+        font-weight: 900;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .bienvenido {
+        color: #e8f4f4;
+        font-size: 3rem;
+        font-family: "Seymour One", sans-serif;
+        position: absolute;
+        /* Posiciona el texto de forma absoluta dentro del contenedor */
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* Centra el texto horizontal y verticalmente */
+        padding: 10px;
+    }
+
+    h3 {
+        font-weight: 700;
+        color: #e8f4f4;
+    }
+
+    .descubri {
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 1.6rem;
+        position: absolute;
+        /* Posiciona el texto de forma absoluta dentro del contenedor */
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* Centra el texto horizontal y verticalmente */
+    }
+
+
+
+    .descuento {
+
+        position: absolute;
+        /* Posiciona el texto de forma absoluta dentro del contenedor */
+        top: 40%;
+        left: 40%;
+
+        p {
+            color: #ffffff;
+            border-radius: 10px;
+            height: auto;
+            font-size: 1.5rem;
+
+            span {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                margin-top: 0.5rem;
+
+                button{
+                    z-index: 1000;
+                }
+
+                .btn-danger {
+                    background-color: #fa5604;
+                    border: none;
+                }
+
+                &:hover {
+                    color: #d6e0e1 important;
+                }
+
+
+            }
+
+        }
+    }
+
+    .background_video{
+        z-index: -100;
+    
+    }
+
+}
+
+
+
+section {
+    .disfruta {
+        text-align: center;
+        font-size: 2rem;
+        color: #fa5604;
+    }
+
+}

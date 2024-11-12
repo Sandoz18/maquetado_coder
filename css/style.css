@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
 }
-
-body {
+* body {
   background-color: #eee8f4;
   font-family: "Mukta", sans-serif;
   font-weight: 500;
@@ -51,94 +50,31 @@ header .nav-link:hover::after {
   width: 100%;
 }
 
-main h1 {
-  font-weight: 900;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-main .bienvenido {
-  color: #e8f4f4;
-  font-size: 3rem;
-  font-family: "Seymour One", sans-serif;
-  position: absolute;
-  /* Posiciona el texto de forma absoluta dentro del contenedor */
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* Centra el texto horizontal y verticalmente */
-  padding: 10px;
-}
-main h3 {
-  font-weight: 700;
-  color: #e8f4f4;
-}
-main .descubri {
-  color: #ffffff;
-  font-weight: 300;
-  font-size: 1.6rem;
-  position: absolute;
-  /* Posiciona el texto de forma absoluta dentro del contenedor */
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* Centra el texto horizontal y verticalmente */
-}
-main .descuento p {
-  color: #ffffff;
-  border-radius: 10px;
-  height: auto;
-  font-size: 1.5rem;
-  position: absolute;
-  /* Posiciona el texto de forma absoluta dentro del contenedor */
-  top: 40%;
-  left: 40%;
-}
-main .descuento p span {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin-top: 0.5rem;
-}
-main .descuento p span .btn-danger {
-  background-color: #fa5604;
-  border: none;
-}
-main .descuento p span:hover {
-  color: #d6e0e1 important;
-}
-
 /**/
 footer {
   background-color: #08364A;
   color: #ffffff;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 1.8rem;
 }
 footer .redes {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
   text-decoration: none;
   list-style: none !important;
+  padding-left: 0;
+}
+footer .redes .btn {
+  width: 4.5rem;
 }
 
-/*16.5 Contact Form Button*/
-.send-btn {
-  text-align: center;
-  margin-top: 80px;
-}
-
-.buscador input {
-  border-radius: 0.3rem !important;
-}
-.buscador input .fondo-buscador {
-  background-color: rgba(2, 115, 104, 0.9215686275);
+.btn-outline-success {
+  background-color: #03676e;
   color: #ffffff;
-}
-.buscador input .fondo-buscador {
-  background-color: rgba(2, 115, 104, 0.9215686275);
-  color: #ffffff;
-}
-.buscador input .newsletter {
-  padding-top: 0 !important;
+  border-radius: 5px;
 }
 
 .card {
@@ -167,24 +103,7 @@ footer .redes {
 }
 .card .title {
   font-size: 3rem !important;
-  color: #08364A;
   font-weight: 800;
-}
-
-section .card-title {
-  background-color: #08364A;
-  color: #ccc;
-}
-
-.container .title {
-  font-family: montserrat;
-  font-weight: 900;
-}
-
-.explora .card-text {
-  font-size: 4.5rem !important;
-  font-weight: 800;
-  height: auto;
 }
 
 /****formulario de contacto****/
@@ -271,7 +190,7 @@ section .card-title {
   height: auto;
   font-size: 1.5rem;
   position: absolute;
-  /* Posiciona el texto de forma absoluta dentro del contenedor */
+  /* Posiciona el texto de forma absoluta dentro del contenedor este position es el que hace el texto quede sobre el video y el z-index 100 hace que se muestre el modal dejandolo por adelante del video*/
   top: 40%;
   left: 42%;
 }
@@ -291,6 +210,236 @@ section .card-title {
 .w-100 p span .ahora {
   color: #fa5604;
   font-weight: 700;
+}
+
+main h1 {
+  font-weight: 900;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+main .bienvenido {
+  color: #e8f4f4;
+  font-size: 3rem;
+  font-family: "Seymour One", sans-serif;
+  position: absolute;
+  /* Posiciona el texto de forma absoluta dentro del contenedor */
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Centra el texto horizontal y verticalmente */
+  padding: 10px;
+}
+main h3 {
+  font-weight: 700;
+  color: #e8f4f4;
+}
+main .descubri {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 1.6rem;
+  position: absolute;
+  /* Posiciona el texto de forma absoluta dentro del contenedor */
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Centra el texto horizontal y verticalmente */
+}
+main .descuento {
+  position: absolute;
+  /* Posiciona el texto de forma absoluta dentro del contenedor */
+  top: 40%;
+  left: 40%;
+}
+main .descuento p {
+  color: #ffffff;
+  border-radius: 10px;
+  height: auto;
+  font-size: 1.5rem;
+}
+main .descuento p span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+main .descuento p span button {
+  z-index: 1000;
+}
+main .descuento p span .btn-danger {
+  background-color: #fa5604;
+  border: none;
+}
+main .descuento p span:hover {
+  color: #d6e0e1 important;
+}
+main .background_video {
+  z-index: -100;
+}
+
+section .disfruta {
+  text-align: center;
+  font-size: 2rem;
+  color: #fa5604;
+}
+
+main section .fs-2 {
+  font-size: 3rem !important;
+  font-weight: 600;
+}
+
+.seccion_principal {
+  text-align: center;
+  font-weight: 800;
+  color: #ffffff;
+  padding: 0;
+}
+.seccion_principal h1 {
+  color: #040746;
+}
+.seccion_principal h1 .p-4 {
+  font-weight: 600;
+}
+.seccion_principal .fs-5 {
+  color: #040746;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.seccion_principal .explora {
+  flex-direction: column;
+  display: flex;
+  background-color: #08364A;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style: none !important;
+  padding-left: 0;
+  font-size: 3.5rem;
+}
+.seccion_principal .explora .btn {
+  width: 5.5rem;
+}
+.seccion_principal .explora ul {
+  list-style-type: none !important;
+}
+
+aside {
+  text-align: center;
+}
+
+.info {
+  margin-top: 10rem;
+}
+.info .container {
+  align-items: center;
+}
+.info .container .fs-1 {
+  font-size: 3rem !important;
+  color: #eb5d20;
+}
+.info .nosotros {
+  font-size: 1.2rem;
+  width: 80%;
+}
+.info .container-fluid {
+  margin: 4rem 0 4rem !important;
+}
+.info .container-fluid h4 {
+  text-align: center;
+  font-size: 3rem !important;
+  color: #eb5d20;
+}
+
+.clientes {
+  text-align: center;
+}
+.clientes h3 {
+  color: rgb(37, 20, 220);
+}
+.clientes figcaption {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+  }
+  .title {
+    font-size: 1.2rem !important;
+  }
+  .logo {
+    width: 60%;
+  }
+  .mt-5 {
+    margin-top: 0rem !important;
+    padding-top: 0rem !important;
+  }
+  .explora .card-text {
+    font-size: 2.2rem !important;
+    font-weight: 800;
+    height: auto;
+  }
+  aside .card-title {
+    font-size: 1.1rem !important;
+  }
+}
+.navbar .container-fluid {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*********************************************Mediaqueries********************************************/
+@media (max-width: 767px) {
+  .navbar {
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+  }
+  .title {
+    font-size: 1rem !important;
+  }
+  .logo {
+    width: 6rem;
+  }
+  .mt-5 {
+    margin-top: 0rem !important;
+    padding-top: 0rem !important;
+  }
+  .navbar .container-fluid {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.background-video {
+  height: 50%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar {
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+  }
+  .title {
+    font-size: 1.2rem !important;
+  }
+  .logo {
+    width: 60%;
+  }
+  .mt-5 {
+    margin-top: 0rem !important;
+    padding-top: 0rem !important;
+  }
+  .navbar .container-fluid {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

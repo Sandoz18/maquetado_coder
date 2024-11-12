@@ -1,0 +1,46 @@
+
+  
+    
+    .info{
+        margin-top: 10rem;
+
+            .container{               
+              
+               align-items: center;
+               .fs-1{
+                font-size: 3rem !important;
+                color:$text-color;
+            
+            }
+
+        }
+
+        .nosotros{
+            font-size: 1.2rem;
+            width: 80%;
+           }
+
+           .container-fluid{
+          margin: 4rem 0 4rem !important;
+
+           h4{
+          
+            text-align: center;
+            font-size: 3rem !important;
+            color:$text-color;
+           }
+           }
+
+
+
+}
+.clientes{
+    text-align: center;
+    h3{
+        color: rgb(37, 20, 220);
+    }
+
+    figcaption{
+        font-size: 1rem;
+    }
+    }

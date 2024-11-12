@@ -1,14 +1,28 @@
 footer {
+    
     background-color: #08364A;
     color: #ffffff;
     display: flex;
-    justify-content: space-around;    
+    justify-content: space-between;   
+    align-items: center; 
     margin-top: 1.8rem;
 
+
 .redes{
-    display: flex;
+    display: flex;  
+    align-items: center;
+    justify-content: space-around;   
     text-decoration: none;
-    list-style: none !important;
+    list-style: none !important;  
+    padding-left: 0;
+
+    .btn{
+        width: 4.5rem;
+      
+    
 }
 
+
+
+}
 }

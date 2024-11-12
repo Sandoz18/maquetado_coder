@@ -1,38 +1,42 @@
-.w-100{
-   
-        p {
-            color: #ffffff;
-            border-radius: 10px;
-            height: auto;
-            font-size: 1.5rem;
-            position: absolute;
-            /* Posiciona el texto de forma absoluta dentro del contenedor */
-            top: 40%;
-            left: 42%;
-            span{
-                position:relative;
-                display: flex;
-                justify-content: center;
-                margin-top: 0.5rem;
-             
-                    .btn-danger{
-                        background-color: #fa5604;
-                          border: none;
-                      }
-                      
-                      .btn-warning:hover {
-                          color: #d6e0e1 important;
-                      }
-                      
-                      .ahora {
-                          color:#fa5604;
-                          font-weight: 700;
-                      }
-                      
-                      
-                           
-                                                 
-             }            
-            
+.w-100 {
+
+  
+    p {
+        color: #ffffff;
+        border-radius: 10px;
+        height: auto;
+        font-size: 1.5rem;
+        position: absolute;
+        /* Posiciona el texto de forma absoluta dentro del contenedor este position es el que hace el texto quede sobre el video y el z-index 100 hace que se muestre el modal dejandolo por adelante del video*/
+        top: 40%;
+        left: 42%;
+
+        span {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-top: 0.5rem;
+
+
+            .btn-danger {
+                background-color: #fa5604;
+                border: none;
+
+            }
+
+            .btn-warning:hover {
+                color: #d6e0e1 important;
+            }
+
+            .ahora {
+                color: #fa5604;
+                font-weight: 700;
+            }
+
+
+
+
         }
+
     }
+}

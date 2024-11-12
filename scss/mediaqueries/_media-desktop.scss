@@ -46,43 +46,4 @@ aside .card-title{
     justify-content: space-around;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-
-
-    .navbar {
-        position: sticky;
-        display: flex;
-        justify-content: space-around;
-    }
-
-
-    .title {
-        font-size: 1.2rem !important;     
-
-    }
-
-
-    .logo {
-        width: 60%;
-
-    }
-
-    .mt-5 {
-        margin-top: 0rem !important;
-        padding-top: 0rem !important;
-    }
-
-
-    .navbar .container-fluid{    
-        display: flex;
-        justify-content: space-around;
-    }
-
-  
-}
-
-
-
-
-
 
