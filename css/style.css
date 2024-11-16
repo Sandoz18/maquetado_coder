@@ -2,11 +2,6 @@
   margin: 0;
   padding: 0;
 }
-* body {
-  background-color: #eee8f4;
-  font-family: "Mukta", sans-serif;
-  font-weight: 500;
-}
 
 .seymour-one-regular {
   font-family: "Seymour One", sans-serif;
@@ -18,6 +13,26 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+  /*
+  lupa {
+      position: relative;
+
+      &__form {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          width: 150px;
+          opacity: 1;
+        }
+      }
+    }*/
+}
 header .navbar {
   background-color: rgba(8, 54, 74, 0.7725490196);
   display: flex;
@@ -29,6 +44,11 @@ header .navbar ul {
 header .navbar ul li a {
   color: #ffffff;
   text-decoration: none;
+}
+header .navbar-toggler-icon {
+  background-color: #ffffff;
+  color: #ffffff;
+  margin-right: 1rem !important;
 }
 header .nav-link {
   position: relative;
@@ -216,58 +236,56 @@ main h1 {
   font-weight: 900;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-main .bienvenido {
+main .texto-bienvenida {
+  position: absolute;
+  text-align: center;
+  width: 50%;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%); /* Centra el texto horizontal y verticalmente */
+}
+main .texto-bienvenida .bienvenido {
   color: #e8f4f4;
   font-family: "Seymour One", sans-serif;
-  position: absolute;
-  /* Posiciona el texto de forma absoluta dentro del contenedor */
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* Centra el texto horizontal y verticalmente */
   padding: 10px;
 }
-main h3 {
+main .texto-bienvenida h3 {
   font-weight: 700;
   color: #e8f4f4;
 }
-main .descubri {
+main .texto-bienvenida .descubri {
   color: #ffffff;
   font-weight: 300;
   font-size: 1.6rem;
-  position: absolute;
+  position: relative;
   /* Posiciona el texto de forma absoluta dentro del contenedor */
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* Centra el texto horizontal y verticalmente */
 }
-main .descuento {
-  position: absolute;
+main .texto-bienvenida .descuento {
+  position: relative;
   /* Posiciona el texto de forma absoluta dentro del contenedor */
   top: 40%;
-  left: 40%;
+  z-index: 500;
 }
-main .descuento p {
+main .texto-bienvenida .descuento p {
   color: #ffffff;
   border-radius: 10px;
   height: auto;
   font-size: 1.5rem;
 }
-main .descuento p span {
+main .texto-bienvenida .descuento p span {
   position: relative;
   display: flex;
   justify-content: center;
   margin-top: 0.5rem;
 }
-main .descuento p span button {
+main .texto-bienvenida .descuento p span button {
   z-index: 1000;
 }
-main .descuento p span .btn-danger {
+main .texto-bienvenida .descuento p span .btn-danger {
   background-color: #fa5604;
   border: none;
 }
-main .descuento p span:hover {
+main .texto-bienvenida .descuento p span:hover {
   color: #d6e0e1 important;
 }
 main .background_video {
@@ -282,6 +300,9 @@ main .background_video video {
   width: 100% !important;
 }
 
+section .container-fluid {
+  background-color: black;
+}
 section .disfruta {
   text-align: center;
   font-size: 2rem;
@@ -372,20 +393,89 @@ aside {
 }
 
 /*********************************************Mediaqueries********************************************/
+footer {
+  background-color: #08364A;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.8rem;
+}
+footer .redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style: none !important;
+  padding-left: 0;
+}
+footer .redes .btn {
+  width: 4.5rem;
+}
+
 @media (max-width: 768px) {
-  main {
-    position: absolute;
+  body .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
-  main .bienvenido {
-    background-color: blueviolet;
-    position: absolute;
-    font-size: 1.2rem !important;
+  body .wrapper header {
+    display: flex;
+    justify-content: space-between;
+    /*ver despues como oculto solo el buscador y pongo icono lupa
+    .d-flex {
+        display: none !important;
+    }
+    */
+  }
+  body .wrapper header .navbar .navbar-brand {
+    text-align: center;
+    padding: 0 10px;
+  }
+  body .wrapper header .navbar .navbar-brand .logo {
+    height: 50%;
+    margin: 0 auto;
+  }
+  body .wrapper main .texto-bienvenida {
+    top: 17%;
+  }
+  body .wrapper main .texto-bienvenida .bienvenido {
+    font-size: 1rem !important;
     padding: auto;
   }
-  main .descubri {
+  body .wrapper main .texto-bienvenida .descubri {
     margin-top: 1rem !important;
     font-size: 0.8rem !important;
-    background-color: aqua;
+    top: 30%;
+  }
+  body .wrapper main .texto-bienvenida .descuento {
+    top: 35% !important;
+  }
+  body .wrapper main .texto-bienvenida .descuento p {
+    font-size: 0.5rem;
+  }
+  body .wrapper main .texto-bienvenida .descuento span button .btn-danger {
+    background-color: #040746 !important;
+  }
+  body .wrapper section .disfruta {
+    font-size: 1.2rem;
+  }
+  body .wrapper section .fs-5 {
+    font-size: 0.8rem !important;
+  }
+  body .wrapper section p {
+    font-size: 0.6rem;
+    text-align: center;
+    justify-self: flex-start;
+  }
+  body .wrapper section .card {
+    align-items: center;
+  }
+  body .wrapper section .card img {
+    width: 60%;
+  }
+  body .wrapper section .card .card-body {
+    width: 60%;
   }
   .seccion_principal .seccion_principal {
     text-align: center;
@@ -425,7 +515,26 @@ aside {
     text-align: center;
   }
 }
-@media (max-width: 768px) {
+footer {
+  display: block;
+  justify-content: center;
+}
+footer .container {
+  display: flex;
+  justify-content: center;
+}
+footer .container .row .col .navbar-brand {
+  margin-right: 0;
+}
+footer .container .row .col .navbar-brand .logo {
+  width: 50%;
+  background-color: cornflowerblue;
+}
+footer .container .row .col .text-center {
+  font-size: 0.3rem !important;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
   .navbar {
     position: sticky;
     display: flex;
@@ -454,7 +563,7 @@ aside {
     justify-content: space-around;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 480px) and (max-width: 768px) {
   .navbar {
     position: sticky;
     display: flex;

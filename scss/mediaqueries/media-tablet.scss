@@ -1,4 +1,6 @@
-@media (max-width: 768px) {
+// tableta posicion horizontal (paisaje)
+
+@media (min-width: 768px) and (max-width: 1024px) {
 
     .navbar {
         position: sticky;
@@ -50,8 +52,8 @@ aside .card-title{
 }
 
 
-
-@media (min-width: 768px) and (max-width: 991px) {
+//tablets orientacion vertical (retrato)
+@media (min-width:480px ) and (max-width: 768px) {
 
 
     .navbar {
