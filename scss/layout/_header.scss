@@ -1,31 +1,84 @@
-
-
-
 header {
+  .navbar {
+    padding: 1rem;
+    background-color: #061b24;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    .navbar-brand {
+      text-align: center;
+      padding: 0 10px;
+
+      .logo {
+        margin: 0 auto;
+        
+      }
 
 
-
-
-    .navbar {
-        background-color: #08364ac5;
-        display: flex;
-        align-items: center;
-
-       
-
-        ul {
-            list-style: none;
-
-            li {
-                a {
-                    color: #ffffff;
-                    text-decoration: none;
-                }
-            }
-        }
     }
 
-    /*
+
+
+    .lupa {
+     display: flex;
+      background-color: aqua;
+      width: 3rem;
+     
+
+      .form-control {
+        width: 6rem;
+      }
+    }
+
+    .navbar-toggler {
+      display: flex;
+      color: white;
+      border: none !important;
+      .navbar-toggler-icon {
+        background-color: #ffffff;
+        color: #ffffff;
+        width: 2.5rem;
+     
+      }
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        a {
+          color: #ffffff;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .nav-link {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        /* Ajusta esta medida para cambiar la distancia del subrayado */
+        height: 2px;
+        /* Ajusta esta medida para cambiar el grosor del subrayado */
+        width: 0;
+        background-color: #ffffff;
+        /* Cambia el color del subrayado */
+        transition: width 0.3s ease-in-out;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+
+  /*
     lupa {
         position: relative;
       
@@ -43,38 +96,4 @@ header {
           }
         }
       }*/
-
-    .navbar-toggler-icon{
-        background-color: #ffffff;
-        color:#ffffff;
-        margin-right: 1rem  !important;
-     
-    }
-
-    
-
-    .nav-link {
-        position: relative;
-
-        &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -2px;
-            /* Ajusta esta medida para cambiar la distancia del subrayado */
-            height: 2px;
-            /* Ajusta esta medida para cambiar el grosor del subrayado */
-            width: 0;
-            background-color: #ffffff;
-            /* Cambia el color del subrayado */
-            transition: width 0.3s ease-in-out;
-        }
-
-        &:hover::after {
-            width: 100%;
-            
-        }
-    }
 }
-
-

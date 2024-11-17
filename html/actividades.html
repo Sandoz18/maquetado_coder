@@ -34,51 +34,61 @@
 
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg nabvar-scrolled">
-                <div
-                    class="container-fluid d-flex justify-content-center px-5 mx-5">
-                    <a href="#" class="navbar-brand">
-                        <!--itemprop e itemtype para SEO-->
-                        <img class="logo img-fluid pb-3"
-                            src="../assets/logo-01.png" alt="logo-wunderlust"
-                            itemprop="logo"
-                            itemscope
-                            itemtype="http://schema.org/Organization"></a>
-                    <div class="collapse navbar-collapse" id="navbarText">
-                        <ul
-                            class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 mx-auto">
-                            <li class="nav-item"><a
-                                    class="nav-link nav-link-active text-white"
-                                    href="../index.html">inicio</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link text-white"
-                                    href="destinos.html">destinos</a></li>
-                            <li class="nav-item"><a class="nav-link text-white"
-                                    href="actividades.html">actividades</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link text-white"
-                                    href="informacion.html">informacion</a></li>
-                            <li class="nav-item"><a class="nav-link text-white"
-                                    href="contacto.html">contacto</a></li>
-                        </ul>
-                    </div>
-                    <!---->
-                    <form class="d-flex mt-1" role="search">
-                        <input class="form-control me-2" type="search"
-                            placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success fondo-buscador"
-                            type="submit">Buscar</button>
-                    </form>
-                    <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#navbarText"
-                        aria-controls="navbarText" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-            </nav>
 
-        </header>
+            <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container d-flex">               
+
+                    <!--------itemprop e itemtype para SEO y logo------>
+                    <a href="../index.html">
+                        <img class="logo img-fluid pb-3" src="../assets/logo-01.png" alt="logo-wunderlust" itemprop="logo"
+                            itemscope itemtype="http://schema.org/Organization">
+                    </a>
+
+                    
+                        <!--lupa-->
+                <div class=" container justify-content-center d-flex align-items-center">
+                    <form class="lupa">
+                        <div class="btn btn-outline-secondary border-0"
+                            type="button">
+                            <i class="fas fa-search text-white"></i>
+                        </div>
+                        <input type="search" class="form-control"
+                            placeholder="Buscar" aria-label="Search">
+                    </form>
+                </div> 
+
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 mx-auto">
+                        <li class="nav-item"><a
+                                class="nav-link nav-link-active text-white"
+                                href="../index.html">inicio</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white"
+                                href="../html/destinos.html">destinos</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white"
+                                href="../html/actividades.html">actividades</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white"
+                                href="../html/informacion.html">información</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white"
+                                href="../html/contacto.html">contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+               
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+            </div>
+        </nav>
+
+    </header>
 
         <main>
             <section>
@@ -567,53 +577,63 @@
 
               <footer>
 
-                <div class="container-fluid mt-5">
+                <div class="container-fluid">
                     <div class="row mt-1">
-                        <div class="col-md-3 d-flex justify-content-center">
-                            <a href="#" class="navbar-brand">
-        
-                                <img class="logo img-fluid pb-3" src="../assets/logo-01.png" alt="logo-wunderlust"></a>
-        
+                        <div class="col-md-3 d-flex justify-content-center mt-5">
+                            <a href="../index.html" class="navbar-brand text-center">
+    
+                                <img class="logo img-fluid pb-3"
+                                    src="../assets/logo-01.png"
+                                    alt="logo-wunderlust"></a>
+    
                         </div>
                         <div class="col-md-6 text-center">
                             <h5 class="text-center">Mapa del sitio</h5>
                             <ul class="list-unstyled text-white">
-        
-                                <li><a href="#">Destinos</a></li>
-                                <li><a href="#">Actividades</a></li>
-                                <li><a href="#">Informacion</a></li>
-                                <li><a href="#">Contacto</a></li>
+    
+                                <li><a href="../html/destinos.html">Destinos</a></li>
+                                <li><a href="../html/actividades.html">Actividades</a></li>
+                                <li><a href="../html/informacion.html">Informacion</a></li>
+                                <li><a href="../html/contacto.html">Contacto</a></li>
                                 <li><a href="#">Términos y Condiciones</a></li>
                             </ul>
                         </div>
                         <div class="col-md-3 d-flex justify-content-center">
                             <ul class="redes mt-1">
-        
-                                <li> <a href="https://www.facebook.com" target="_parent"><img src="../assets/redes/facebook.png"
-                                            class="btn btn-social-icons img-fluid" alt="Facebook"></a></li>
-                                <li> <a href="https://www.instagram.com" target="_parent"><img
-                                            src="../assets/redes/instagram.png" class="btn btn-social-icons img-fluid"
+    
+                                <li> <a href="https://www.facebook.com"
+                                        target="_parent"><img
+                                            src="../assets/redes/facebook.png"
+                                            class="btn btn-social-icons img"
                                             alt="Facebook"></a></li>
-                                <li> <a href="https://www.tiktok.com" target="_parent"><img src="../assets/redes/tiktok .png"
-                                            class="btn btn-social-icons img-fluid" alt="Facebook"></a></li>
+                                <li> <a href="https://www.instagram.com"
+                                        target="_parent"><img
+                                            src="../assets/redes/instagram.png"
+                                            class="btn btn-social-icons img"
+                                            alt="Facebook"></a></li>
+                                <li> <a href="https://www.tiktok.com"
+                                        target="_parent"><img
+                                            src="../assets/redes/tiktok .png"
+                                            class="btn btn-social-icons img"
+                                            alt="Facebook"></a></li>
                                 <li>
-                                    <a href="https://www.Youtube.com" target="_parent"><img src="../assets/redes/Youtube.png"
-                                            class="btn btn-social-icons img-fluid" alt="Facebook"></a>
+                                    <a href="https://www.Youtube.com"
+                                        target="_parent"><img
+                                            src="../assets/redes/Youtube.png"
+                                            class="btn btn-social-icons img"
+                                            alt="Facebook"></a>
                                 </li>
-        
+    
                             </ul>
-        
-        
-        
-        
+    
                         </div>
                     </div>
                     <div class="row mt-1">
                         <p class="d-block text-center mt-1 fs-5">wuderlust@2024</p>
                     </div>
-        
-        
-            </footer>
+    
+                </footer>
+    
                 <!--bundle de bootstrap-->
                 <script
                     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

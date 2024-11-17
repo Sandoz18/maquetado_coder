@@ -1,5 +1,5 @@
 /*********************************************Mediaqueries********************************************/
-@import"../layout/footer";
+
 
 @media (max-width: 768px) {
 
@@ -8,121 +8,124 @@
 
     //index
     body {
- .wrapper{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    header {
-        display: flex;
-        justify-content: space-between;
-        .navbar {          
-         
-            .navbar-brand {
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
 
-                text-align: center;
-                padding: 0 10px;
+            header {
+                display: flex;
+                justify-content: space-around;
+                background-color: fuchsia;
+
+                .navbar {
+
+                    .navbar-brand {
+
+                        text-align: center;
+                        padding: 0 10px;
 
 
-                .logo {
-                    height: 50%;
-                    margin: 0 auto;
+                        .logo {
+
+                            margin: 0 auto;
+                        }
+
+                    }
+
+
+
                 }
 
-            }
-
-          
-
-        }
-
-        /*ver despues como oculto solo el buscador y pongo icono lupa
+                /*ver despues como oculto solo el buscador y pongo icono lupa
         .d-flex {
             display: none !important;
         }
         */
-    }
-
-    main {
-
-        .texto-bienvenida{
-                top:17%;
-
-            .bienvenido {                
-                font-size: 1rem !important;
-                padding: auto;
             }
-    
-            .descubri {
-                margin-top: 1rem !important;
-                font-size: 0.8rem !important;
-                top: 30%;
-    
+
+            main {
+
+                .texto-bienvenida {
+                    top: 17%;
+
+                    .bienvenido {
+                        font-size: 1rem !important;
+                        padding: auto;
+                    }
+
+                    .descubri {
+                        margin-top: 1rem !important;
+                        font-size: 0.8rem !important;
+                        top: 30%;
+
+                    }
+
+
+                    .descuento {
+                        top: 35% !important;
+
+
+                        p {
+                            font-size: 0.5rem;
+                        }
+
+                        span {
+
+                            button {
+                                .btn-danger {
+
+                                    background-color: #040746 !important;
+                                }
+                            }
+
+
+                        }
+
+
+
+                    }
+                }
+
+
+
             }
-    
-    
-            .descuento {
-                top: 35% !important;
-             
-    
+
+
+            section {
+                .disfruta {
+                    font-size: 1.2rem;
+                }
+
+
+                .fs-5 {
+                    font-size: 0.8rem !important;
+                }
+
                 p {
-                    font-size: 0.5rem;
+                    font-size: 0.6rem;
+                    text-align: center;
+                    justify-self: flex-start;
                 }
 
-                span{
+                .card {
+                    align-items: center;
 
-                    button{
-                        .btn-danger{
-                 
-                  background-color:#040746 !important;
-                 }
-                 }
-              
+                    img {
+                        width: 60%;
+                    }
 
+                    .card-body {
+                        width: 60%;
+                    }
                 }
-
-             
-    
             }
+
+
+
         }
 
-
-      
     }
-
-
-    section {
-        .disfruta {
-            font-size: 1.2rem;
-        }
-
-
-        .fs-5 {
-            font-size: 0.8rem !important;
-        }
-
-        p {
-            font-size: 0.6rem;            
-            text-align: center;
-            justify-self: flex-start;
-        }
-
-        .card {
-            align-items: center;
-
-            img {
-                width: 60%;
-            }
-
-            .card-body {
-                width: 60%;
-            }
-        }
-    }
-
-
-
-}
-
- }
 
 
 
@@ -182,42 +185,63 @@
 
 //footer
 
-footer{
+footer {
     display: block;
     justify-content: center;
-    .container{
+
+    .container {
         display: flex;
         justify-content: center;
-        .row{
 
-            .col{
-                .navbar-brand{
+        .row {
+
+            .col {
+                .navbar-brand {
                     margin-right: 0;
-                    .logo{
-                        width:50%;
+
+                    .logo {
+                        width: 50%;
                         background-color: cornflowerblue;
                     }
-                   } 
+                }
+
+
             }
 
-            .col{
-                .text-center{
-                    font-size: 0.3rem !important;
+            .col {
+                .text-center {
+                    font-size: 2rem !important;
                 }
             }
+
+
+
+
+
+
+
+
         }
-      
+
     }
-   
-   
+
+
+
+
+
 }
+
+//actividades
 
 
 @media (max-width: 320px) {
 
 
+    .logo {
+        width: 2.5rem;
 
 
 
+    }
 
 }

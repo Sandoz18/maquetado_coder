@@ -15,28 +15,56 @@
 
 header {
   /*
-  lupa {
-      position: relative;
+    lupa {
+        position: relative;
 
-      &__form {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        opacity: 0;
-        transition: all 0.3s ease-in-out;
+        &__form {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          opacity: 0;
+          transition: all 0.3s ease-in-out;
 
-        &:hover {
-          width: 150px;
-          opacity: 1;
+          &:hover {
+            width: 150px;
+            opacity: 1;
+          }
         }
-      }
-    }*/
+      }*/
 }
 header .navbar {
-  background-color: rgba(8, 54, 74, 0.7725490196);
+  padding: 1rem;
+  background-color: #061b24;
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
+}
+header .navbar .navbar-brand {
+  text-align: center;
+  padding: 0 10px;
+}
+header .navbar .navbar-brand .logo {
+  margin: 0 auto;
+}
+header .navbar .lupa {
+  display: flex;
+  background-color: aqua;
+  width: 3rem;
+}
+header .navbar .lupa .form-control {
+  width: 6rem;
+}
+header .navbar .navbar-toggler {
+  display: flex;
+  color: white;
+  border: none !important;
+}
+header .navbar .navbar-toggler .navbar-toggler-icon {
+  background-color: #ffffff;
+  color: #ffffff;
+  width: 2.5rem;
 }
 header .navbar ul {
   list-style: none;
@@ -45,15 +73,10 @@ header .navbar ul li a {
   color: #ffffff;
   text-decoration: none;
 }
-header .navbar-toggler-icon {
-  background-color: #ffffff;
-  color: #ffffff;
-  margin-right: 1rem !important;
-}
-header .nav-link {
+header .navbar .nav-link {
   position: relative;
 }
-header .nav-link::after {
+header .navbar .nav-link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -66,35 +89,50 @@ header .nav-link::after {
   /* Cambia el color del subrayado */
   transition: width 0.3s ease-in-out;
 }
-header .nav-link:hover::after {
+header .navbar .nav-link:hover::after {
   width: 100%;
 }
 
 /**/
 footer {
-  background-color: #08364A;
+  background-color: #061b24;
   color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1.8rem;
+  margin-top: 1.8rem !important;
+  padding: 3rem !important;
+}
+footer ul {
+  padding: 0;
+}
+footer ul li {
+  font-weight: 600;
+}
+footer ul li a {
+  color: #abbed1;
 }
 footer .redes {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   text-decoration: none;
   list-style: none !important;
-  padding-left: 0;
 }
 footer .redes .btn {
-  width: 4.5rem;
+  width: 4rem;
+  padding: auto;
+  margin: 0;
 }
 
 .btn-outline-success {
   background-color: #03676e;
   color: #ffffff;
   border-radius: 5px;
+}
+
+.card {
+  background-color: #ffffff;
 }
 
 .card {
@@ -300,13 +338,13 @@ main .background_video video {
   width: 100% !important;
 }
 
-section .container-fluid {
-  background-color: black;
-}
 section .disfruta {
   text-align: center;
   font-size: 2rem;
   color: #fa5604;
+}
+section h4 {
+  color: #9ebb10;
 }
 
 main section .fs-2 {
@@ -393,26 +431,6 @@ aside {
 }
 
 /*********************************************Mediaqueries********************************************/
-footer {
-  background-color: #08364A;
-  color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 1.8rem;
-}
-footer .redes {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-decoration: none;
-  list-style: none !important;
-  padding-left: 0;
-}
-footer .redes .btn {
-  width: 4.5rem;
-}
-
 @media (max-width: 768px) {
   body .wrapper {
     display: flex;
@@ -421,7 +439,8 @@ footer .redes .btn {
   }
   body .wrapper header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: fuchsia;
     /*ver despues como oculto solo el buscador y pongo icono lupa
     .d-flex {
         display: none !important;
@@ -433,7 +452,6 @@ footer .redes .btn {
     padding: 0 10px;
   }
   body .wrapper header .navbar .navbar-brand .logo {
-    height: 50%;
     margin: 0 auto;
   }
   body .wrapper main .texto-bienvenida {
@@ -531,9 +549,14 @@ footer .container .row .col .navbar-brand .logo {
   background-color: cornflowerblue;
 }
 footer .container .row .col .text-center {
-  font-size: 0.3rem !important;
+  font-size: 2rem !important;
 }
 
+@media (max-width: 320px) {
+  .logo {
+    width: 2.5rem;
+  }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   .navbar {
     position: sticky;
@@ -544,7 +567,7 @@ footer .container .row .col .text-center {
     font-size: 1.2rem !important;
   }
   .navbar .logo {
-    width: 60%;
+    width: 5rem;
   }
   .navbar .mt-5 {
     margin-top: 0rem !important;
