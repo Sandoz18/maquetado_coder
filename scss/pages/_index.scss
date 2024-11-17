@@ -1,129 +1,149 @@
 //estilos sobre el video
+body{
+ 
+    main {
 
-main {
-    h1 {
-        font-weight: 900;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-   .texto-bienvenida{
-    position: absolute;
-    text-align: center;
-    width: 50%;
-    left:50%; 
-    top:40%;     
-    transform: translate(-50%, -50%);/* Centra el texto horizontal y verticalmente */
-
-
-    .bienvenido {
-        color: #e8f4f4;  
-        font-family: "Seymour One", sans-serif;                 
-        padding: 10px;
-    }
-
-    h3 {
-        font-weight: 700;
-        color: #e8f4f4;
-     
-    }
-
-    .descubri {
-        color: #ffffff;   
-        font-weight: 300;
-        font-size: 1.6rem;
-        position: relative;
-        /* Posiciona el texto de forma absoluta dentro del contenedor */
-       
-    }
-
-
-
-    .descuento {           
-        position: relative;
-        /* Posiciona el texto de forma absoluta dentro del contenedor */
-        top: 40%;       
-        z-index: 500;
-
-        
-
-        p {
-            color: #ffffff;
-            border-radius: 10px;
-            height: auto;
-            font-size: 1.5rem;
-
-            span {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                margin-top: 0.5rem;
-
-                button {
-                    z-index: 1000;
-                }
-
-                .btn-danger {
-                    background-color: #fa5604;
-                    border: none;
-                }
-
-                &:hover {
-                    color: #d6e0e1 important;
-                }
-
-
+        h1 {
+            font-weight: 900;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    
+        .texto-bienvenida {
+            position: absolute;
+            text-align: center;
+            width: 50%;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+            /* Centra el texto horizontal y verticalmente */
+    
+    
+            .bienvenido {
+                color: #e8f4f4;
+                font-family: "Seymour One", sans-serif;
+                padding: 10px;
             }
+    
+            h3 {
+                font-weight: 700;
+                color: #e8f4f4;
+            }
+    
+            .descubri {
+                color: #ffffff;
+                font-weight: 300;
+                font-size: 1.6rem;
+                position: relative;
+                /* Posiciona el texto de forma absoluta dentro del contenedor */
+            }
+    
+            .descuento {
+                position: relative;
+                /* Posiciona el texto de forma absoluta dentro del contenedor */
+                top: 40%;
+                z-index: 500;
+    
+                p {
+                    color: #ffffff;
+                    border-radius: 10px;
+                    height: auto;
+                    font-size: 1.5rem;
+                    
+    
+                    span {
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 0.5rem;
+    
+                        button {
+                            z-index: 1000;                       
+                          }
 
+                          .btn{
+                            color: #04faa8;
+                            border: none;
+                        }
+    
+                        &:hover {
+                            color: #d6e0e1 important;
+                        }
+    
+    
+                    }
+    
+                }
+            }
+    
         }
-    }
-
-   }
-
-  
-    .background_video {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: -100;
-        width: 100%;
-
+    
+    
+    
         video {
-            flex-grow: 1;
-            width: 100% !important;
-            
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            object-fit: cover;
+            z-index: 0;
+            /* Coloca el video detrás de otros elementos */
+            overflow: hidden;
+            /*para que oculte el contenido que queda "desbordado"*/
         }
+    
+    
+        .background_video {
+            width: 100%;
+            height: 500px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: -1;
+    
+        }
+    
+    
+    
     }
-
-
-
-}
-
-
-
-
-
+  
     section {
-
-   
-   
-     
-
-
+    
+    text-align: center;
         .disfruta {
+           
             text-align: center;
             font-size: 2rem;
-            color: #fa5604;
+            color: #ffffff;
+            font-weight: 500;          
+        }
+
+
+        h3{
+            color: #fff709; 
         }
     
-    
-
-            h4{
-                color: #9ebb10;  
+        h4 {
+            color: #fff709;
+            ;
         }
-       
-        
 
+      
+            
+            
+
+                .text-white{
+                    color: #ffffff;
+                    background-color: #2526262c;
+                    display: inline-block;
+                }
+              
+
+             
+      
+    
     
     }
-
-
+}

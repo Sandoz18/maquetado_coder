@@ -4,6 +4,282 @@
 @media (max-width: 768px) {
 
 
+    //index
+    body {
+        
+            header {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;               
+                justify-content: flex-start;
+
+                .navbar {
+
+                    .navbar-brand {
+
+                        text-align: center;
+                        padding: 0 10px;
+
+
+                        .logo {
+
+                            margin: 0 auto;
+                        }
+
+                    }
+
+
+
+                }
+
+            }
+
+            main {
+
+                row{
+                    .texto-bienvenida {
+                        top: 27%;
+    
+                        .bienvenido {
+                            font-size: 1rem !important;
+                            padding: auto;
+                        }
+    
+                        .descubri {
+                            margin-top: 1rem !important;
+                            font-size: 0.8rem !important;
+                            top: 30%;
+    
+                        }
+    
+    
+                        .descuento {
+                            top: 35% !important;
+                         
+    
+                            p {
+                                font-size: 0.8rem;
+                                margin: 0 auto;
+                                margin-bottom: 0.5rem;
+                            }
+    
+                            span {
+    
+                                button {
+                                    .btn-danger {
+    
+                                        background-color: #040746 !important;
+                                    }
+                                }
+    
+    
+                            }
+    
+    
+    
+                        }
+                    }
+    
+    
+                }
+                
+             
+
+            }
+
+            video {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 20%;
+                left: 50%;
+                transform: translateY(-50%) translateX(-50%);
+                object-fit: cover;
+                z-index: 0;
+                /* Coloca el video detrás de otros elementos */
+                overflow: hidden;
+                /*para que oculte el contenido que queda "desbordado"*/
+            }
+        
+        
+            .background_video {
+                width: 100%;
+             
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: -1;
+        
+            }
+
+            section {
+
+                height: auto;
+
+                .disfruta {
+                    font-size: 1.2rem;
+                }
+
+
+                .fs-5 {
+                    font-size: 0.8rem !important;
+                }
+
+                p {
+                    font-size: 0.6rem;
+                    text-align: center;
+                    justify-self: flex-start;
+                }
+
+
+              
+                    span {
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 0.5rem;
+    
+                        button {
+                            z-index: 1000;
+                        }
+    
+                        .btn-danger {
+                            background-color: #fa5604;
+                            border: none;
+                        }
+    
+                      
+            }
+    
+        }
+    
+    
+    
+   
+
+                .card {
+                    align-items: center;
+
+                    img {
+                        width: 60%;
+                    }
+
+                    .card-body {
+                        width: 60%;
+                    }
+                }
+            }
+
+
+
+        
+
+    }
+
+
+
+    // destinos
+    .seccion_principal {
+
+        .seccion_principal {
+            text-align: center;
+            font-weight: 800;
+            color: #ffffff;
+            padding: 0;
+
+
+
+
+
+        }
+
+
+        .fs-5 {
+            color: #040746;
+            font-size: 0.6rem;
+            font-weight: 300;
+
+        }
+
+
+
+
+
+
+        .explora {
+            flex-direction: column;
+            display: flex;
+            @include estilo-footer;
+            @include estilo-redes;
+            font-size: 3.5rem;
+
+            ul {
+                list-style-type: none !important;
+            }
+        }
+
+
+
+    }
+
+    aside {
+        text-align: center;
+    }
+
+
+//footer
+
+footer {
+    display: block;
+    justify-content: center;
+
+    .container {
+        display: flex;
+        justify-content: center;
+
+        .row {
+
+            .col {
+                .navbar-brand {
+                    margin-right: 0;
+
+                    .logo {
+                        width: 50%;
+                        background-color: cornflowerblue;
+                    }
+                }
+
+
+            }
+
+            .col {
+                .text-center {
+                    font-size: 2rem !important;
+                }
+            }
+
+
+
+
+
+
+
+
+        }
+
+    }
+
+
+
+
+
+}
+
+//actividades
+
+
+@media (max-width: 320px) {
 
 
     //index
@@ -16,14 +292,13 @@
             header {
                 display: flex;
                 justify-content: space-around;
-                background-color: fuchsia;
 
                 .navbar {
 
                     .navbar-brand {
 
                         text-align: center;
-                        padding: 0 10px;
+                        padding: 0 5px;
 
 
                         .logo {
@@ -124,123 +399,6 @@
 
 
         }
-
-    }
-
-
-
-
-
-
-
-
-    // destinos
-    .seccion_principal {
-
-        .seccion_principal {
-            text-align: center;
-            font-weight: 800;
-            color: #ffffff;
-            padding: 0;
-
-
-
-
-
-        }
-
-
-        .fs-5 {
-            color: #040746;
-            font-size: 0.6rem;
-            font-weight: 300;
-
-        }
-
-
-
-
-
-
-        .explora {
-            flex-direction: column;
-            display: flex;
-            @include estilo-footer;
-            @include estilo-redes;
-            font-size: 3.5rem;
-
-            ul {
-                list-style-type: none !important;
-            }
-        }
-
-
-
-    }
-
-    aside {
-        text-align: center;
-    }
-}
-
-//footer
-
-footer {
-    display: block;
-    justify-content: center;
-
-    .container {
-        display: flex;
-        justify-content: center;
-
-        .row {
-
-            .col {
-                .navbar-brand {
-                    margin-right: 0;
-
-                    .logo {
-                        width: 50%;
-                        background-color: cornflowerblue;
-                    }
-                }
-
-
-            }
-
-            .col {
-                .text-center {
-                    font-size: 2rem !important;
-                }
-            }
-
-
-
-
-
-
-
-
-        }
-
-    }
-
-
-
-
-
-}
-
-//actividades
-
-
-@media (max-width: 320px) {
-
-
-    .logo {
-        width: 2.5rem;
-
-
 
     }
 

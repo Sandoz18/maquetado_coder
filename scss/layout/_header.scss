@@ -21,26 +21,14 @@ header {
 
 
 
-    .lupa {
-     display: flex;
-      background-color: aqua;
-      width: 3rem;
-     
-
-      .form-control {
-        width: 6rem;
-      }
-    }
-
     .navbar-toggler {
       display: flex;
-      color: white;
-      border: none !important;
-      .navbar-toggler-icon {
-        background-color: #ffffff;
-        color: #ffffff;
-        width: 2.5rem;
+      color: #ffffff;
      
+      .navbar-toggler-icon {
+     background-color: white;
+     border: transparent;
+    
       }
     }
 

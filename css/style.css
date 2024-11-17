@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -48,23 +49,13 @@ header .navbar .navbar-brand {
 header .navbar .navbar-brand .logo {
   margin: 0 auto;
 }
-header .navbar .lupa {
-  display: flex;
-  background-color: aqua;
-  width: 3rem;
-}
-header .navbar .lupa .form-control {
-  width: 6rem;
-}
 header .navbar .navbar-toggler {
   display: flex;
-  color: white;
-  border: none !important;
+  color: #ffffff;
 }
 header .navbar .navbar-toggler .navbar-toggler-icon {
-  background-color: #ffffff;
-  color: #ffffff;
-  width: 2.5rem;
+  background-color: white;
+  border: transparent;
 }
 header .navbar ul {
   list-style: none;
@@ -270,81 +261,104 @@ footer .redes .btn {
   font-weight: 700;
 }
 
-main h1 {
+body main h1 {
   font-weight: 900;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-main .texto-bienvenida {
+body main .texto-bienvenida {
   position: absolute;
   text-align: center;
   width: 50%;
   left: 50%;
   top: 40%;
-  transform: translate(-50%, -50%); /* Centra el texto horizontal y verticalmente */
+  transform: translate(-50%, -50%);
+  /* Centra el texto horizontal y verticalmente */
 }
-main .texto-bienvenida .bienvenido {
+body main .texto-bienvenida .bienvenido {
   color: #e8f4f4;
   font-family: "Seymour One", sans-serif;
   padding: 10px;
 }
-main .texto-bienvenida h3 {
+body main .texto-bienvenida h3 {
   font-weight: 700;
   color: #e8f4f4;
 }
-main .texto-bienvenida .descubri {
+body main .texto-bienvenida .descubri {
   color: #ffffff;
   font-weight: 300;
   font-size: 1.6rem;
   position: relative;
   /* Posiciona el texto de forma absoluta dentro del contenedor */
 }
-main .texto-bienvenida .descuento {
+body main .texto-bienvenida .descuento {
   position: relative;
   /* Posiciona el texto de forma absoluta dentro del contenedor */
   top: 40%;
   z-index: 500;
 }
-main .texto-bienvenida .descuento p {
+body main .texto-bienvenida .descuento p {
   color: #ffffff;
   border-radius: 10px;
   height: auto;
   font-size: 1.5rem;
 }
-main .texto-bienvenida .descuento p span {
+body main .texto-bienvenida .descuento p span {
   position: relative;
   display: flex;
   justify-content: center;
   margin-top: 0.5rem;
 }
-main .texto-bienvenida .descuento p span button {
+body main .texto-bienvenida .descuento p span button {
   z-index: 1000;
 }
-main .texto-bienvenida .descuento p span .btn-danger {
-  background-color: #fa5604;
+body main .texto-bienvenida .descuento p span .btn {
+  color: #04faa8;
   border: none;
 }
-main .texto-bienvenida .descuento p span:hover {
+body main .texto-bienvenida .descuento p span:hover {
   color: #d6e0e1 important;
 }
-main .background_video {
+body main video {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  object-fit: cover;
+  z-index: 0;
+  /* Coloca el video detrás de otros elementos */
+  overflow: hidden;
+  /*para que oculte el contenido que queda "desbordado"*/
+}
+body main .background_video {
+  width: 100%;
+  height: 500px;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: -100;
-  width: 100%;
+  z-index: -1;
 }
-main .background_video video {
-  flex-grow: 1;
-  width: 100% !important;
+body section {
+  text-align: center;
 }
-
-section .disfruta {
+body section .disfruta {
   text-align: center;
   font-size: 2rem;
-  color: #fa5604;
+  color: #ffffff;
+  font-weight: 500;
 }
-section h4 {
-  color: #9ebb10;
+body section h3 {
+  color: #fff709;
+}
+body section h4 {
+  color: #fff709;
+}
+body section .text-white {
+  color: #ffffff;
+  background-color: rgba(37, 38, 38, 0.1725490196);
+  display: inline-block;
 }
 
 main section .fs-2 {
@@ -430,8 +444,172 @@ aside {
   font-size: 1rem;
 }
 
+body main h4 {
+  color: blue;
+  font-size: 2rem;
+}
+body main h2 {
+  color: #9510e8;
+}
+body main .card h3 {
+  color: #000000;
+}
+
 /*********************************************Mediaqueries********************************************/
 @media (max-width: 768px) {
+  body header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  body header .navbar .navbar-brand {
+    text-align: center;
+    padding: 0 10px;
+  }
+  body header .navbar .navbar-brand .logo {
+    margin: 0 auto;
+  }
+  body main row .texto-bienvenida {
+    top: 27%;
+  }
+  body main row .texto-bienvenida .bienvenido {
+    font-size: 1rem !important;
+    padding: auto;
+  }
+  body main row .texto-bienvenida .descubri {
+    margin-top: 1rem !important;
+    font-size: 0.8rem !important;
+    top: 30%;
+  }
+  body main row .texto-bienvenida .descuento {
+    top: 35% !important;
+  }
+  body main row .texto-bienvenida .descuento p {
+    font-size: 0.8rem;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+  }
+  body main row .texto-bienvenida .descuento span button .btn-danger {
+    background-color: #040746 !important;
+  }
+  body video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 20%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    object-fit: cover;
+    z-index: 0;
+    /* Coloca el video detrás de otros elementos */
+    overflow: hidden;
+    /*para que oculte el contenido que queda "desbordado"*/
+  }
+  body .background_video {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+  }
+  body section {
+    height: auto;
+  }
+  body section .disfruta {
+    font-size: 1.2rem;
+  }
+  body section .fs-5 {
+    font-size: 0.8rem !important;
+  }
+  body section p {
+    font-size: 0.6rem;
+    text-align: center;
+    justify-self: flex-start;
+  }
+  body section span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  body section span button {
+    z-index: 1000;
+  }
+  body section span .btn-danger {
+    background-color: #fa5604;
+    border: none;
+  }
+  body .card {
+    align-items: center;
+  }
+  body .card img {
+    width: 60%;
+  }
+  body .card .card-body {
+    width: 60%;
+  }
+}
+.seccion_principal .seccion_principal {
+  text-align: center;
+  font-weight: 800;
+  color: #ffffff;
+  padding: 0;
+}
+.seccion_principal .fs-5 {
+  color: #040746;
+  font-size: 0.6rem;
+  font-weight: 300;
+}
+.seccion_principal .explora {
+  flex-direction: column;
+  display: flex;
+  background-color: #08364A;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style: none !important;
+  padding-left: 0;
+  font-size: 3.5rem;
+}
+.seccion_principal .explora .btn {
+  width: 5.5rem;
+}
+.seccion_principal .explora ul {
+  list-style-type: none !important;
+}
+
+aside {
+  text-align: center;
+}
+
+footer {
+  display: block;
+  justify-content: center;
+}
+footer .container {
+  display: flex;
+  justify-content: center;
+}
+footer .container .row .col .navbar-brand {
+  margin-right: 0;
+}
+footer .container .row .col .navbar-brand .logo {
+  width: 50%;
+  background-color: cornflowerblue;
+}
+footer .container .row .col .text-center {
+  font-size: 2rem !important;
+}
+
+@media (max-width: 320px) {
   body .wrapper {
     display: flex;
     flex-direction: column;
@@ -440,7 +618,6 @@ aside {
   body .wrapper header {
     display: flex;
     justify-content: space-around;
-    background-color: fuchsia;
     /*ver despues como oculto solo el buscador y pongo icono lupa
     .d-flex {
         display: none !important;
@@ -449,7 +626,7 @@ aside {
   }
   body .wrapper header .navbar .navbar-brand {
     text-align: center;
-    padding: 0 10px;
+    padding: 0 5px;
   }
   body .wrapper header .navbar .navbar-brand .logo {
     margin: 0 auto;
@@ -494,67 +671,6 @@ aside {
   }
   body .wrapper section .card .card-body {
     width: 60%;
-  }
-  .seccion_principal .seccion_principal {
-    text-align: center;
-    font-weight: 800;
-    color: #ffffff;
-    padding: 0;
-  }
-  .seccion_principal .fs-5 {
-    color: #040746;
-    font-size: 0.6rem;
-    font-weight: 300;
-  }
-  .seccion_principal .explora {
-    flex-direction: column;
-    display: flex;
-    background-color: #08364A;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-decoration: none;
-    list-style: none !important;
-    padding-left: 0;
-    font-size: 3.5rem;
-  }
-  .seccion_principal .explora .btn {
-    width: 5.5rem;
-  }
-  .seccion_principal .explora ul {
-    list-style-type: none !important;
-  }
-  aside {
-    text-align: center;
-  }
-}
-footer {
-  display: block;
-  justify-content: center;
-}
-footer .container {
-  display: flex;
-  justify-content: center;
-}
-footer .container .row .col .navbar-brand {
-  margin-right: 0;
-}
-footer .container .row .col .navbar-brand .logo {
-  width: 50%;
-  background-color: cornflowerblue;
-}
-footer .container .row .col .text-center {
-  font-size: 2rem !important;
-}
-
-@media (max-width: 320px) {
-  .logo {
-    width: 2.5rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
