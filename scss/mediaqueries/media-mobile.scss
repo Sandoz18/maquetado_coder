@@ -1,10 +1,10 @@
-/*********************************************Mediaqueries********************************************/
 
+ /**************************************************index*****************************************************/
 
 @media (max-width: 768px) {
 
 
-    //index
+   
     body {
         
             header {
@@ -18,7 +18,7 @@
                     .navbar-brand {
 
                         text-align: center;
-                        padding: 0 10px;
+                        padding: 0 2px;
 
 
                         .logo {
@@ -38,23 +38,24 @@
 
                 row{
                     .texto-bienvenida {
-                        top: 27%;
+                        top: 37%;
+                        width: 100% !important;
     
                         .bienvenido {
-                            font-size: 1rem !important;
+                            font-size: 0.8rem !important;
                             padding: auto;
                         }
     
                         .descubri {
-                            margin-top: 1rem !important;
-                            font-size: 0.8rem !important;
-                            top: 30%;
+                            margin-top: 0.3rem !important;
+                            font-size: 0.5rem !important;
+                            top: 40%;
     
                         }
     
     
                         .descuento {
-                            top: 35% !important;
+                            top: 45% !important;
                          
     
                             p {
@@ -179,7 +180,9 @@
 
 
 
-    // destinos
+
+    /********************************************************destinos*************************************************/
+    
     .seccion_principal {
 
         .seccion_principal {
@@ -228,7 +231,10 @@
     }
 
 
-//footer
+/********************************************************footer**********************************************/
+
+
+
 
 footer {
     display: block;
@@ -275,6 +281,8 @@ footer {
 
 
 }
+
+
 
 //actividades
 

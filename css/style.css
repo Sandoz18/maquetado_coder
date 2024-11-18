@@ -15,24 +15,7 @@
 }
 
 header {
-  /*
-    lupa {
-        position: relative;
-
-        &__form {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 0;
-          opacity: 0;
-          transition: all 0.3s ease-in-out;
-
-          &:hover {
-            width: 150px;
-            opacity: 1;
-          }
-        }
-      }*/
+ 
 }
 header .navbar {
   padding: 1rem;
