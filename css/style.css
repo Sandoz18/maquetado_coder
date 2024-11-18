@@ -15,7 +15,24 @@
 }
 
 header {
- 
+  /*
+    lupa {
+        position: relative;
+
+        &__form {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          opacity: 0;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            width: 150px;
+            opacity: 1;
+          }
+        }
+      }*/
 }
 header .navbar {
   padding: 1rem;
@@ -224,7 +241,6 @@ footer .redes .btn {
   position: absolute;
   /* Posiciona el texto de forma absoluta dentro del contenedor este position es el que hace el texto quede sobre el video y el z-index 100 hace que se muestre el modal dejandolo por adelante del video*/
   top: 40%;
-  left: 42%;
 }
 .w-100 p span {
   position: relative;
@@ -251,7 +267,6 @@ body main h1 {
 body main .texto-bienvenida {
   position: absolute;
   text-align: center;
-  width: 50%;
   left: 50%;
   top: 40%;
   transform: translate(-50%, -50%);
@@ -438,7 +453,7 @@ body main .card h3 {
   color: #000000;
 }
 
-/*********************************************Mediaqueries********************************************/
+/**************************************************index*****************************************************/
 @media (max-width: 768px) {
   body header {
     display: flex;
@@ -448,33 +463,37 @@ body main .card h3 {
   }
   body header .navbar .navbar-brand {
     text-align: center;
-    padding: 0 10px;
+    padding: 0 2px;
   }
   body header .navbar .navbar-brand .logo {
     margin: 0 auto;
   }
-  body main row .texto-bienvenida {
-    top: 27%;
+  body main section {
+    margin: top 25px;
   }
-  body main row .texto-bienvenida .bienvenido {
-    font-size: 1rem !important;
+  body main section .row .texto-bienvenida {
+    margin-top: 1rem;
+    width: 100% !important;
+  }
+  body main section .row .texto-bienvenida .bienvenido {
+    font-size: 1.1rem !important;
     padding: auto;
   }
-  body main row .texto-bienvenida .descubri {
-    margin-top: 1rem !important;
-    font-size: 0.8rem !important;
-    top: 30%;
+  body main section .row .texto-bienvenida .descubri {
+    font-size: 0.9rem !important;
   }
-  body main row .texto-bienvenida .descuento {
-    top: 35% !important;
+  body main section .row .texto-bienvenida .descuento {
+    font-size: 0.2em;
   }
-  body main row .texto-bienvenida .descuento p {
+  body main section .row .texto-bienvenida .descuento p {
     font-size: 0.8rem;
     margin: 0 auto;
     margin-bottom: 0.5rem;
   }
-  body main row .texto-bienvenida .descuento span button .btn-danger {
-    background-color: #040746 !important;
+  body main section .row .texto-bienvenida .descuento span .btn {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
   }
   body video {
     position: fixed;
@@ -534,6 +553,7 @@ body main .card h3 {
     width: 60%;
   }
 }
+/********************************************************destinos*************************************************/
 .seccion_principal .seccion_principal {
   text-align: center;
   font-weight: 800;
@@ -573,6 +593,7 @@ aside {
   text-align: center;
 }
 
+/********************************************************footer**********************************************/
 footer {
   display: block;
   justify-content: center;

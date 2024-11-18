@@ -35,27 +35,31 @@
             }
 
             main {
+                section{
 
-                row{
+                    margin: top 25px;
+
+
+                    
+                .row{
                     .texto-bienvenida {
-                        top: 37%;
+                    margin-top: 1rem;
                         width: 100% !important;
-    
                         .bienvenido {
-                            font-size: 0.8rem !important;
+                            font-size: 1.1rem !important;
                             padding: auto;
                         }
     
                         .descubri {
-                            margin-top: 0.3rem !important;
-                            font-size: 0.5rem !important;
-                            top: 40%;
+                           
+                            font-size: 0.9rem !important;
+                          
     
                         }
     
     
                         .descuento {
-                            top: 45% !important;
+                          font-size:0.2em;
                          
     
                             p {
@@ -66,11 +70,14 @@
     
                             span {
     
-                                button {
-                                    .btn-danger {
-    
-                                        background-color: #040746 !important;
-                                    }
+                                .btn{
+                                  
+                                      width:7rem; 
+                                      height:2.5rem;
+                                      font-size:0.8rem;
+                                      
+                                     
+                                  
                                 }
     
     
@@ -85,6 +92,8 @@
                 }
                 
              
+                }
+
 
             }
 
