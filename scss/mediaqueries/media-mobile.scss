@@ -1,10 +1,10 @@
 
- /**************************************************index*****************************************************/
+/**************************************************index*****************************************************/
 
 @media (max-width: 768px) {
 
 
-   
+
     body {
         
             header {
@@ -46,21 +46,21 @@
                     margin-top: 1rem;
                         width: 100% !important;
                         .bienvenido {
-                            font-size: 1.1rem !important;
+                            font-size: 1.5rem !important;
                             padding: auto;
                         }
     
                         .descubri {
-                           
+            
                             font-size: 0.9rem !important;
-                          
+                        
     
                         }
     
     
                         .descuento {
-                          font-size:0.2em;
-                         
+                        font-size:0.2em;
+                        
     
                             p {
                                 font-size: 0.8rem;
@@ -71,13 +71,10 @@
                             span {
     
                                 .btn{
-                                  
-                                      width:7rem; 
-                                      height:2.5rem;
-                                      font-size:0.8rem;
-                                      
-                                     
-                                  
+                                    width:7rem; 
+                                    height:2.5rem;
+                                    font-size:0.8rem;
+ 
                                 }
     
     
@@ -91,7 +88,7 @@
     
                 }
                 
-             
+        
                 }
 
 
@@ -114,7 +111,7 @@
         
             .background_video {
                 width: 100%;
-             
+        height:80vh;
                 position: relative;
                 display: flex;
                 justify-content: center;
@@ -128,22 +125,22 @@
                 height: auto;
 
                 .disfruta {
-                    font-size: 1.2rem;
+                    font-size: 1.8rem;
+                    margin-top:0.2rem;
                 }
 
 
                 .fs-5 {
-                    font-size: 0.8rem !important;
+                    font-size: 1rem !important;
                 }
 
                 p {
-                    font-size: 0.6rem;
+                    font-size: 0.8rem;
                     text-align: center;
                     justify-self: flex-start;
                 }
 
 
-              
                     span {
                         position: relative;
                         display: flex;
@@ -159,25 +156,19 @@
                             border: none;
                         }
     
-                      
+
             }
     
         }
     
     
     
-   
+
 
                 .card {
                     align-items: center;
 
-                    img {
-                        width: 60%;
-                    }
-
-                    .card-body {
-                        width: 60%;
-                    }
+                    
                 }
             }
 
@@ -260,7 +251,7 @@ footer {
                     margin-right: 0;
 
                     .logo {
-                        width: 50%;
+                        width: 25%;
                         background-color: cornflowerblue;
                     }
                 }
@@ -300,123 +291,6 @@ footer {
 
 
     //index
-    body {
-        .wrapper {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-
-            header {
-                display: flex;
-                justify-content: space-around;
-
-                .navbar {
-
-                    .navbar-brand {
-
-                        text-align: center;
-                        padding: 0 5px;
-
-
-                        .logo {
-
-                            margin: 0 auto;
-                        }
-
-                    }
-
-
-
-                }
-
-                /*ver despues como oculto solo el buscador y pongo icono lupa
-        .d-flex {
-            display: none !important;
-        }
-        */
-            }
-
-            main {
-
-                .texto-bienvenida {
-                    top: 17%;
-
-                    .bienvenido {
-                        font-size: 1rem !important;
-                        padding: auto;
-                    }
-
-                    .descubri {
-                        margin-top: 1rem !important;
-                        font-size: 0.8rem !important;
-                        top: 30%;
-
-                    }
-
-
-                    .descuento {
-                        top: 35% !important;
-
-
-                        p {
-                            font-size: 0.5rem;
-                        }
-
-                        span {
-
-                            button {
-                                .btn-danger {
-
-                                    background-color: #040746 !important;
-                                }
-                            }
-
-
-                        }
-
-
-
-                    }
-                }
-
-
-
-            }
-
-
-            section {
-                .disfruta {
-                    font-size: 1.2rem;
-                }
-
-
-                .fs-5 {
-                    font-size: 0.8rem !important;
-                }
-
-                p {
-                    font-size: 0.6rem;
-                    text-align: center;
-                    justify-self: flex-start;
-                }
-
-                .card {
-                    align-items: center;
-
-                    img {
-                        width: 60%;
-                    }
-
-                    .card-body {
-                        width: 60%;
-                    }
-                }
-            }
-
-
-
-        }
-
-    }
+  
 
 }

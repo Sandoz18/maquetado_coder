@@ -342,6 +342,7 @@ body section {
   text-align: center;
 }
 body section .disfruta {
+  margin-top: 5rem;
   text-align: center;
   font-size: 2rem;
   color: #ffffff;
@@ -476,7 +477,7 @@ body main .card h3 {
     width: 100% !important;
   }
   body main section .row .texto-bienvenida .bienvenido {
-    font-size: 1.1rem !important;
+    font-size: 1.5rem !important;
     padding: auto;
   }
   body main section .row .texto-bienvenida .descubri {
@@ -510,6 +511,7 @@ body main .card h3 {
   }
   body .background_video {
     width: 100%;
+    height: 80vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -520,13 +522,14 @@ body main .card h3 {
     height: auto;
   }
   body section .disfruta {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+    margin-top: 0.2rem;
   }
   body section .fs-5 {
-    font-size: 0.8rem !important;
+    font-size: 1rem !important;
   }
   body section p {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     text-align: center;
     justify-self: flex-start;
   }
@@ -545,12 +548,6 @@ body main .card h3 {
   }
   body .card {
     align-items: center;
-  }
-  body .card img {
-    width: 60%;
-  }
-  body .card .card-body {
-    width: 60%;
   }
 }
 /********************************************************destinos*************************************************/
@@ -606,77 +603,13 @@ footer .container .row .col .navbar-brand {
   margin-right: 0;
 }
 footer .container .row .col .navbar-brand .logo {
-  width: 50%;
+  width: 25%;
   background-color: cornflowerblue;
 }
 footer .container .row .col .text-center {
   font-size: 2rem !important;
 }
 
-@media (max-width: 320px) {
-  body .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  body .wrapper header {
-    display: flex;
-    justify-content: space-around;
-    /*ver despues como oculto solo el buscador y pongo icono lupa
-    .d-flex {
-        display: none !important;
-    }
-    */
-  }
-  body .wrapper header .navbar .navbar-brand {
-    text-align: center;
-    padding: 0 5px;
-  }
-  body .wrapper header .navbar .navbar-brand .logo {
-    margin: 0 auto;
-  }
-  body .wrapper main .texto-bienvenida {
-    top: 17%;
-  }
-  body .wrapper main .texto-bienvenida .bienvenido {
-    font-size: 1rem !important;
-    padding: auto;
-  }
-  body .wrapper main .texto-bienvenida .descubri {
-    margin-top: 1rem !important;
-    font-size: 0.8rem !important;
-    top: 30%;
-  }
-  body .wrapper main .texto-bienvenida .descuento {
-    top: 35% !important;
-  }
-  body .wrapper main .texto-bienvenida .descuento p {
-    font-size: 0.5rem;
-  }
-  body .wrapper main .texto-bienvenida .descuento span button .btn-danger {
-    background-color: #040746 !important;
-  }
-  body .wrapper section .disfruta {
-    font-size: 1.2rem;
-  }
-  body .wrapper section .fs-5 {
-    font-size: 0.8rem !important;
-  }
-  body .wrapper section p {
-    font-size: 0.6rem;
-    text-align: center;
-    justify-self: flex-start;
-  }
-  body .wrapper section .card {
-    align-items: center;
-  }
-  body .wrapper section .card img {
-    width: 60%;
-  }
-  body .wrapper section .card .card-body {
-    width: 60%;
-  }
-}
 @media (min-width: 768px) and (max-width: 1024px) {
   .navbar {
     position: sticky;
