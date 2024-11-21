@@ -10,10 +10,6 @@
   font-style: normal;
 }
 
-.p {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 header {
   /*
     lupa {
@@ -52,10 +48,12 @@ header .navbar .navbar-brand .logo {
 header .navbar .navbar-toggler {
   display: flex;
   color: #ffffff;
+  line-height: normal;
 }
 header .navbar .navbar-toggler .navbar-toggler-icon {
-  background-color: white;
-  border: transparent;
+  display: none;
+  border: none;
+  background-color: #ffffff;
 }
 header .navbar ul {
   list-style: none;
@@ -273,7 +271,7 @@ body main .texto-bienvenida {
   /* Centra el texto horizontal y verticalmente */
 }
 body main .texto-bienvenida .bienvenido {
-  color: #e8f4f4;
+  color: #ffc107;
   font-family: "Seymour One", sans-serif;
   padding: 10px;
 }
@@ -299,6 +297,7 @@ body main .texto-bienvenida .descuento p {
   border-radius: 10px;
   height: auto;
   font-size: 1.5rem;
+  justify-content: center;
 }
 body main .texto-bienvenida .descuento p span {
   position: relative;
@@ -349,14 +348,14 @@ body section .disfruta {
   font-weight: 500;
 }
 body section h3 {
-  color: #fff709;
+  color: #ffc107;
 }
 body section h4 {
-  color: #fff709;
+  color: #ffc107;
 }
 body section .text-white {
   color: #ffffff;
-  background-color: rgba(37, 38, 38, 0.1725490196);
+  background-color: rgba(7, 15, 15, 0.2352941176);
   display: inline-block;
 }
 
@@ -443,21 +442,44 @@ aside {
   font-size: 1rem;
 }
 
-body main h4 {
-  color: blue;
+body {
+  background-color: #e7e7e7;
+}
+body main section mark {
+  background-color: #080801;
   font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 5rem;
 }
-body main h2 {
-  color: #9510e8;
+body main section h1 {
+  color: #040404;
+  font-size: 2.5rem;
+  font-weight: 900;
 }
-body main .card h3 {
+body main section h1 .bienvenido {
+  font-family: "Seymour One", sans-serif;
+  padding: 10px;
+}
+body main section h4 {
+  color: #7119c8;
+}
+body main section p {
+  border-radius: 10px;
+  height: auto;
+  font-size: 1.3rem;
+  justify-content: center;
+}
+body main section .card h3 {
   color: #000000;
+}
+body main section .card p {
+  font-size: 1rem;
 }
 
 /**************************************************index*****************************************************/
 @media (max-width: 768px) {
   body header {
-    display: flex;
+    display: block;
     justify-content: space-around;
     flex-direction: column;
     justify-content: flex-start;
@@ -467,7 +489,12 @@ body main .card h3 {
     padding: 0 2px;
   }
   body header .navbar .navbar-brand .logo {
+    width: 50%;
     margin: 0 auto;
+  }
+  body header .navbar .navbar-toggler-icon {
+    display: block;
+    background-color: #ffffff;
   }
   body main section {
     margin: top 25px;
@@ -603,8 +630,7 @@ footer .container .row .col .navbar-brand {
   margin-right: 0;
 }
 footer .container .row .col .navbar-brand .logo {
-  width: 25%;
-  background-color: cornflowerblue;
+  width: 50%;
 }
 footer .container .row .col .text-center {
   font-size: 2rem !important;

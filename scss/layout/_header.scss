@@ -16,18 +16,22 @@ header {
         
       }
 
-
+      
     }
-
 
 
     .navbar-toggler {
       display: flex;
-      color: #ffffff;
+     color:#ffffff;
+     line-height: normal;
+    
      
       .navbar-toggler-icon {
-     background-color: white;
-     border: transparent;
+        display: none;
+    
+     border: none;
+     background-color: #ffffff;
+     
     
       }
     }

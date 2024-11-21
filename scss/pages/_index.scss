@@ -19,7 +19,7 @@ body{
     
     
             .bienvenido {
-                color: #e8f4f4;
+                color: #ffc107;
                 font-family: "Seymour One", sans-serif;
                 padding: 10px;
             }
@@ -48,6 +48,7 @@ body{
                     border-radius: 10px;
                     height: auto;
                     font-size: 1.5rem;
+                    justify-content: center;
                     
     
                     span {
@@ -55,6 +56,8 @@ body{
                         display: flex;
                         justify-content: center;
                         margin-top: 0.5rem;
+
+
     
                         button {
                             z-index: 1000;                       
@@ -122,11 +125,11 @@ body{
 
 
         h3{
-            color: #fff709; 
+            color: #ffc107; 
         }
     
         h4 {
-            color: #fff709;
+            color: #ffc107;
             ;
         }
 
@@ -136,7 +139,7 @@ body{
 
                 .text-white{
                     color: #ffffff;
-                 background-color: #2526262c;
+                 background-color: #070f0f3c;
                     display: inline-block;
                 }
               

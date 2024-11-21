@@ -1,23 +1,56 @@
 body{
+  background-color: $background-body;
     main{
-        h4{
-            color:blue;
-            font-size: 2rem;
-        }
-
-        h2{
-            color:#9510e8;
-        }
-
-        .card{
-            h3{
-                color:#000000;
+        section{
+            mark{
+                background-color: #080801;
+                font-size: 2rem;
+                color: #ffffff;
+                margin-bottom: 5rem;
             }
+    
+            h1{
+                color: #040404;
+                font-size: 2.5rem;
+                font-weight: 900;         
+    
+    
+                .bienvenido {
+                    
+                                 font-family: "Seymour One", sans-serif;
+                    padding: 10px;
+                }
+            }
+    
+    
+    
+            h4{
+                color:#7119c8;
+            }
+    
+            p{              
+               border-radius: 10px;
+                        height: auto;
+                        font-size: 1.3rem;
+                        justify-content: center;
+            }
+    
+            .card{
+               
+                h3{
+                    color:#000000;
+                }
+
+                p{
+                    font-size: 1rem;
+                }
+            }
+    
         }
-
-    }
-
-
+    
+    
+        }
+       
 
 
 }
