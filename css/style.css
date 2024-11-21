@@ -445,35 +445,24 @@ aside {
 body {
   background-color: #e7e7e7;
 }
-body main section mark {
-  background-color: #080801;
-  font-size: 2rem;
+body .seccion_principal h1 {
+  font-size: 2.7rem;
+}
+body .seccion_principal h2 {
+  font-weight: 500;
+}
+body .seccion_principal .seleccion {
+  font-weight: 700;
+  font-size: 2.3rem;
+  color: #061b24;
+}
+body .seccion_principal mark {
+  font-size: 1.8rem;
+  background-color: #061b24;
   color: #ffffff;
-  margin-bottom: 5rem;
 }
-body main section h1 {
-  color: #040404;
-  font-size: 2.5rem;
-  font-weight: 900;
-}
-body main section h1 .bienvenido {
-  font-family: "Seymour One", sans-serif;
-  padding: 10px;
-}
-body main section h4 {
-  color: #7119c8;
-}
-body main section p {
-  border-radius: 10px;
-  height: auto;
-  font-size: 1.3rem;
-  justify-content: center;
-}
-body main section .card h3 {
-  color: #000000;
-}
-body main section .card p {
-  font-size: 1rem;
+body .seccion_principal .descripcion {
+  font-weight: 300;
 }
 
 /**************************************************index*****************************************************/
