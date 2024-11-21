@@ -179,7 +179,7 @@
 
         
 
-    }
+   
 
 
 
@@ -284,15 +284,33 @@ footer {
 
 }
 
+/*********************************************************actividades*************************/
+
+.seccion_principal{
+   
+    h1{
+        font-size:  1.5rem !important;
+        background-color: #fa5604;
+    }
+
+    h2{
+        background-color: aqua;
+        font-size: 1.2rem !important;
+    }
+    p{
+        font-size: 0.8rem !important;
+    }
+
+   .py-5{
+    background-color: blue;
+    margin: 1, 0 !important;
+   }
+}
 
 
-//actividades
 
 
-@media (max-width: 320px) {
 
 
-    //index
-  
-
+/****************************este es el final de la mrdiquerie de 768 no borrar!!!!*******************/
 }

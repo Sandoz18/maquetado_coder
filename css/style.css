@@ -446,10 +446,15 @@ body {
   background-color: #e7e7e7;
 }
 body .seccion_principal h1 {
-  font-size: 2.7rem;
+  font-size: 2.3rem;
+  font-weight: 900;
+}
+body .seccion_principal .fs-4 {
+  font-style: italic;
 }
 body .seccion_principal h2 {
-  font-weight: 500;
+  font-weight: 400;
+  padding-top: 1rem;
 }
 body .seccion_principal .seleccion {
   font-weight: 700;
@@ -463,6 +468,14 @@ body .seccion_principal mark {
 }
 body .seccion_principal .descripcion {
   font-weight: 300;
+}
+body .seccion_principal .btn-primary {
+  background-color: #198754;
+  border: #198754;
+}
+body article {
+  background-color: #198754;
+  color: #ffffff;
 }
 
 /**************************************************index*****************************************************/
@@ -565,66 +578,80 @@ body .seccion_principal .descripcion {
   body .card {
     align-items: center;
   }
+  /********************************************************destinos*************************************************/
+  .seccion_principal .seccion_principal {
+    text-align: center;
+    font-weight: 800;
+    color: #ffffff;
+    padding: 0;
+  }
+  .seccion_principal .fs-5 {
+    color: #040746;
+    font-size: 0.6rem;
+    font-weight: 300;
+  }
+  .seccion_principal .explora {
+    flex-direction: column;
+    display: flex;
+    background-color: #08364A;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none !important;
+    padding-left: 0;
+    font-size: 3.5rem;
+  }
+  .seccion_principal .explora .btn {
+    width: 5.5rem;
+  }
+  .seccion_principal .explora ul {
+    list-style-type: none !important;
+  }
+  aside {
+    text-align: center;
+  }
+  /********************************************************footer**********************************************/
+  footer {
+    display: block;
+    justify-content: center;
+  }
+  footer .container {
+    display: flex;
+    justify-content: center;
+  }
+  footer .container .row .col .navbar-brand {
+    margin-right: 0;
+  }
+  footer .container .row .col .navbar-brand .logo {
+    width: 50%;
+  }
+  footer .container .row .col .text-center {
+    font-size: 2rem !important;
+  }
+  /*********************************************************actividades*************************/
+  .seccion_principal h1 {
+    font-size: 1.5rem !important;
+    background-color: #fa5604;
+  }
+  .seccion_principal h2 {
+    background-color: aqua;
+    font-size: 1.2rem !important;
+  }
+  .seccion_principal p {
+    font-size: 0.8rem !important;
+  }
+  .seccion_principal .py-5 {
+    background-color: blue;
+    margin: 1, 0 !important;
+  }
+  /****************************este es el final de la mrdiquerie de 768 no borrar!!!!*******************/
 }
-/********************************************************destinos*************************************************/
-.seccion_principal .seccion_principal {
-  text-align: center;
-  font-weight: 800;
-  color: #ffffff;
-  padding: 0;
-}
-.seccion_principal .fs-5 {
-  color: #040746;
-  font-size: 0.6rem;
-  font-weight: 300;
-}
-.seccion_principal .explora {
-  flex-direction: column;
-  display: flex;
-  background-color: #08364A;
-  color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 1.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-decoration: none;
-  list-style: none !important;
-  padding-left: 0;
-  font-size: 3.5rem;
-}
-.seccion_principal .explora .btn {
-  width: 5.5rem;
-}
-.seccion_principal .explora ul {
-  list-style-type: none !important;
-}
-
-aside {
-  text-align: center;
-}
-
-/********************************************************footer**********************************************/
-footer {
-  display: block;
-  justify-content: center;
-}
-footer .container {
-  display: flex;
-  justify-content: center;
-}
-footer .container .row .col .navbar-brand {
-  margin-right: 0;
-}
-footer .container .row .col .navbar-brand .logo {
-  width: 50%;
-}
-footer .container .row .col .text-center {
-  font-size: 2rem !important;
-}
-
 @media (min-width: 768px) and (max-width: 1024px) {
   .navbar {
     position: sticky;
