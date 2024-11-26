@@ -1,0 +1,84 @@
+@import "../utilities/mixins";
+
+body{
+  background-color: $background-body;
+ 
+ .seccion_principal{
+    margin-top: 10rem; 
+ 
+
+    h1{            
+      
+        @include texto;
+        margin-top: 4rem;
+    }
+
+  .fs-4{
+  font-size: 1rem;
+    font-style: italic;
+    line-height: 1.8rem;
+  }
+
+    h2{
+        font-weight: 900;
+        padding-top: 1rem;
+        font-size: 1.6rem;
+    }
+
+  
+
+        .seleccion{
+            font-weight: 700;
+            font-size: 2.3rem;
+            color: #061b24;
+            margin-top: 2rem !important;
+            font-weight: 900;
+        }
+   
+
+    mark{
+        font-size: 1.8rem;
+        background-color: #198754;
+       
+
+        color:#ffffff;
+    }
+
+    .descripcion{
+        font-weight: 300;
+    }
+
+    .card{
+        border-radius: 1rem;
+        .card-body{
+            .fs-5{
+                text-align: center;
+            }
+          
+        }
+        .card-footer{
+            border: none !important;
+            background-color: #ffffff;
+            }
+
+            .btn-primary{
+                background-color: #198754;
+                border: #198754;
+                margin-bottom: 2rem !important;
+            }
+    }
+   
+    
+
+ }      
+
+
+article{
+    background-color:#198754;
+    color: #ffffff;
+    
+}
+
+
+}
+

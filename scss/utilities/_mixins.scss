@@ -1,0 +1,29 @@
+@mixin estilo-footer{
+    background-color: #08364A;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;   
+    align-items: center; 
+    margin-top: 1.8rem;
+}
+
+@mixin estilo-redes{
+    display: flex;  
+    align-items: center;
+    justify-content: space-around;   
+    text-decoration: none;
+    list-style: none !important;  
+    padding-left: 0;
+
+    .btn{
+        width: 5.5rem;      
+    
+}
+}
+@mixin texto{
+    color: #ff4400;
+    font-family: "Seymour One", sans-serif; 
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+

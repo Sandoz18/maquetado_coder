@@ -1,0 +1,49 @@
+footer {
+
+    background-color: #061b24;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.8rem !important;
+    padding: 3rem !important;
+
+
+    ul {
+
+        padding: 0;
+
+        li {
+
+
+            font-weight: 600;
+
+            a {
+                color: #abbed1;
+            }
+        }
+    }
+
+    .redes {
+     
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        list-style: none !important;
+
+
+        .btn {
+            width: 4rem;
+            padding: auto;
+            margin: 0;
+           
+
+
+
+        }
+
+
+
+    }
+}

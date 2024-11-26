@@ -1,0 +1,45 @@
+
+//Estilos galeria de fotos 
+
+.card{
+    background-color: #ffffff;
+}
+.card{
+    //fondo tarjeta
+ transition: transform 0.5s;
+    overflow: hidden;
+    border-color: #ccc;
+    border-width: 0.3rem;
+    border-radius: 0%;
+
+
+&:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+&:hover .card-img-overlay {
+    opacity: 0.7;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    /* Efecto de zoom sutil */
+    visibility: visible;
+    /* Mostramos el overlay al pasar el mouse */
+}
+
+.card-img-overlay {
+    /* ... otros estilos ... */
+    visibility: hidden;
+    /* Ocultamos el overlay por defecto */
+}
+
+.title {
+    font-size: 3rem !important;  
+    font-weight: 800;
+
+}
+
+}
+
+
+

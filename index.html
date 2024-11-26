@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="proyecto final">
+    <meta name="keywords" content="pagina web">
+    <meta name="author" content="Irene Imbriani">
+    <!--------google fonts-------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Praise&family=Seymour+One&display=swap"
+        rel="stylesheet">
+
+    <!------fontawesome---------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <!--------------bootstrap------------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--------css------>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>inicio</title>
+    <!------favicon-->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container d-flex">
+
+                <!--------itemprop e itemtype para SEO y logo------>
+                <a href="index.html">
+                    <img class="logo img-fluid pb-3" src="assets/logo-01.png" alt="logo-wunderlust" itemprop="logo"
+                        itemscope itemtype="http://schema.org/Organization">
+                </a>
+
+               
+
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 mx-auto text-center">
+                        <li class="nav-item"><a class="nav-link nav-link-active text-white" href="index.html">inicio</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white" href="html/destinos.html">destinos</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white" href="html/actividades.html">actividades</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white" href="html/informacion.html">información</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white" href="html/contacto.html">contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+
+    </header>
+
+    <!---->
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="col-12 col-md-8 flex-column align-items-center">                 
+                        <div class="container-fluid texto-bienvenida">
+                            <h1 class="bienvenido">
+                                Bienvenido
+                            </h1>
+                            <h3 class="descubri fw-bold">
+                                Descubrí Argentina
+                            </h3>
+                            <!--agregar modal bootstrap-->
+                            <div class="descuento">
+                                <p>Obtené descuentos exclusivos</p>
+                                <span class="w-100">
+                                    <button type="button" class="btn fw-bold btn-lg text-dark text-opacity-75 bg-warning"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        data-bs-whatever="@fat">Contactanos
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">New
+                                            message</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Message:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Send
+                                            message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                  
+
+                </div>
+                
+                
+                <div class="background_video embed-responsive embed-responsive-16by9">
+                    <video autoplay loop muted>
+                        <source src="assets/banner_1920x1080 OPT.m4v" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="disfruta">Argentina te espera</h2>
+                <h3 class="fs-3 text-center ">Viví aventuras
+                    inolvidables.</h3>
+                    <div class="container text-white justify-content-center px-3 py-3">
+                        <p class="fs-5">Explora glaciares milenarios, escala volcanes, navega
+                            por ríos caudalosos y descubre la rica
+                            biodiversidad de nuestros bosques. Con guías
+                            expertos y equipos de última generación, cada
+                            excursión
+                            es una oportunidad única para conectar con la
+                            naturaleza. Desde trekking en la Cordillera de
+                            los
+                            Andes hasta buceo en las aguas cristalinas de la
+                            Patagonia, te ofrecemos experiencias
+                            inolvidables
+                            en destinos únicos. ¡Reservá ahora y viví Argentina
+                            como nunca antes!
+                            <b>#ArgentinaAventura
+                                #ViveLaNaturaleza #ExploraArgentina #Patagonia
+                                #Andes #Mendoza #Salta #TierraDelFuego
+                                #TurismoSostenible</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container d-flex justify-content-around pt-5">git 
+                <div class="row">
+
+                    <div class="col-12 col-lg-4">
+                        <div class="card border-0">
+                            <img src="assets/viajeros2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Encuentra tu destino
+                                    ideal</h5>
+                                <p class="card-text">Argentina te llama.
+                                    ¿Montañas majestuosas,
+                                    playas paradisíacas o ciudades vibrantes?
+                                    Descubre los
+                                    rincones más fascinantes de nuestro país.
+                                </p>
+                                <a href="#" class="btn btn-success border-0">Explora
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card border-0">
+                            <img src="assets/experiencias.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Descubre las mejores
+                                    actividades</h5>
+                                <p class="card-text">
+                                    Desde trekking en la Cordillera de los Andes
+                                    hasta un tango en Buenos Aires,
+                                    tenemos la actividad
+                                    perfecta para ti.</p>
+                                <a href="#" class="btn btn-success border-0">Descubrí
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                        <div class="card border-0">
+                            <img src="assets/traveler-chatting-with-hostel-staff-about-local-attractions.jpg"
+                                class="card-img-top" alt="imagen_viajeros">
+                            <div class="card-body">
+                                <h5 class="card-title">Disfruta experiencias
+                                    únicas</h5>
+                                <p class="card-text">
+                                    Vive aventuras únicas y personalizadas en
+                                    los rincones más asombrosos de Argentina.
+                                    ¡Reserva tu experiencia ahora!</p>
+                                <a href="#" class="btn btn-success  border-0">
+                                    Reservá
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <section class="nosotros container">
+        <h4 class="fw-bold text-center mt-3">Descubrí Argentina con
+            Wunderlust</h4>
+        <p class="text-white fw-normal">
+            Planificá tu viaje perfecto con nosotros.
+            ¡Tu próxima aventura te espera! Explora el mundo con nuestra
+            app. Descubre los mejores destinos, lee reseñas de otros
+            viajeros y reserva alojamientos y actividades que se adapten
+            a tus gustos. ¡Crea tu itinerario perfecto y vive
+            experiencias inolvidables!
+        </p>
+  
+
+    <div class=" align-items-center">
+        <h4 class=" fw-bold text-center">¡Únete a nuestra
+            comunidad!</h4>
+        <p class="card-text text-center text-white">Suscríbete a nuestro newsletter
+            y recibe
+            las mejores ofertas, consejos de viaje y mucho más.</p>
+        <div class="d-flex justify-content-center mb-0">
+            <form>
+                <input type="email" placeholder="Tu correo electrónico">
+                <button type="submit" class=" rounded-2 p-1 ms-1 px-2 border-0 btn btn-success">Suscribirse</button>
+            </form>
+        </div>
+    </div>
+</section>
+    <footer>
+
+        <div class="container-fluid">
+            <div class="row mt-1">
+                <div class="col-md-3 d-flex justify-content-center mt-5">
+                    <a href="index.html" class="navbar-brand text-center">
+
+                        <img class="logo img-fluid pb-3" src="assets/logo-01.png" alt="logo-wunderlust"></a>
+
+                </div>
+                <div class="col-md-6 text-center">
+                    <h5 class="text-center">Mapa del sitio</h5>
+                    <ul class="list-unstyled text-white">
+
+                        <li><a href="html/destinos.html">Destinos</a></li>
+                        <li><a href="html/actividades.html">Actividades</a></li>
+                        <li><a href="html/informacion.html">Informacion</a></li>
+                        <li><a href="html/contacto.html">Contacto</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 d-flex justify-content-center">
+                    <ul class="redes mt-1">
+
+                        <li> <a href="https://www.facebook.com" target="_parent"><img src="assets/redes/facebook.png"
+                                    class="btn btn-social-icons img" alt="Facebook"></a></li>
+                        <li> <a href="https://www.instagram.com" target="_parent"><img src="assets/redes/instagram.png"
+                                    class="btn btn-social-icons img" alt="Facebook"></a></li>
+                        <li> <a href="https://www.tiktok.com" target="_parent"><img src="assets/redes/tiktok .png"
+                                    class="btn btn-social-icons img" alt="Facebook"></a></li>
+                        <li>
+                            <a href="https://www.Youtube.com" target="_parent"><img src="assets/redes/Youtube.png"
+                                    class="btn btn-social-icons img" alt="Facebook"></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="row mt-1">
+                <p class="d-block text-center mt-1 fs-5">wuderlust@2024</p>
+            </div>
+
+    </footer>
+
+    <!-----------bundle de bootstrap-------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
