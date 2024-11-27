@@ -1,36 +1,34 @@
+body {
 
-
-
-body{
- 
+    
     main {
 
         h1 {
             font-weight: 900;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
-    
+
         .texto-bienvenida {
             position: absolute;
             text-align: center;
-           
+
             left: 50%;
             top: 40%;
             transform: translate(-50%, -50%);
             /* Centra el texto horizontal y verticalmente */
-    
-    
+
+
             .bienvenido {
                 color: #ffc107;
                 font-family: "Seymour One", sans-serif;
                 padding: 10px;
             }
-    
+
             h3 {
                 font-weight: 700;
                 color: #e8f4f4;
             }
-    
+
             .descubri {
                 color: #ffffff;
                 font-weight: 300;
@@ -38,21 +36,21 @@ body{
                 position: relative;
                 /* Posiciona el texto de forma absoluta dentro del contenedor */
             }
-    
+
             .descuento {
                 position: relative;
                 /* Posiciona el texto de forma absoluta dentro del contenedor */
                 top: 40%;
                 z-index: 500;
-    
+
                 p {
                     color: #ffffff;
                     border-radius: 10px;
                     height: auto;
                     font-size: 1.5rem;
                     justify-content: center;
-                    
-    
+
+
                     span {
                         position: relative;
                         display: flex;
@@ -60,31 +58,32 @@ body{
                         margin-top: 0.5rem;
 
 
-    
-                        button {
-                            z-index: 1000;                       
-                          }
 
-                          .btn{
+                        button {
+                            z-index: 1000;
+                        }
+
+                        .btn {
                             color: #04faa8;
                             border: none;
                         }
-    
+
                         &:hover {
                             color: #d6e0e1 important;
                         }
-    
-    
+
+
                     }
-    
+
                 }
             }
-    
+
         }
-    
-    
-    
+
+
+
         video {
+            
             position: fixed;
             width: 100%;
             height: 100%;
@@ -97,8 +96,8 @@ body{
             overflow: hidden;
             /*para que oculte el contenido que queda "desbordado"*/
         }
-    
-    
+
+
         .background_video {
             width: 100%;
             height: 500px;
@@ -107,48 +106,39 @@ body{
             justify-content: center;
             align-items: center;
             z-index: -1;
-    
+          
         }
-    
-    
-    
+
     }
-  
-    section {
-    
-    text-align: center;
+
+    section {      
+        text-align: center;
+
         .disfruta {
-           margin-top:5rem;
+            margin-top: 5rem;
             text-align: center;
             font-size: 2rem;
             color: #ffffff;
-            font-weight: 500;          
+            font-weight: 500;
         }
 
 
-        h3{
-            color: #ffc107; 
+        h3 {
+            color: #ffc107;
         }
-    
+
         h4 {
             color: #ffc107;
             ;
         }
 
-      
-            
-            
 
-                .text-white{
-                    color: #ffffff;
-                 background-color: #070f0f3c;
-                    display: inline-block;
-                }
-              
+        .text-white {
+            color: #ffffff;
+            background-color: #070f0f75;
+            display: inline-block;
+        }
 
-             
-      
-    
-    
+
     }
 }

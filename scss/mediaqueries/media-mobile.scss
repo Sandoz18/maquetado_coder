@@ -5,39 +5,11 @@
 
     body {
         
-            header {
-                display: block;
-                justify-content: space-around;
-                flex-direction: column;               
-                justify-content: flex-start;
-
-                .navbar {
-
-                    .navbar-brand {
-
-                        text-align: center;
-                        padding: 0 2px;
-
-
-                        .logo {
-                            width: 50%;
-                            margin: 0 auto;
-                        }
-
-                    }
-
-.navbar-toggler-icon{
-    display: block;
-    background-color: #ffffff;
-}
-
-                }
-
-            }
+         
 
             main {
                 section{
-                    margin: top 25px;
+                    margin-top: 25px;
                     
                 .row{
                     .texto-bienvenida {
@@ -48,14 +20,13 @@
                             padding: auto;
                         }
     
-                        .descubri {
-            
-                            font-size: 0.9rem !important;                     
+                        .descubri {            
+                            font-size: 1.4rem !important;                     
                             }
         
                         .descuento {
-                        font-size:0.2em;
-                       
+                        font-size:0.9rem;
+                
                             p {
                                 font-size: 0.8rem;
                                 margin: 0 auto;
@@ -67,8 +38,7 @@
                                 .btn{
                                     width:7rem; 
                                     height:2.5rem;
-                                    font-size:0.8rem;
- 
+                                    font-size:0.8rem; 
                                 }   
     
                             }
@@ -97,8 +67,7 @@
                 overflow: hidden;
                 /*para que oculte el contenido que queda "desbordado"*/
             }
-        
-        
+                
             .background_video {
                 width: 100%;
         height:80vh;
@@ -106,30 +75,32 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                z-index: -1;
-        
+                z-index: -1;        
             }
 
             section {
-
                 height: auto;
 
                 .disfruta {
-                    font-size: 1.8rem;
+                    font-size: 1.6rem;
                     margin-top:0.2rem;
                 }
 
+                .fs-3 {
+                    font-size: 1.2rem !important;
+                }
 
-                .fs-5 {
+
+                .fs-5{
                     font-size: 1rem !important;
+                    line-height: 1.3rem;
                 }
 
                 p {
-                    font-size: 0.8rem;
+                    font-size: 0.9rem;
                     text-align: center;
                     justify-self: flex-start;
                 }
-
 
                     span {
                         position: relative;
@@ -142,27 +113,25 @@
                         }
     
                         .btn-danger {
-                            background-color: #fa5604;
+                           
                             border: none;
-                        }
-    
+                        }   
 
             }
-    
-        }
-    
-    
-    
 
-
-                .card {
-                    align-items: center;
-
+            
+                .card{
+                    
+                        margin-bottom: 5rem !important;
                     
                 }
+            
+            
+        }
+    
+
+
             }
-
-
 
 
     /**************************destinos*******************/
@@ -333,7 +302,30 @@ body{
 
 
 /*********************************header******************************/
+header {
+    display: block;
+    justify-content: space-around;
+    flex-direction: column;               
+    justify-content: flex-start;
 
+    .navbar {
+        .navbar-brand {
+            text-align: center;
+            padding: 0 2px;
+
+            .logo {
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+}
+
+.navbar-toggler-icon{
+    display: block;
+    background-color: #ffffff;
+}
 
 
 /****************************este es el final de la mrdiquerie de 768 no borrar!!!!*******************/

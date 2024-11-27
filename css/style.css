@@ -335,7 +335,7 @@ body section h4 {
 }
 body section .text-white {
   color: #ffffff;
-  background-color: rgba(7, 15, 15, 0.2352941176);
+  background-color: rgba(7, 15, 15, 0.4588235294);
   display: inline-block;
 }
 
@@ -580,26 +580,8 @@ body article {
 
 /**************************************************index*****************************************************/
 @media (max-width: 768px) {
-  body header {
-    display: block;
-    justify-content: space-around;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  body header .navbar .navbar-brand {
-    text-align: center;
-    padding: 0 2px;
-  }
-  body header .navbar .navbar-brand .logo {
-    width: 50%;
-    margin: 0 auto;
-  }
-  body header .navbar .navbar-toggler-icon {
-    display: block;
-    background-color: #ffffff;
-  }
   body main section {
-    margin: top 25px;
+    margin-top: 25px;
   }
   body main section .row .texto-bienvenida {
     margin-top: 1rem;
@@ -610,10 +592,10 @@ body article {
     padding: auto;
   }
   body main section .row .texto-bienvenida .descubri {
-    font-size: 0.9rem !important;
+    font-size: 1.4rem !important;
   }
   body main section .row .texto-bienvenida .descuento {
-    font-size: 0.2em;
+    font-size: 0.9rem;
   }
   body main section .row .texto-bienvenida .descuento p {
     font-size: 0.8rem;
@@ -651,14 +633,18 @@ body article {
     height: auto;
   }
   body section .disfruta {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-top: 0.2rem;
+  }
+  body section .fs-3 {
+    font-size: 1.2rem !important;
   }
   body section .fs-5 {
     font-size: 1rem !important;
+    line-height: 1.3rem;
   }
   body section p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-align: center;
     justify-self: flex-start;
   }
@@ -672,11 +658,10 @@ body article {
     z-index: 1000;
   }
   body section span .btn-danger {
-    background-color: #fa5604;
     border: none;
   }
-  body .card {
-    align-items: center;
+  body section .card {
+    margin-bottom: 5rem !important;
   }
   /**************************destinos*******************/
   body .seccion_principal {
@@ -778,6 +763,24 @@ body article {
   }
   /********************************contacto******************************/
   /*********************************header******************************/
+  header {
+    display: block;
+    justify-content: space-around;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  header .navbar .navbar-brand {
+    text-align: center;
+    padding: 0 2px;
+  }
+  header .navbar .navbar-brand .logo {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .navbar-toggler-icon {
+    display: block;
+    background-color: #ffffff;
+  }
   /****************************este es el final de la mrdiquerie de 768 no borrar!!!!*******************/
 }
 @media (min-width: 320px) and (max-width: 767px) {
