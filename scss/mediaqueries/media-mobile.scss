@@ -1,413 +1,526 @@
-
 /**************************************************index*****************************************************/
 
 @media (max-width: 768px) {
 
     body {
-        
-         
 
-            main {
-                section{
-                    margin-top: 25px;
-                    
-                .row{
+
+
+        main {
+            section {
+                margin-top: 25px;
+
+                .row {
                     .texto-bienvenida {
-                    margin-top: 1rem;
+                        margin-top: 1rem;
                         width: 100% !important;
+
                         .bienvenido {
                             font-size: 1.5rem !important;
                             padding: auto;
                         }
-    
-                        .descubri {            
-                            font-size: 1.4rem !important;                     
-                            }
-        
+
+                        .descubri {
+                            font-size: 1.4rem !important;
+                        }
+
                         .descuento {
-                        font-size:0.9rem;
-                
+                            font-size: 0.9rem;
+
                             p {
                                 font-size: 0.8rem;
                                 margin: 0 auto;
                                 margin-bottom: 0.5rem;
                             }
-    
+
                             span {
-    
-                                .btn{
-                                    width:7rem; 
-                                    height:2.5rem;
-                                    font-size:0.8rem; 
-                                }   
-    
+
+                                .btn {
+                                    width: 7rem;
+                                    height: 2.5rem;
+                                    font-size: 0.8rem;
+                                }
+
                             }
-    
+
                         }
                     }
-        
-                }
-                
-        
+
                 }
 
 
             }
 
-            video {
-                position: fixed;
-                width: 100%;
-                height: 100%;
-                top: 20%;
-                left: 50%;
-                transform: translateY(-50%) translateX(-50%);
-                object-fit: cover;
-                z-index: 0;
-                /* Coloca el video detrás de otros elementos */
-                overflow: hidden;
-                /*para que oculte el contenido que queda "desbordado"*/
+
+        }
+
+        video {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 20%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            object-fit: cover;
+            z-index: 0;
+            /* Coloca el video detrás de otros elementos */
+            overflow: hidden;
+            /*para que oculte el contenido que queda "desbordado"*/
+        }
+
+        .background_video {
+            width: 100%;
+            height: 80vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: -1;
+        }
+
+        section {
+            height: auto;
+
+            .disfruta {
+                font-size: 1.6rem;
+                margin-top: 0.2rem;
             }
-                
-            .background_video {
-                width: 100%;
-        height:80vh;
+
+            .fs-3 {
+                font-size: 1.2rem !important;
+            }
+
+
+            .fs-5 {
+                font-size: 1rem !important;
+                line-height: 1.3rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+                text-align: center;
+                justify-self: flex-start;
+            }
+
+            span {
                 position: relative;
                 display: flex;
                 justify-content: center;
-                align-items: center;
-                z-index: -1;        
-            }
+                margin-top: 0.5rem;
 
-            section {
-                height: auto;
-
-                .disfruta {
-                    font-size: 1.6rem;
-                    margin-top:0.2rem;
+                button {
+                    z-index: 1000;
                 }
 
-                .fs-3 {
-                    font-size: 1.2rem !important;
+                .btn-danger {
+
+                    border: none;
                 }
-
-
-                .fs-5{
-                    font-size: 1rem !important;
-                    line-height: 1.3rem;
-                }
-
-                p {
-                    font-size: 0.9rem;
-                    text-align: center;
-                    justify-self: flex-start;
-                }
-
-                    span {
-                        position: relative;
-                        display: flex;
-                        justify-content: center;
-                        margin-top: 0.5rem;
-    
-                        button {
-                            z-index: 1000;
-                        }
-    
-                        .btn-danger {
-                           
-                            border: none;
-                        }   
 
             }
 
-            
-                .card{
-                    
-                        margin-bottom: 5rem !important;
-                    
-                }
-            
-            
+
+            .card {
+
+                margin-bottom: 5rem !important;
+
+            }
+
+
         }
-    
 
 
-            }
+
+    }
 
 
     /**************************destinos*******************/
-    body{
-       
-        .seccion_principal {
-          
+    body {
+
+        .principal {
+
             text-align: center;
             font-weight: 800;
             color: #ffffff;
             padding: 0;
 
 
-        .fs-5 {
+            .fs-5 {
+
+                font-size: 0.6rem;
+                font-weight: 300;
+            }
+
+
+            .explora {
+                flex-direction: column;
+                display: flex;
+                @include estilo-footer;
+                @include estilo-redes;
+                font-size: 3.5rem;
+
+                ul {
+                    list-style-type: none !important;
+                }
+            }
+
+
+
+        }
+
+        aside {
+            text-align: center;
+        }
+
+    }
+
+
+    /********************************************************footer**********************************************/
+
+
+
+
+    footer {
+        display: block;
+        justify-content: center;
+
+        .container {
+            display: flex;
+            justify-content: center;
+
+            .row {
+
+                .col {
+                    .navbar-brand {
+                        margin-right: 0;
+
+                        .logo {
+                            width: 50%;
+                        }
+                    }
+
+
+                }
+
+                .col {
+                    .text-center {
+                        font-size: 2rem !important;
+                    }
+                }
+
+
+
+
+
+
+
+
+            }
+
+        }
+
+
+
+
+
+    }
+
+    /*******************************actividades****************/
+
+    body {
+        .seccion_principal {
+            margin-top: 2rem !important;
+
+            h1 {
+                font-size: 1.3rem !important;
+
+            }
+
+            h2 {
+
+                font-size: 1.1rem !important;
+                width: 100% !important;
+            }
+
+            p {
+                font-size: 0.9rem !important;
+
+            }
+
+            .seleccion {
+                font-size: 1rem !important;
+            }
+
+            .py-5 {
+
+                col {
+                    margin-top: 0.10rem !important;
+                    margin-bottom: 0.1rem !important;
+                }
+
+                .card {
+                    margin-bottom: 5% !important;
+
+                    .card-body {
+                        .fs-5 {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /***********************información**************************/
+
+    .info {
+        margin-top: 4rem !important;
+
+        .nosotros {
+            font-size: 1rem !important;
+
+            p {
+                font-size: 0.2rem;
+            }
+        }
+
+    }
+
+
+    .faq {
+        h4 {
+            font-size: 1rem !important;
+        }
+
+    }
+
+    .clientes {
+        h3 {
+            font-size: 1rem !important;
+        }
+    }
+
+    /********************************contacto******************************/
+
+    main{
+      
+        section{   
+            text-align: center;
+            p{
+               
+                
+                .fs-2{             
+                font-weight: 600;
+                @include texto;
+                font-weight: 900;
+                font-size: 2.5rem;         
+                
+                }
+            }  
+                .form-contacto{
+                    width: 100%;
+                 
+                }
+                
+              .mapa{
+                width: 100%;
+              }
+          
+        }
+
+        .contactanos{
          
+          justify-content: center;
+        }
+    }
+
+    /*********************************header******************************/
+    header {
+        display: block;
+        justify-content: space-around;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .navbar {
+            .navbar-brand {
+                text-align: center;
+                padding: 0 2px;
+
+                .logo {
+                    width: 50%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+    }
+
+    .navbar-toggler-icon {
+        display: block;
+        background-color: #ffffff;
+    }
+
+
+    /****************************este es el final de la mrdiquerie de 768 no borrar!!!!*******************/
+}
+
+
+
+
+
+@media(min-width: 320px) and (max-width: 767px) {
+
+    /***************************información**********************************/
+
+    .info {
+        margin-top: 8rem !important;
+
+        .nosotros {
+            font-size: 1rem !important;
+
+            p {
+                font-size: 0.2rem;
+            }
+        }
+
+    }
+
+
+    .faq {
+        h4 {
+            font-size: 0.6rem !important;
+        }
+
+    }
+
+    .clientes {
+        h3 {
+            font-size: 1rem !important;
+        }
+    }
+
+
+
+    /***************************destinos***************************/
+
+    .principal {
+        margin-top: 4rem !important;
+
+        h1 {
+            font-size: 1rem !important;
+        }
+
+        .fs-5 {
+            color: #040746;
             font-size: 0.6rem;
             font-weight: 300;
         }
-
 
         .explora {
             flex-direction: column;
             display: flex;
             @include estilo-footer;
             @include estilo-redes;
-            font-size: 3.5rem;
-
-            ul {
-                list-style-type: none !important;
-            }
+            font-size: 1.5rem;
         }
 
-
-
     }
 
-    aside {
-        text-align: center;
-    }
 
-    }
-    
+    /**************************actividades******************************/
 
-/********************************************************footer**********************************************/
+    /*******************************actividades****************/
 
+    body {
+        .seccion_principal {
+            margin-top: 2rem !important;
 
+            h1 {
+                font-size: 1.3rem !important;
 
+            }
 
-footer {
-    display: block;
-    justify-content: center;
+            h2 {
 
-    .container {
-        display: flex;
-        justify-content: center;
+                font-size: 1.1rem !important;
+                width: 100% !important;
+            }
 
-        .row {
+            p {
+                font-size: 0.9rem !important;
 
-            .col {
-                .navbar-brand {
-                    margin-right: 0;
+            }
 
-                    .logo {
-                      width: 50%;
+            .seleccion {
+                font-size: 1rem !important;
+            }
+
+            .py-5 {
+
+                col {
+                    margin-top: 0.10rem !important;
+                    margin-bottom: 0.1rem !important;
+                }
+
+                .card {
+                    margin-bottom: 5% !important;
+
+                    .card-body {
+                        .fs-5 {
+                            text-align: center;
+                        }
                     }
                 }
-
-
             }
-
-            .col {
-                .text-center {
-                    font-size: 2rem !important;
-                }
-            }
-
-
-
-
-
-
-
-
         }
-
     }
 
 
+    /*contacto*/
+    main{
 
-
-
-}
-
-/*******************************actividades****************/
-
-body{
-    .seccion_principal{ 
- margin-top: 2rem !important;
-   
-        h1{
-            font-size:  1.3rem !important;
+        section{   
           
+                .form-contacto{
+                    width: 100%;
+                    
+                }
+                .contact-form-area {
+                    /* ... other styles ... */
+                  
+                    @media (max-width: 768px) {
+                      padding: 50px;
+                      margin-top: 50px;
+                    }
+                  
+                    @media (max-width: 320px) {
+                      padding: 20px;
+                      margin-top: 30px;
+                    }
+                  }
+                  
+                  .contact-form-area input[type='text'],
+                  .contact-form-area input[type='email'],
+                  .contact-form-area textarea {
+                    width: 100%; /* Make all inputs full-width on smaller screens */
+                  height: auto;
+                    @media (min-width: 768px) {
+                      width: 49.6%; /* Restore original width for larger screens */
+                    }
+                  }
+                
+              .mapa{
+                width: 100%;
+              }          
         }
     
-        h2{
-         
-            font-size: 1.1rem !important;
-            width: 100% !important;
-        }
-        p{
-            font-size: 0.9rem !important;
-           
-        }
-    
-        .seleccion{
-            font-size: 1rem !important;
-        }
-        
-       .py-5{
-     
-       col{
-        margin-top: 0.10rem !important;
-        margin-bottom: 0.1rem !important;
-       }
-        .card{
-            margin-bottom: 5% !important;
-            .card-body{
-               .fs-5{
-                text-align: center;
-               } 
-            }
-        }
-       }
-    }
-}
-
-
-
-/***********************información**************************/
-
-.info{
-    margin-top: 4rem !important;
-    .nosotros{
-        font-size: 1rem !important;
-        p{
-            font-size: 0.2rem;
-        }
-    } 
-    
-}
-
-
-.faq{
-    h4{
-        font-size: 1rem !important;
-    }
-   
-}
-
-.clientes{
-    h3{
-        font-size: 1rem !important;
-    }
-}
-
-/********************************contacto******************************/
-
-
-
-/*********************************header******************************/
-header {
-    display: block;
-    justify-content: space-around;
-    flex-direction: column;               
-    justify-content: flex-start;
-
-    .navbar {
-        .navbar-brand {
-            text-align: center;
-            padding: 0 2px;
-
-            .logo {
-                width: 50%;
-                margin: 0 auto;
-            }
+        .contactanos{
+          justify-content: center;
         }
     }
 
 }
 
-.navbar-toggler-icon{
-    display: block;
-    background-color: #ffffff;
-}
-
-
-/****************************este es el final de la mrdiquerie de 768 no borrar!!!!*******************/
-}
-
-
-
-
-
-@media(min-width: 320px) and (max-width: 767px)  { 
-    
-/***************************información**********************************/
-
-.info{
-    margin-top: 8rem !important;
-    .nosotros{
-        font-size: 1rem !important;
-        p{
-            font-size: 0.2rem;
-        }
-    } 
-    
-}
-
-
-.faq{
-    h4{
-        font-size: 1rem !important;
-    }
-   
-}
-
-.clientes{
-    h3{
-        font-size: 1rem !important;
-    }
-}
-
-
-
- /***************************destinos***************************/
-    
- .seccion_principal {
-    margin-top: 8rem !important;
-
-    h1{
-        font-size: 1rem !important;
-    }
-    .fs-5 {
-        color: #040746;
-        font-size: 0.6rem;
-        font-weight: 300;
-    }
-
-    .explora {
-        flex-direction: column;
-        display: flex;
-        @include estilo-footer;
-        @include estilo-redes;
-        font-size: 1.5rem;
-    }
-
-}
-
-
-/**************************actividades******************************/
-
-
-body{
-    .seccion_principal{
-        section{
-          margin-top: 2rem;
-        }
-      
-    
-        mark{
-            font-size: 1.3rem;
-        }
-      
-    }
-}
-
-
-
-}  /******cierre mediaqueries 576 no borrar!!!**********/
+/******cierre mediaqueries 576 no borrar!!!**********/

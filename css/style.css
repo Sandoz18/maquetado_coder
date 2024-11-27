@@ -33,7 +33,6 @@ header .navbar .navbar-toggler {
 header .navbar .navbar-toggler .navbar-toggler-icon {
   display: none;
   border: none;
-  background-color: #ffffff;
 }
 header .navbar ul {
   list-style: none;
@@ -133,74 +132,6 @@ footer .redes .btn {
   font-weight: 800;
 }
 
-/****formulario de contacto****/
-.contact-form-area {
-  background: #fff;
-  -webkit-box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 2px 25px rgba(194, 194, 194, 0.25);
-  border-radius: 26px;
-  padding: 100px;
-  margin-top: 120px;
-  position: relative;
-  z-index: 1;
-}
-
-.contact-form-heading h3 {
-  color: #323657;
-  text-align: center;
-  margin-bottom: 60px;
-  font-weight: 700;
-}
-
-.contact-form-area input[type=text] {
-  width: 49.6%;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #323657;
-  padding: 10px 5px;
-  color: #323657;
-}
-
-.contact-form-area input[type=email] {
-  width: 100%;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #323657;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  color: #323657;
-  padding: 10px 5px;
-}
-
-.contact-form-area textarea {
-  width: 100%;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #323657;
-  color: #323657;
-  padding: 10px 5px;
-}
-
-#formsend {
-  background: #027368;
-  color: #ffffff;
-  border: none;
-  padding: 12px 42px;
-  text-transform: capitalize;
-  font-weight: 700;
-  cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  border-radius: 10px;
-}
-#formsend:hover {
-  background: #04ADBF;
-}
-
-.form-contacto {
-  height: auto;
-}
-
 .newsletter {
   padding-top: 0 !important;
 }
@@ -251,7 +182,8 @@ body main .texto-bienvenida {
   /* Centra el texto horizontal y verticalmente */
 }
 body main .texto-bienvenida .bienvenido {
-  color: #ffc107;
+  color: #ffffff;
+  font-size: 3rem;
   font-family: "Seymour One", sans-serif;
   padding: 10px;
 }
@@ -323,22 +255,28 @@ body section {
 body section .disfruta {
   margin-top: 5rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.1rem;
   color: #ffffff;
   font-weight: 500;
 }
 body section h3 {
-  color: #ffc107;
+  color: #fff;
 }
 body section h4 {
-  color: #ffc107;
+  color: #fff;
 }
 body section .text-white {
   color: #ffffff;
   background-color: rgba(7, 15, 15, 0.4588235294);
   display: inline-block;
+  border-radius: 0.7rem;
+  padding: 10px 20px;
 }
 
+main section {
+  margin-bottom: 1rem;
+  /****formulario de contacto****/
+}
 main section .fs-2 {
   font-weight: 600;
   color: #ff4400;
@@ -348,26 +286,96 @@ main section .fs-2 {
   font-weight: 900;
   font-size: 2.5rem;
 }
+main section .form-contacto {
+  width: 70%;
+}
+main section .contact-form-area {
+  background: #fff;
+  -webkit-box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 25px rgba(194, 194, 194, 0.25);
+  border-radius: 26px;
+  padding: 100px;
+  margin-top: 120px;
+  position: relative;
+  z-index: 1;
+}
+main section .contact-form-heading h3 {
+  color: #323657;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+main section .contact-form-area input[type=text] {
+  width: 49.6%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #323657;
+  padding: 10px 5px;
+  color: #323657;
+}
+main section .contact-form-area input[type=email] {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #323657;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  color: #323657;
+  padding: 10px 5px;
+}
+main section .contact-form-area textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #323657;
+  color: #323657;
+  padding: 10px 5px;
+}
+main section #formsend {
+  background: #027368;
+  color: #ffffff;
+  border: none;
+  padding: 12px 42px;
+  text-transform: capitalize;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+main section #formsend:hover {
+  background: #04ADBF;
+}
+main section .form-contacto {
+  height: auto;
+}
+main section .mapa {
+  width: 70%;
+}
+main .contactanos {
+  justify-content: center;
+}
 
-.seccion_principal {
+.principal {
+  margin-top: 4rem;
   text-align: center;
   font-weight: 800;
   color: #ffffff;
-  padding: 0;
 }
-.seccion_principal h1 {
+.principal h1 {
+  font-size: 1rem;
   font-weight: 600;
   color: #ff4400;
   font-family: "Seymour One", sans-serif;
   font-weight: 900;
   font-size: 2.5rem;
 }
-.seccion_principal .fs-5 {
+.principal .fs-5 {
   color: black;
   font-size: 1.2rem;
   font-weight: 300;
 }
-.seccion_principal .explora {
+.principal .explora {
   flex-direction: column;
   display: flex;
   background-color: #08364A;
@@ -384,15 +392,20 @@ main section .fs-2 {
   padding-left: 0;
   font-size: 3.5rem;
 }
-.seccion_principal .explora .btn {
+.principal .explora .btn {
   width: 5.5rem;
 }
-.seccion_principal .explora ul {
+.principal .explora ul {
   list-style-type: none !important;
 }
 
 aside {
   text-align: center;
+  margin-top: 1rem;
+}
+aside h3 {
+  font-weight: 500;
+  padding: 1rem;
 }
 
 body .border {
@@ -533,9 +546,9 @@ body .seccion_principal h1 {
   font-size: 2.5rem;
   margin-top: 4rem;
 }
-body .seccion_principal .fs-4 {
-  font-size: 1rem;
-  font-style: italic;
+body .seccion_principal .fs-5 {
+  font-size: 1.2rem;
+  font-weight: 300;
   line-height: 1.8rem;
 }
 body .seccion_principal h2 {
@@ -664,17 +677,17 @@ body article {
     margin-bottom: 5rem !important;
   }
   /**************************destinos*******************/
-  body .seccion_principal {
+  body .principal {
     text-align: center;
     font-weight: 800;
     color: #ffffff;
     padding: 0;
   }
-  body .seccion_principal .fs-5 {
+  body .principal .fs-5 {
     font-size: 0.6rem;
     font-weight: 300;
   }
-  body .seccion_principal .explora {
+  body .principal .explora {
     flex-direction: column;
     display: flex;
     background-color: #08364A;
@@ -691,10 +704,10 @@ body article {
     padding-left: 0;
     font-size: 3.5rem;
   }
-  body .seccion_principal .explora .btn {
+  body .principal .explora .btn {
     width: 5.5rem;
   }
-  body .seccion_principal .explora ul {
+  body .principal .explora ul {
     list-style-type: none !important;
   }
   body aside {
@@ -762,6 +775,27 @@ body article {
     font-size: 1rem !important;
   }
   /********************************contacto******************************/
+  main section {
+    text-align: center;
+  }
+  main section p .fs-2 {
+    font-weight: 600;
+    color: #ff4400;
+    font-family: "Seymour One", sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-size: 2.5rem;
+  }
+  main section .form-contacto {
+    width: 100%;
+  }
+  main section .mapa {
+    width: 100%;
+  }
+  main .contactanos {
+    justify-content: center;
+  }
   /*********************************header******************************/
   header {
     display: block;
@@ -795,24 +829,24 @@ body article {
     font-size: 0.2rem;
   }
   .faq h4 {
-    font-size: 1rem !important;
+    font-size: 0.6rem !important;
   }
   .clientes h3 {
     font-size: 1rem !important;
   }
   /***************************destinos***************************/
-  .seccion_principal {
-    margin-top: 8rem !important;
+  .principal {
+    margin-top: 4rem !important;
   }
-  .seccion_principal h1 {
+  .principal h1 {
     font-size: 1rem !important;
   }
-  .seccion_principal .fs-5 {
+  .principal .fs-5 {
     color: #040746;
     font-size: 0.6rem;
     font-weight: 300;
   }
-  .seccion_principal .explora {
+  .principal .explora {
     flex-direction: column;
     display: flex;
     background-color: #08364A;
@@ -829,17 +863,81 @@ body article {
     padding-left: 0;
     font-size: 1.5rem;
   }
-  .seccion_principal .explora .btn {
+  .principal .explora .btn {
     width: 5.5rem;
   }
   /**************************actividades******************************/
-  body .seccion_principal section {
-    margin-top: 2rem;
+  /*******************************actividades****************/
+  body .seccion_principal {
+    margin-top: 2rem !important;
   }
-  body .seccion_principal mark {
-    font-size: 1.3rem;
+  body .seccion_principal h1 {
+    font-size: 1.3rem !important;
   }
-} /******cierre mediaqueries 576 no borrar!!!**********/
+  body .seccion_principal h2 {
+    font-size: 1.1rem !important;
+    width: 100% !important;
+  }
+  body .seccion_principal p {
+    font-size: 0.9rem !important;
+  }
+  body .seccion_principal .seleccion {
+    font-size: 1rem !important;
+  }
+  body .seccion_principal .py-5 col {
+    margin-top: 0.1rem !important;
+    margin-bottom: 0.1rem !important;
+  }
+  body .seccion_principal .py-5 .card {
+    margin-bottom: 5% !important;
+  }
+  body .seccion_principal .py-5 .card .card-body .fs-5 {
+    text-align: center;
+  }
+  /*contacto*/
+  main section .form-contacto {
+    width: 100%;
+  }
+  main section .contact-form-area {
+    /* ... other styles ... */
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) and (max-width: 768px) {
+  main section .contact-form-area {
+    padding: 50px;
+    margin-top: 50px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) and (max-width: 320px) {
+  main section .contact-form-area {
+    padding: 20px;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  main section .contact-form-area input[type=text],
+  main section .contact-form-area input[type=email],
+  main section .contact-form-area textarea {
+    width: 100%; /* Make all inputs full-width on smaller screens */
+    height: auto;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) and (min-width: 768px) {
+  main section .contact-form-area input[type=text],
+  main section .contact-form-area input[type=email],
+  main section .contact-form-area textarea {
+    width: 49.6%; /* Restore original width for larger screens */
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  main section .mapa {
+    width: 100%;
+  }
+  main .contactanos {
+    justify-content: center;
+  }
+}
+/******cierre mediaqueries 576 no borrar!!!**********/
 @media (min-width: 768px) and (max-width: 1024px) {
   .navbar {
     position: sticky;

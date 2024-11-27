@@ -1,14 +1,15 @@
 @import "../utilities/mixins";
 @import"../utilities/variables";
 
-.seccion_principal {
+.principal {
+    margin-top: 4rem;
     text-align: center;
     font-weight: 800;
     color: #ffffff;
-    padding: 0;
+  
     
     h1 {    
-       
+       font-size: 1rem;
         font-weight: 600;
         @include texto
     }
@@ -37,4 +38,9 @@
 
 aside {
     text-align: center;
+    margin-top: 1rem;
+    h3{
+       font-weight: 500;       
+        padding: 1rem;
+    }
 }

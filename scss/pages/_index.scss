@@ -19,7 +19,8 @@ body {
 
 
             .bienvenido {
-                color: #ffc107;
+                color: #ffffff;
+                font-size: 3rem;
                 font-family: "Seymour One", sans-serif;
                 padding: 10px;
             }
@@ -58,14 +59,19 @@ body {
                         margin-top: 0.5rem;
 
 
+                      
 
                         button {
                             z-index: 1000;
+                       
                         }
 
+                        
+                       
                         .btn {
                             color: #04faa8;
                             border: none;
+                           
                         }
 
                         &:hover {
@@ -117,19 +123,20 @@ body {
         .disfruta {
             margin-top: 5rem;
             text-align: center;
-            font-size: 2rem;
+            font-size: 2.1rem;
             color: #ffffff;
             font-weight: 500;
         }
 
 
         h3 {
-            color: #ffc107;
+            
+            color: #fff;
         }
 
         h4 {
-            color: #ffc107;
-            ;
+            color: #fff;
+            
         }
 
 
@@ -137,6 +144,8 @@ body {
             color: #ffffff;
             background-color: #070f0f75;
             display: inline-block;
+            border-radius: 0.7rem;
+            padding:10px 20px;
         }
 
 
