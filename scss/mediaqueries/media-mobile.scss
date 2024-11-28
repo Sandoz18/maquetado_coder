@@ -138,7 +138,7 @@
     body {
 
         .principal {
-
+            margin-top: 0;
             text-align: center;
             font-weight: 800;
             color: #ffffff;
@@ -151,13 +151,18 @@
                 font-weight: 300;
             }
 
+        h1{
+    font-size: 1.5rem !important;
+        }
 
             .explora {
                 flex-direction: column;
                 display: flex;
                 @include estilo-footer;
                 @include estilo-redes;
-                font-size: 3.5rem;
+                p{
+                    font-size: 1.5rem;                   
+                }
 
                 ul {
                     list-style-type: none !important;
@@ -170,6 +175,11 @@
 
         aside {
             text-align: center;
+            h3{
+               
+                font-size: 1rem;       
+               
+            }
         }
 
     }
@@ -228,8 +238,9 @@
     /*******************************actividades****************/
 
     body {
+        
         .seccion_principal {
-            margin-top: 2rem !important;
+            margin-top: 0.5rem !important;
 
             h1 {
                 font-size: 1.3rem !important;
@@ -406,7 +417,7 @@
     /***************************destinos***************************/
 
     .principal {
-        margin-top: 4rem !important;
+     
 
         h1 {
             font-size: 1rem !important;
@@ -418,12 +429,23 @@
             font-weight: 300;
         }
 
+
         .explora {
             flex-direction: column;
             display: flex;
             @include estilo-footer;
             @include estilo-redes;
-            font-size: 1.5rem;
+
+            p{
+                font-size: 1rem !important;
+            }
+            
+        }
+
+        aside{
+            h3{
+                font-size: 0.6rem;
+            }
         }
 
     }
@@ -434,6 +456,7 @@
     /*******************************actividades****************/
 
     body {
+        margin-top: 10rem !important;
         .seccion_principal {
             margin-top: 2rem !important;
 
@@ -465,11 +488,12 @@
                 }
 
                 .card {
-                    margin-bottom: 5% !important;
+                    margin-bottom: 10px !important;
 
                     .card-body {
                         .fs-5 {
                             text-align: center;
+                          
                         }
                     }
                 }

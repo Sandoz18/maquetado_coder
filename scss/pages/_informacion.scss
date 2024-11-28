@@ -21,10 +21,8 @@
 
                 .container{              
                 align-items: center !important;
-                .nosotros{
-                  
-                    @include texto;
-                
+                .nosotros{                  
+                    @include texto;                
                     }
                     p{
                         font-size: 1.2rem !important;

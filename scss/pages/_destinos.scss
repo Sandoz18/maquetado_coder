@@ -2,7 +2,7 @@
 @import"../utilities/variables";
 
 .principal {
-    margin-top: 4rem;
+    margin-top: 10rem;
     text-align: center;
     font-weight: 800;
     color: #ffffff;
@@ -27,6 +27,7 @@
         @include estilo-footer;
         @include estilo-redes;
         font-size: 3.5rem;
+       width: 100;
         
 
         ul {
@@ -34,13 +35,24 @@
         }
     }
 
+    .card {
+        margin-bottom: 0.5rem!important;
+
+       
+    }
+
+   
+
 }
 
 aside {
     text-align: center;
     margin-top: 1rem;
-    h3{
-       font-weight: 500;       
+    h3{           
         padding: 1rem;
+        font-size: 1.5rem;       
+        font-weight: 500;
+        color: #198754;
+        font-family: "Seymour One", sans-serif;
     }
 }

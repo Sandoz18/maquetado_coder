@@ -6,9 +6,8 @@ main{
         margin-bottom: 1rem;       
             .fs-2{             
             font-weight: 600;
-            @include texto;
-            font-weight: 900;
-            font-size: 2.5rem;         
+            @include texto;         
+            font-size: 3rem;         
             
             }
 
@@ -16,77 +15,7 @@ main{
                 width: 70%;
                 
             }
-            /****formulario de contacto****/
-.contact-form-area {
-	background: #fff;
-	-webkit-box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.2);
-	box-shadow: 0px 2px 25px rgba(194, 194, 194, 0.25);
-	border-radius: 26px;
-	padding: 100px;
-	margin-top: 120px;
-	position: relative;
-	z-index: 1
-}
-
-.contact-form-heading h3 {
-	color: #323657;
-	text-align: center;
-	margin-bottom: 60px;
-	font-weight: 700
-}
-
-.contact-form-area input[type='text'] {
-	width: 49.6%;
-	background-color: transparent;
-	border: none;
-	border-bottom: 1px solid #323657;
-	padding: 10px 5px;
-	color: #323657
-}
-
-.contact-form-area input[type='email'] {
-	width: 100%;
-	background-color: transparent;
-	border: none;
-	border-bottom: 1px solid #323657;
-	margin-top: 60px;
-	margin-bottom: 60px;
-	color: #323657;
-	padding: 10px 5px
-}
-
-.contact-form-area textarea {
-	width: 100%;
-	background-color: transparent;
-	border: none;
-	border-bottom: 1px solid #323657;
-	color: #323657;
-	padding: 10px 5px
-}
-
-#formsend {
-	background:#027368;
-	color: #ffffff;
-	border: none;
-	padding: 12px 42px;
-	text-transform: capitalize;
-	font-weight: 700;
-	cursor: pointer;
-	-webkit-transition: .5s;
-	transition: .5s;
-	border-radius: 10px;
-
-&:hover {
-	background: #04ADBF
-}
-
-
-}
-
-.form-contacto {
-  
-    height: auto;
-}
+            
 
 
             

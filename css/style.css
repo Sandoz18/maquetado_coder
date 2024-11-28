@@ -132,10 +132,80 @@ footer .redes .btn {
   font-weight: 800;
 }
 
-.newsletter {
-  padding-top: 0 !important;
+/****formulario de contacto****/
+.contact-form-area {
+  background: #fff;
+  -webkit-box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 25px rgba(194, 194, 194, 0.25);
+  border-radius: 26px;
+  padding: 100px;
+  margin-top: 120px;
+  position: relative;
+  z-index: 1;
 }
 
+.contact-form-heading h3 {
+  color: #323657;
+  text-align: center;
+  margin-bottom: 60px;
+  font-weight: 700;
+}
+
+.contact-form-area input[type=text] {
+  width: 49.6%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #323657;
+  padding: 10px 5px;
+  color: #323657;
+}
+
+.contact-form-area input[type=email] {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #323657;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  color: #323657;
+  padding: 10px 5px;
+}
+
+.contact-form-area textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #323657;
+  color: #323657;
+  padding: 10px 5px;
+}
+
+#formsend {
+  background: #027368;
+  color: #ffffff;
+  border: none;
+  padding: 12px 42px;
+  text-transform: capitalize;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+#formsend:hover {
+  background: #04ADBF;
+}
+
+.form-contacto {
+  height: auto;
+}
+
+/*
+.newsletter{  
+    padding-top: 0 !important;
+
+
+}*/
 #map {
   width: 100%;
   height: 600px !important;
@@ -275,7 +345,6 @@ body section .text-white {
 
 main section {
   margin-bottom: 1rem;
-  /****formulario de contacto****/
 }
 main section .fs-2 {
   font-weight: 600;
@@ -283,71 +352,10 @@ main section .fs-2 {
   font-family: "Seymour One", sans-serif;
   font-weight: 900;
   font-size: 2.5rem;
-  font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 main section .form-contacto {
   width: 70%;
-}
-main section .contact-form-area {
-  background: #fff;
-  -webkit-box-shadow: 0px 9px 45px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 2px 25px rgba(194, 194, 194, 0.25);
-  border-radius: 26px;
-  padding: 100px;
-  margin-top: 120px;
-  position: relative;
-  z-index: 1;
-}
-main section .contact-form-heading h3 {
-  color: #323657;
-  text-align: center;
-  margin-bottom: 60px;
-  font-weight: 700;
-}
-main section .contact-form-area input[type=text] {
-  width: 49.6%;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #323657;
-  padding: 10px 5px;
-  color: #323657;
-}
-main section .contact-form-area input[type=email] {
-  width: 100%;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #323657;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  color: #323657;
-  padding: 10px 5px;
-}
-main section .contact-form-area textarea {
-  width: 100%;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #323657;
-  color: #323657;
-  padding: 10px 5px;
-}
-main section #formsend {
-  background: #027368;
-  color: #ffffff;
-  border: none;
-  padding: 12px 42px;
-  text-transform: capitalize;
-  font-weight: 700;
-  cursor: pointer;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  border-radius: 10px;
-}
-main section #formsend:hover {
-  background: #04ADBF;
-}
-main section .form-contacto {
-  height: auto;
 }
 main section .mapa {
   width: 70%;
@@ -357,7 +365,7 @@ main .contactanos {
 }
 
 .principal {
-  margin-top: 4rem;
+  margin-top: 10rem;
   text-align: center;
   font-weight: 800;
   color: #ffffff;
@@ -391,6 +399,7 @@ main .contactanos {
   list-style: none !important;
   padding-left: 0;
   font-size: 3.5rem;
+  width: 100;
 }
 .principal .explora .btn {
   width: 5.5rem;
@@ -398,14 +407,20 @@ main .contactanos {
 .principal .explora ul {
   list-style-type: none !important;
 }
+.principal .card {
+  margin-bottom: 0.5rem !important;
+}
 
 aside {
   text-align: center;
   margin-top: 1rem;
 }
 aside h3 {
-  font-weight: 500;
   padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #198754;
+  font-family: "Seymour One", sans-serif;
 }
 
 body .border {
@@ -549,7 +564,7 @@ body .seccion_principal h1 {
 body .seccion_principal .fs-5 {
   font-size: 1.2rem;
   font-weight: 300;
-  line-height: 1.8rem;
+  line-height: 1.3rem;
 }
 body .seccion_principal h2 {
   font-weight: 900;
@@ -678,6 +693,7 @@ body article {
   }
   /**************************destinos*******************/
   body .principal {
+    margin-top: 0;
     text-align: center;
     font-weight: 800;
     color: #ffffff;
@@ -686,6 +702,9 @@ body article {
   body .principal .fs-5 {
     font-size: 0.6rem;
     font-weight: 300;
+  }
+  body .principal h1 {
+    font-size: 1.5rem !important;
   }
   body .principal .explora {
     flex-direction: column;
@@ -702,16 +721,21 @@ body article {
     text-decoration: none;
     list-style: none !important;
     padding-left: 0;
-    font-size: 3.5rem;
   }
   body .principal .explora .btn {
     width: 5.5rem;
+  }
+  body .principal .explora p {
+    font-size: 1.5rem;
   }
   body .principal .explora ul {
     list-style-type: none !important;
   }
   body aside {
     text-align: center;
+  }
+  body aside h3 {
+    font-size: 1rem;
   }
   /********************************************************footer**********************************************/
   footer {
@@ -733,7 +757,7 @@ body article {
   }
   /*******************************actividades****************/
   body .seccion_principal {
-    margin-top: 2rem !important;
+    margin-top: 0.5rem !important;
   }
   body .seccion_principal h1 {
     font-size: 1.3rem !important;
@@ -835,9 +859,6 @@ body article {
     font-size: 1rem !important;
   }
   /***************************destinos***************************/
-  .principal {
-    margin-top: 4rem !important;
-  }
   .principal h1 {
     font-size: 1rem !important;
   }
@@ -861,13 +882,21 @@ body article {
     text-decoration: none;
     list-style: none !important;
     padding-left: 0;
-    font-size: 1.5rem;
   }
   .principal .explora .btn {
     width: 5.5rem;
   }
+  .principal .explora p {
+    font-size: 1rem !important;
+  }
+  .principal aside h3 {
+    font-size: 0.6rem;
+  }
   /**************************actividades******************************/
   /*******************************actividades****************/
+  body {
+    margin-top: 10rem !important;
+  }
   body .seccion_principal {
     margin-top: 2rem !important;
   }
@@ -889,7 +918,7 @@ body article {
     margin-bottom: 0.1rem !important;
   }
   body .seccion_principal .py-5 .card {
-    margin-bottom: 5% !important;
+    margin-bottom: 10px !important;
   }
   body .seccion_principal .py-5 .card .card-body .fs-5 {
     text-align: center;
