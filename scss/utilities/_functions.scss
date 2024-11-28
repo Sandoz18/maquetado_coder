@@ -1,0 +1,7 @@
+@function is-modal-open($element) {
+    @if (has-class($element, 'modal') and has-class($element, 'show')) {
+      @return true;
+    } @else {
+      @return false;
+    }
+  }

@@ -49,7 +49,21 @@ body{
     }
 
     .card{
-        border-radius: 1rem;
+        border-radius: 1rem;       
+        
+            .modal.show  {
+                @include disable-hover-on-modal-open;}
+                .card{
+                    pointer-events: none !important;
+                    z-index: index 100;
+                }
+              
+                & hover {                       
+                    background-color: transparent;
+            
+           
+        }
+
         .card-body{
             .fs-5{
                 text-align: center;
@@ -67,9 +81,23 @@ body{
                 margin-bottom: 2rem !important;
             }
     }
-   
-    
 
+        
+        
+        .modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999; 
+          
+            &.show {             
+              pointer-events: none; 
+           }
+        
+          }
+      
+       
  }      
 
 

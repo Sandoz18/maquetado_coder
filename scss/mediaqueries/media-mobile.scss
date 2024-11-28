@@ -161,7 +161,7 @@
                 @include estilo-footer;
                 @include estilo-redes;
                 p{
-                    font-size: 1.5rem;                   
+                    font-size: 2rem;                   
                 }
 
                 ul {
@@ -314,39 +314,41 @@
     }
 
     /********************************contacto******************************/
-
     main{
-      
-        section{   
-            text-align: center;
-            p{
-               
-                
-                .fs-2{             
-                font-weight: 600;
-                @include texto;
-                font-weight: 900;
-                font-size: 2.5rem;         
-                
+
+        section{  
+          margin-bottom: 1rem;  
+          h1{
+            font-size: 1.5rem;
+            font-weight: 400;
+            @include texto;    
+                 } 
+
+                  
+             .card{
+                p{
+                    font-size: 80% !important;
                 }
-            }  
+               }
+            
                 .form-contacto{
-                    width: 100%;
-                 
+                    width: 80%;
+                    
                 }
+                
+    
+    
                 
               .mapa{
-                width: 100%;
+                width: 70%;
               }
           
         }
-
+    
         .contactanos{
-         
           justify-content: center;
         }
     }
-
     /*********************************header******************************/
     header {
         display: block;
@@ -437,7 +439,7 @@
             @include estilo-redes;
 
             p{
-                font-size: 1rem !important;
+                font-size: 1.5rem !important;
             }
             
         }
@@ -453,6 +455,12 @@
 
     /**************************actividades******************************/
 
+
+    .card{
+        p{
+            font-size: 40% !important;
+        }
+       }
     /*******************************actividades****************/
 
     body {
@@ -507,6 +515,10 @@
 
         section{   
           
+            h1{
+                font-size: 1.5rem;
+                padding-top: 0rem !important;
+            }
                 .form-contacto{
                     width: 100%;
                     

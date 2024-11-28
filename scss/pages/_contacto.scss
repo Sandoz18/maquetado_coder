@@ -1,31 +1,25 @@
 @import "../utilities/mixins";
 
 main{
-
-    section{   
-        margin-bottom: 1rem;       
-            .fs-2{             
-            font-weight: 600;
-            @include texto;         
-            font-size: 3rem;         
+ 
+    section{  
+      margin-bottom: 1rem; 
+      margin-top: 10rem;
+       
+      h1{
+        font-size: 3rem;
+        font-weight: 400;
+        @include texto;    
+             }   
             
-            }
-
-            .form-contacto{
-                width: 70%;
-                
-            }
-            
-
-
-            
-          .mapa{
-            width: 70%;
-          }
-      
     }
 
     .contactanos{
       justify-content: center;
+    
+      p{
+        text-align: center;
+        font-size: 2.5em;
+      }
     }
 }
