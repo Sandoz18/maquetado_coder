@@ -151,17 +151,18 @@
                 font-weight: 300;
             }
 
-        h1{
-    font-size: 1.5rem !important;
-        }
+            h1 {
+                font-size: 1.5rem !important;
+            }
 
             .explora {
                 flex-direction: column;
                 display: flex;
                 @include estilo-footer;
                 @include estilo-redes;
-                p{
-                    font-size: 2rem;                   
+
+                p {
+                    font-size: 2rem;
                 }
 
                 ul {
@@ -175,10 +176,11 @@
 
         aside {
             text-align: center;
-            h3{
-               
-                font-size: 1rem;       
-               
+
+            h3 {
+
+                font-size: 1rem;
+
             }
         }
 
@@ -238,7 +240,7 @@
     /*******************************actividades****************/
 
     body {
-        
+
         .seccion_principal {
             margin-top: 0.5rem !important;
 
@@ -314,41 +316,43 @@
     }
 
     /********************************contacto******************************/
-    main{
+    main {
 
-        section{  
-          margin-bottom: 1rem;  
-          h1{
-            font-size: 1.5rem;
-            font-weight: 400;
-            @include texto;    
-                 } 
+        section {
+            margin-bottom: 1rem;
 
-                  
-             .card{
-                p{
+            h1 {
+                font-size: 1.5rem;
+                font-weight: 400;
+                @include texto;
+            }
+
+
+            .card {
+                p {
                     font-size: 80% !important;
                 }
-               }
-            
-                .form-contacto{
-                    width: 80%;
-                    
-                }
-                
-    
-    
-                
-              .mapa{
+            }
+
+            .form-contacto {
+                width: 80%;
+
+            }
+
+
+
+
+            .mapa {
                 width: 70%;
-              }
-          
+            }
+
         }
-    
-        .contactanos{
-          justify-content: center;
+
+        .contactanos {
+            justify-content: center;
         }
     }
+
     /*********************************header******************************/
     header {
         display: block;
@@ -380,10 +384,7 @@
 }
 
 
-
-
-
-@media(min-width: 320px) and (max-width: 767px) {
+@media(max-width: 767px) {
 
     /***************************información**********************************/
 
@@ -419,7 +420,7 @@
     /***************************destinos***************************/
 
     .principal {
-     
+
 
         h1 {
             font-size: 1rem !important;
@@ -438,14 +439,14 @@
             @include estilo-footer;
             @include estilo-redes;
 
-            p{
+            p {
                 font-size: 1.5rem !important;
             }
-            
+
         }
 
-        aside{
-            h3{
+        aside {
+            h3 {
                 font-size: 0.6rem;
             }
         }
@@ -456,32 +457,25 @@
     /**************************actividades******************************/
 
 
-    .card{
-        p{
-            font-size: 40% !important;
-        }
-       }
-    /*******************************actividades****************/
-
     body {
         margin-top: 10rem !important;
+
         .seccion_principal {
             margin-top: 2rem !important;
+            text-align: center;
 
             h1 {
                 font-size: 1.3rem !important;
-
+                
             }
 
             h2 {
-
                 font-size: 1.1rem !important;
                 width: 100% !important;
             }
 
             p {
                 font-size: 0.9rem !important;
-
             }
 
             .seleccion {
@@ -497,11 +491,12 @@
 
                 .card {
                     margin-bottom: 10px !important;
-
+                    text-align: center;
                     .card-body {
+                       
                         .fs-5 {
-                            text-align: center;
-                          
+                            
+                            font-weight: 400;
                         }
                     }
                 }
@@ -510,50 +505,55 @@
     }
 
 
-    /*contacto*/
-    main{
-
-        section{   
-          
-            h1{
+    /***************contacto***********/
+    main {
+      
+        section {
+            margin-top: 0rem !important;
+            h1 {
                 font-size: 1.5rem;
-                padding-top: 0rem !important;
-            }
-                .form-contacto{
-                    width: 100%;
-                    
-                }
-                .contact-form-area {
-                    /* ... other styles ... */
-                  
-                    @media (max-width: 768px) {
-                      padding: 50px;
-                      margin-top: 50px;
-                    }
-                  
-                    @media (max-width: 320px) {
-                      padding: 20px;
-                      margin-top: 30px;
-                    }
-                  }
-                  
-                  .contact-form-area input[type='text'],
-                  .contact-form-area input[type='email'],
-                  .contact-form-area textarea {
-                    width: 100%; /* Make all inputs full-width on smaller screens */
-                  height: auto;
-                    @media (min-width: 768px) {
-                      width: 49.6%; /* Restore original width for larger screens */
-                    }
-                  }
                 
-              .mapa{
+            }
+
+            .form-contacto {
                 width: 100%;
-              }          
+
+            }
+
+            .contact-form-area {
+                /* ... other styles ... */
+
+                @media (max-width: 768px) {
+                    padding: 50px;
+                    margin-top: 50px;
+                }
+
+                @media (max-width: 320px) {
+                    padding: 20px;
+                    margin-top: 30px;
+                }
+            }
+
+            .contact-form-area input[type='text'],
+            .contact-form-area input[type='email'],
+            .contact-form-area textarea {
+                width: 100%;
+                /* Make all inputs full-width on smaller screens */
+                height: auto;
+
+                @media (min-width: 768px) {
+                    width: 49.6%;
+                    /* Restore original width for larger screens */
+                }
+            }
+
+            .mapa {
+                width: 100%;
+            }
         }
-    
-        .contactanos{
-          justify-content: center;
+
+        .contactanos {
+            justify-content: center;
         }
     }
 

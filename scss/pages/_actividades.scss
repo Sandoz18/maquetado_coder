@@ -1,112 +1,106 @@
 @import "../utilities/mixins";
 
-body{
-  background-color: $background-body;
- 
- .seccion_principal{
-    margin-top: 10rem; 
- 
+body {
+    background-color: $background-body;
 
-    h1{            
-      
-        @include texto;
-        margin-top: 4rem;
-    }
+    .seccion_principal {
+        margin-top: 10rem;
 
-  .fs-5{
-  font-size: 1.2rem;
-   font-weight: 300;
-    line-height: 1.3rem;
-  }
+        h1 {
+            @include texto;
+            margin-top: 4rem;
+        }
 
-    h2{
-        font-weight: 900;
-        padding-top: 1rem;
-        font-size: 1.6rem;
-    }
+        .fs-5 {
+            font-size: 1.2rem;
+            font-weight: 300;
+            line-height: 1.3rem;
+        }
 
-  
+        h2 {
+            font-weight: 900;
+            padding-top: 1rem;
+            font-size: 1.6rem;
+        }
 
-        .seleccion{
+        .seleccion {
             font-weight: 700;
             font-size: 2.3rem;
             color: #061b24;
             margin-top: 2rem !important;
             font-weight: 900;
         }
-   
 
-    mark{
-        font-size: 1.8rem;
-        background-color: #198754;
-       
 
-        color:#ffffff;
-    }
+        mark {
+            font-size: 1.8rem;
+            background-color: #198754;
+            color: #ffffff;
+        }
 
-    .descripcion{
-        font-weight: 300;
-    }
+        .descripcion {
+            font-weight: 300;
+        }
 
-    .card{
-        border-radius: 1rem;       
-        
-            .modal.show  {
-                @include disable-hover-on-modal-open;}
-                .card{
-                    pointer-events: none !important;
-                    z-index: index 100;
+        .card {
+            border-radius: 1rem;
+
+            .modal.show {
+                @include disable-hover-on-modal-open;
+            }
+
+            .card {
+                pointer-events: none !important;
+                z-index: index 100;
+            }
+
+            & hover {
+                background-color: transparent;
+            }
+
+            .card-body {
+                .fs-5 {
+                    text-align: center;
                 }
-              
-                & hover {                       
-                    background-color: transparent;
-            
-           
-        }
 
-        .card-body{
-            .fs-5{
-                text-align: center;
-            }
-          
-        }
-        .card-footer{
-            border: none !important;
-            background-color: #ffffff;
             }
 
-            .btn-primary{
+            .card-footer {
+                border: none !important;
+                background-color: #ffffff;
+            }
+
+            .btn-primary {
                 background-color: #198754;
                 border: #198754;
                 margin-bottom: 2rem !important;
             }
-    }
+        }
 
-        
-        
+
+
         .modal {
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            z-index: 9999; 
-          
-            &.show {             
-              pointer-events: none; 
-           }
-        
-          }
-      
-       
- }      
+            z-index: 9999;
+
+            &.show {
+                pointer-events: none;
+            }
+
+        }
 
 
-article{
-    background-color:#198754;
-    color: #ffffff;
-    
+    }
+
+
+    article {
+        background-color: #198754;
+        color: #ffffff;
+
+    }
+
+
 }
-
-
-}
-
