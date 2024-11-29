@@ -356,17 +356,26 @@ main section h1 {
   font-weight: 900;
   font-size: 2.5rem;
 }
+main section .card-contacto {
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+main section .card-contacto .card-text {
+  margin: 0 auto;
+}
 main .contactanos {
   justify-content: center;
 }
-main .contactanos p {
+main .contactanos .form-contacto {
+  margin-top: -5rem;
+}
+main .contactanos .form-contacto p {
   text-align: center;
   font-size: 2.5em;
 }
 
 /*desactiva el hoover cuando el modal está abierto*/
 .principal {
-  margin-top: 10rem;
   text-align: center;
   font-weight: 800;
   color: #ffffff;
@@ -436,7 +445,7 @@ body .info {
 }
 body .info h1 {
   justify-content: center;
-  font-size: 3rem !important;
+  font-size: 3rem;
 }
 body .info .container {
   align-items: center !important;
@@ -554,9 +563,6 @@ body .clientes .stars {
 body {
   background-color: #e7e7e7;
 }
-body .seccion_principal {
-  margin-top: 10rem;
-}
 body .seccion_principal h1 {
   color: #ff4400;
   font-family: "Seymour One", sans-serif;
@@ -640,18 +646,18 @@ body article {
     margin-top: 25px;
   }
   body main section .row .texto-bienvenida {
-    margin-top: 1rem;
+    margin-top: -10rem;
     width: 100% !important;
   }
   body main section .row .texto-bienvenida .bienvenido {
-    font-size: 1.5rem !important;
+    font-size: 2rem;
     padding: auto;
   }
   body main section .row .texto-bienvenida .descubri {
-    font-size: 1.4rem !important;
+    font-size: 1.8rem;
   }
   body main section .row .texto-bienvenida .descuento {
-    font-size: 0.9rem;
+    font-size: 1.3rem;
   }
   body main section .row .texto-bienvenida .descuento p {
     font-size: 0.8rem;
@@ -717,7 +723,7 @@ body article {
     border: none;
   }
   body section .card {
-    margin-bottom: 5rem !important;
+    margin-bottom: 0.5rem !important;
   }
   /**************************destinos*******************/
   body .principal {
@@ -805,9 +811,19 @@ body article {
     margin-bottom: 0.1rem !important;
   }
   body .seccion_principal .py-5 .card {
-    margin-bottom: 5% !important;
+    margin-bottom: 5%;
+    align-items: center;
+  }
+  body .seccion_principal .py-5 .card .card-body {
+    text-align: center;
   }
   body .seccion_principal .py-5 .card .card-body .fs-5 {
+    text-align: center;
+  }
+  body .seccion_principal .py-5 .card .card-body strong {
+    margin: 0 auto;
+  }
+  body .seccion_principal .py-5 .card .card-body strong .card-text {
     text-align: center;
   }
   /***********************información**************************/
@@ -815,31 +831,31 @@ body article {
     margin-top: 4rem !important;
   }
   .info .nosotros {
-    font-size: 1rem !important;
+    font-size: 2rem !important;
   }
   .info .nosotros p {
     font-size: 0.2rem;
   }
   .faq h4 {
-    font-size: 1rem !important;
+    font-size: 2rem !important;
   }
   .clientes h3 {
-    font-size: 1rem !important;
+    font-size: 2rem !important;
   }
   /********************************contacto******************************/
   main section {
     margin-bottom: 1rem;
   }
   main section h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 400;
-    color: #ff4400;
-    font-family: "Seymour One", sans-serif;
-    font-weight: 900;
-    font-size: 2.5rem;
   }
-  main section .card p {
+  main section .card-contacto p {
     font-size: 80% !important;
+    margin-bottom: 0.5rem;
+  }
+  main section .card-contacto .card-title {
+    margin-top: 1.5rem;
   }
   main section .form-contacto {
     width: 80%;
@@ -848,7 +864,11 @@ body article {
     width: 70%;
   }
   main .contactanos {
-    justify-content: center;
+    text-align: center;
+  }
+  main .contactanos .fs-2 {
+    font-size: 1.5rem !important;
+    margin: 0 auto;
   }
   /*********************************header******************************/
   header {
@@ -871,141 +891,44 @@ body article {
   }
   /****************************este es el final de la mrdiquerie de 768 no borrar!!!!*******************/
 }
-@media (max-width: 767px) {
-  /***************************información**********************************/
-  .info {
-    margin-top: 8rem !important;
+@media (max-width: 320px) {
+  header .logo {
+    width: 5rem;
+    margin: 0 auto;
   }
-  .info .nosotros {
+  .texto-bienvenida {
+    padding-top: 8rem !important;
+  }
+  .texto-bienvenida .bienvenido {
     font-size: 1rem !important;
   }
-  .info .nosotros p {
-    font-size: 0.2rem;
-  }
-  .faq h4 {
-    font-size: 0.6rem !important;
-  }
-  .clientes h3 {
-    font-size: 1rem !important;
-  }
-  /***************************destinos***************************/
-  .principal h1 {
-    font-size: 1rem !important;
-  }
-  .principal .fs-5 {
-    color: #040746;
-    font-size: 0.6rem;
-    font-weight: 300;
-  }
-  .principal .explora {
-    flex-direction: column;
-    display: flex;
-    background-color: #08364A;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-decoration: none;
-    list-style: none !important;
-    padding-left: 0;
-  }
-  .principal .explora .btn {
-    width: 5.5rem;
-  }
-  .principal .explora p {
-    font-size: 1.5rem !important;
-  }
-  .principal aside h3 {
-    font-size: 0.6rem;
-  }
-  /**************************actividades******************************/
-  body {
-    margin-top: 10rem !important;
-  }
-  body .seccion_principal {
-    margin-top: 2rem !important;
-    text-align: center;
-  }
-  body .seccion_principal h1 {
-    font-size: 1.3rem !important;
-  }
-  body .seccion_principal h2 {
-    font-size: 1.1rem !important;
-    width: 100% !important;
-  }
-  body .seccion_principal p {
+  .texto-bienvenida .descubri {
     font-size: 0.9rem !important;
   }
-  body .seccion_principal .seleccion {
-    font-size: 1rem !important;
+  .texto-bienvenida .descuento {
+    font-size: 1.3rem;
   }
-  body .seccion_principal .py-5 col {
-    margin-top: 0.1rem !important;
-    margin-bottom: 0.1rem !important;
+  .texto-bienvenida .descuento p {
+    font-size: 0.8rem;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
   }
-  body .seccion_principal .py-5 .card {
-    margin-bottom: 10px !important;
-    text-align: center;
+  .p-4 {
+    padding-top: 8rem !important;
   }
-  body .seccion_principal .py-5 .card .card-body .fs-5 {
-    font-weight: 400;
+  .seccion_principal .bienvenido {
+    padding-top: 4rem;
   }
-  /***************contacto***********/
-  main section {
-    margin-top: 0rem !important;
+  .info .nosotros {
+    font-size: 1.5rem !important;
   }
-  main section h1 {
-    font-size: 1.5rem;
+  .faq h4 {
+    font-size: 1.5rem !important;
   }
-  main section .form-contacto {
-    width: 100%;
-  }
-  main section .contact-form-area {
-    /* ... other styles ... */
+  .clientes h3 {
+    font-size: 1.5rem !important;
   }
 }
-@media (max-width: 767px) and (max-width: 768px) {
-  main section .contact-form-area {
-    padding: 50px;
-    margin-top: 50px;
-  }
-}
-@media (max-width: 767px) and (max-width: 320px) {
-  main section .contact-form-area {
-    padding: 20px;
-    margin-top: 30px;
-  }
-}
-@media (max-width: 767px) {
-  main section .contact-form-area input[type=text],
-  main section .contact-form-area input[type=email],
-  main section .contact-form-area textarea {
-    width: 100%;
-    /* Make all inputs full-width on smaller screens */
-    height: auto;
-  }
-}
-@media (max-width: 767px) and (min-width: 768px) {
-  main section .contact-form-area input[type=text],
-  main section .contact-form-area input[type=email],
-  main section .contact-form-area textarea {
-    width: 49.6%;
-    /* Restore original width for larger screens */
-  }
-}
-@media (max-width: 767px) {
-  main section .mapa {
-    width: 100%;
-  }
-  main .contactanos {
-    justify-content: center;
-  }
-}
-/******cierre mediaqueries 576 no borrar!!!**********/
 @media (min-width: 768px) and (max-width: 1024px) {
   .navbar {
     position: sticky;

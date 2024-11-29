@@ -12,16 +12,32 @@ main {
       @include texto;
     }
 
+    .card-contacto{
+      margin-bottom: 0.5rem;
+      text-align: center;
+     
+
+      .card-text{
+        margin: 0 auto;
+      }
+    }
+
   }
 
+  
   .contactanos {
     justify-content: center;
+   
 
+.form-contacto{
+margin-top: -5rem;
 
+  p {
+    text-align: center;
+    font-size: 2.5em;
+  }
+}
 
-    p {
-      text-align: center;
-      font-size: 2.5em;
-    }
+  
   }
 }

@@ -12,20 +12,20 @@
 
                 .row {
                     .texto-bienvenida {
-                        margin-top: 1rem;
+                        margin-top: -10rem;
                         width: 100% !important;
 
                         .bienvenido {
-                            font-size: 1.5rem !important;
+                            font-size: 2rem;
                             padding: auto;
                         }
 
                         .descubri {
-                            font-size: 1.4rem !important;
+                            font-size: 1.8rem ;
                         }
 
                         .descuento {
-                            font-size: 0.9rem;
+                            font-size: 1.3rem;
 
                             p {
                                 font-size: 0.8rem;
@@ -122,7 +122,7 @@
 
             .card {
 
-                margin-bottom: 5rem !important;
+                margin-bottom: 0.5rem !important;
 
             }
 
@@ -272,12 +272,22 @@
                 }
 
                 .card {
-                    margin-bottom: 5% !important;
-
+                    margin-bottom: 5% ;                 
+                    align-items: center;
                     .card-body {
+                        text-align: center;
                         .fs-5 {
                             text-align: center;
+                           
                         }
+                        strong{
+                            margin: 0 auto;                           
+                            .card-text{
+                                text-align: center;
+                                
+                            }
+                        }
+                       
                     }
                 }
             }
@@ -292,7 +302,7 @@
         margin-top: 4rem !important;
 
         .nosotros {
-            font-size: 1rem !important;
+            font-size: 2rem !important;
 
             p {
                 font-size: 0.2rem;
@@ -304,14 +314,14 @@
 
     .faq {
         h4 {
-            font-size: 1rem !important;
+            font-size: 2rem !important;
         }
 
     }
 
     .clientes {
         h3 {
-            font-size: 1rem !important;
+            font-size: 2rem !important;
         }
     }
 
@@ -322,15 +332,23 @@
             margin-bottom: 1rem;
 
             h1 {
-                font-size: 1.5rem;
-                font-weight: 400;
-                @include texto;
+                font-size: 2rem;
+                font-weight: 400;            
+               
             }
 
 
-            .card {
+            .card-contacto {
                 p {
                     font-size: 80% !important;
+                    margin-bottom: 0.5rem;
+                }
+
+
+                
+                .card-title{
+                  
+                    margin-top: 1.5rem;
                 }
             }
 
@@ -349,7 +367,14 @@
         }
 
         .contactanos {
-            justify-content: center;
+            
+            text-align: center;          
+          
+            .fs-2{
+                font-size: 1.5rem !important;               
+                margin: 0 auto;
+                
+            }
         }
     }
 
@@ -384,179 +409,77 @@
 }
 
 
-@media(max-width: 767px) {
+@media (max-width: 320px) {
+    header {        
+            .logo {
+                width: 5rem;
+              margin: 0 auto;              
+            }    
+            
+          }
 
-    /***************************información**********************************/
-
-    .info {
-        margin-top: 8rem !important;
-
-        .nosotros {
-            font-size: 1rem !important;
-
-            p {
-                font-size: 0.2rem;
+          .texto-bienvenida{
+         padding-top: 8rem !important;
+            .bienvenido{
+                font-size:1rem !important;
+              
             }
-        }
-
-    }
-
-
-    .faq {
-        h4 {
-            font-size: 0.6rem !important;
-        }
-
-    }
-
-    .clientes {
-        h3 {
-            font-size: 1rem !important;
-        }
-    }
-
-
-
-    /***************************destinos***************************/
-
-    .principal {
-
-
-        h1 {
-            font-size: 1rem !important;
-        }
-
-        .fs-5 {
-            color: #040746;
-            font-size: 0.6rem;
-            font-weight: 300;
-        }
-
-
-        .explora {
-            flex-direction: column;
-            display: flex;
-            @include estilo-footer;
-            @include estilo-redes;
-
-            p {
-                font-size: 1.5rem !important;
-            }
-
-        }
-
-        aside {
-            h3 {
-                font-size: 0.6rem;
-            }
-        }
-
-    }
-
-
-    /**************************actividades******************************/
-
-
-    body {
-        margin-top: 10rem !important;
-
-        .seccion_principal {
-            margin-top: 2rem !important;
-            text-align: center;
-
-            h1 {
-                font-size: 1.3rem !important;
-                
-            }
-
-            h2 {
-                font-size: 1.1rem !important;
-                width: 100% !important;
-            }
-
-            p {
+           
+            .descubri {
                 font-size: 0.9rem !important;
             }
 
-            .seleccion {
-                font-size: 1rem !important;
-            }
+            .descuento {
+                font-size: 1.3rem;
 
-            .py-5 {
-
-                col {
-                    margin-top: 0.10rem !important;
-                    margin-bottom: 0.1rem !important;
+                p {
+                    font-size: 0.8rem;
+                    margin: 0 auto;
+                    margin-bottom: 0.5rem;
                 }
 
-                .card {
-                    margin-bottom: 10px !important;
-                    text-align: center;
-                    .card-body {
-                       
-                        .fs-5 {
-                            
-                            font-weight: 400;
-                        }
-                    }
-                }
-            }
-        }
-    }
 
+          }
+         
 
-    /***************contacto***********/
-    main {
       
-        section {
-            margin-top: 0rem !important;
-            h1 {
-                font-size: 1.5rem;
-                
-            }
-
-            .form-contacto {
-                width: 100%;
-
-            }
-
-            .contact-form-area {
-                /* ... other styles ... */
-
-                @media (max-width: 768px) {
-                    padding: 50px;
-                    margin-top: 50px;
-                }
-
-                @media (max-width: 320px) {
-                    padding: 20px;
-                    margin-top: 30px;
-                }
-            }
-
-            .contact-form-area input[type='text'],
-            .contact-form-area input[type='email'],
-            .contact-form-area textarea {
-                width: 100%;
-                /* Make all inputs full-width on smaller screens */
-                height: auto;
-
-                @media (min-width: 768px) {
-                    width: 49.6%;
-                    /* Restore original width for larger screens */
-                }
-            }
-
-            .mapa {
-                width: 100%;
-            }
+          
+          
+        }
+     
+        .p-4{           
+            padding-top: 8rem !important;
         }
 
-        .contactanos {
-            justify-content: center;
+        .seccion_principal {
+      
+            .bienvenido{
+              
+                padding-top: 4rem;
+            }
+    }
+
+    .info{
+        .nosotros{
+            font-size: 1.5rem !important;
+           
+        }
+
+    }
+
+    .faq{
+        h4{
+            font-size: 1.5rem !important;
+        }
+       
+    }
+
+    .clientes{
+        h3{
+            font-size: 1.5rem !important;
         }
     }
+
+
 
 }
-
-/******cierre mediaqueries 576 no borrar!!!**********/
