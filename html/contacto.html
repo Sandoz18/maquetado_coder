@@ -41,56 +41,55 @@
 
 <body>
     <header>
-
         <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container d-flex">               
+            <div class="container d-flex">
 
                 <!--------itemprop e itemtype para SEO y logo------>
                 <a href="../index.html">
-                    <img class="logo img-fluid pb-3" src="../assets/logo-01.png" alt="logo-wunderlust" itemprop="logo"
+                    <img class="logo img-fluid pb-3"
+                        src="../assets/logo-01.png" alt="logo-wunderlust"
+                        itemprop="logo"
                         itemscope itemtype="http://schema.org/Organization">
                 </a>
 
-
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 mx-auto  text-center">
-                    <li class="nav-item"><a
-                            class="nav-link nav-link-active text-white"
-                            href="../index.html">inicio</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link text-white"
-                            href="../html/destinos.html">destinos</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link text-white"
-                            href="../html/actividades.html">actividades</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link text-white"
-                            href="../html/informacion.html">información</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link text-white"
-                            href="../html/contacto.html">contacto</a>
-                    </li>
-
-                </ul>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul
+                        class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 mx-auto  text-center">
+                        <li class="nav-item"><a
+                                class="nav-link nav-link-active text-white"
+                                href="../index.html">inicio</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white"
+                                href="../html/destinos.html">destinos</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white"
+                                href="../html/actividades.html">actividades</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white"
+                                href="../html/informacion.html">información</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white"
+                                href="../html/contacto.html">contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-solid fa-bars fa-1x"></i>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-
-           
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon "></span>
-    </button>
-        </div>
-    </nav>
-
-</header>
-
+        </nav>
+    </header>
+    
     <main>
         <section class="my-5 py-5">
             <div class="container">
                 <div class="row">
                     <div class="col-12 mt-2 pt-5">
-                        <p class="fs-2 fw-bold fs-1 text-center mt-4">Contactanos:</p>
+                        <p class="fs-2 fw-bold fs-1 text-center mt-4">Contactanos</p>
                         <p class="fs-3 text-secondary fw-semibold  text-center">Contactanos por
                             los siguientes medios o dejanos tus datos y te responderemos a la brevedad</p>
                     </div>
@@ -118,9 +117,6 @@
                             <p class="card-text text-center fs-5 lh-1 text-secondary mb-2">info@wunderlust.com</p>
                             <p class="card-text text-center fs-5 lh-1 text-secondary mb-4">contacto@wunderlust.com</p>
 
-
-
-
                         </div>
                     </div>
 
@@ -138,18 +134,16 @@
                         </div>
                     </div>
 
-
-
-
-
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="container-fluid  justify-content-around align-items-start d-flex gx-3">
-                <div class="col-12 col-lg-6">
-                    <div class="contact-form-area bg-warning">
+        <section class="contactanos"> 
+            <p class="fs-2 text-secondary fw-bold mb-0">
+                Dejanos tus datos y nos comunicaremos a la brevedad</p>                   
+                <div class="container form-contacto">                 
+                   <div class="col-12">                    
+                    <div class="contact-form-area">
                         <div class="contact-form">
                             <form action="#">
                                 <input type="text" placeholder="Nombre">
@@ -163,27 +157,35 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="col-12 col-lg-6">
-
-                    <div id="map"></div>
-                    <script>
-                        var map = L.map('map').setView([-34.603722, -58.381556], 15);
-
-                        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                        }).addTo(map);
-
-                        var marker = L.marker([-34.603722, -58.381556]).addTo(map)
-                            .bindPopup('Obelisco de Buenos Aires');
-                    </script>
-
-
-
-                </div>
             </div>
 
+
+
+                <div class="container mapa">
+                    <div class="col-12">
+
+                        <div id="map"></div>
+                        <script>
+                            var map = L.map('map').setView([-34.603722, -58.381556], 15);
+
+                            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                            }).addTo(map);
+
+                            var marker = L.marker([-34.603722, -58.381556]).addTo(map)
+                                .bindPopup('Obelisco de Buenos Aires');
+                        </script>
+
+
+
+                    </div>
+                </div>
+
+
+
+
         </section>
+    </main>
     </main>
 
     <footer>
