@@ -168,14 +168,16 @@
     /**************************destinos*******************/
     body{
        
-        .seccion_principal {
+        .principal {
           
             text-align: center;
             font-weight: 800;
             color: #ffffff;
             padding: 0;
 
-
+            h1{
+                font-size: 1.8rem;
+            }
         .fs-5 {
          
             font-size: 0.6rem;
@@ -259,8 +261,9 @@ footer {
 /*******************************actividades****************/
 
 body{
+  
     .seccion_principal{ 
- margin-top: 2rem !important;
+
    
         h1{
             font-size:  1.3rem !important;
@@ -376,11 +379,10 @@ body{
 
  /***************************destinos***************************/
     
- .seccion_principal {
-    margin-top: 8rem !important;
+ .principal { 
 
     h1{
-        font-size: 1rem !important;
+        font-size: 1.2rem !important;
     }
     .fs-5 {
         color: #040746;
@@ -404,9 +406,7 @@ body{
 
 body{
     .seccion_principal{
-        section{
-          margin-top: 2rem;
-        }
+        
       
     
         mark{

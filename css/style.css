@@ -339,35 +339,39 @@ body section .text-white {
   display: inline-block;
 }
 
-main section .fs-2 {
-  font-weight: 600;
+main section .fs-1 {
   color: #ff4400;
   font-family: "Seymour One", sans-serif;
   font-weight: 900;
   font-size: 2.5rem;
   font-weight: 900;
-  font-size: 2.5rem;
 }
 
-.seccion_principal {
+.principal {
   text-align: center;
   font-weight: 800;
   color: #ffffff;
   padding: 0;
+  margin-top: 1rem;
 }
-.seccion_principal h1 {
+.principal h1 {
   font-weight: 600;
   color: #ff4400;
   font-family: "Seymour One", sans-serif;
   font-weight: 900;
   font-size: 2.5rem;
+  margin-bottom: 0;
 }
-.seccion_principal .fs-5 {
+.principal .fs-5 {
+  margin-top: auto;
   color: black;
-  font-size: 1.2rem;
-  font-weight: 300;
+  font-size: 1.8rem;
+  font-weight: 200;
 }
-.seccion_principal .explora {
+.principal .container-fluid {
+  margin-top: 0;
+}
+.principal .explora {
   flex-direction: column;
   display: flex;
   background-color: #08364A;
@@ -384,29 +388,33 @@ main section .fs-2 {
   padding-left: 0;
   font-size: 3.5rem;
 }
-.seccion_principal .explora .btn {
+.principal .explora .btn {
   width: 5.5rem;
 }
-.seccion_principal .explora ul {
+.principal .explora ul {
   list-style-type: none !important;
 }
 
 aside {
   text-align: center;
+  margin-top: 4rem;
+}
+aside h3 {
+  background-color: aquamarine;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
 }
 
 body .border {
   width: 160px;
   height: 5px;
-  background: #6ab04c;
+  background: #4cb06c;
   margin: 26px auto;
 }
-body .info {
-  margin-top: 8rem;
-}
 body .info h1 {
+  margin-top: 1rem;
   justify-content: center;
-  font-size: 3rem !important;
+  font-size: 2.5rem !important;
 }
 body .info .container {
   align-items: center !important;
@@ -522,9 +530,6 @@ body .clientes .stars {
 
 body {
   background-color: #e7e7e7;
-}
-body .seccion_principal {
-  margin-top: 10rem;
 }
 body .seccion_principal h1 {
   color: #ff4400;
@@ -679,17 +684,20 @@ body article {
     align-items: center;
   }
   /**************************destinos*******************/
-  body .seccion_principal {
+  body .principal {
     text-align: center;
     font-weight: 800;
     color: #ffffff;
     padding: 0;
   }
-  body .seccion_principal .fs-5 {
+  body .principal h1 {
+    font-size: 1.8rem;
+  }
+  body .principal .fs-5 {
     font-size: 0.6rem;
     font-weight: 300;
   }
-  body .seccion_principal .explora {
+  body .principal .explora {
     flex-direction: column;
     display: flex;
     background-color: #08364A;
@@ -706,10 +714,10 @@ body article {
     padding-left: 0;
     font-size: 3.5rem;
   }
-  body .seccion_principal .explora .btn {
+  body .principal .explora .btn {
     width: 5.5rem;
   }
-  body .seccion_principal .explora ul {
+  body .principal .explora ul {
     list-style-type: none !important;
   }
   body aside {
@@ -734,9 +742,6 @@ body article {
     font-size: 2rem !important;
   }
   /*******************************actividades****************/
-  body .seccion_principal {
-    margin-top: 2rem !important;
-  }
   body .seccion_principal h1 {
     font-size: 1.3rem !important;
   }
@@ -798,18 +803,15 @@ body article {
     font-size: 1rem !important;
   }
   /***************************destinos***************************/
-  .seccion_principal {
-    margin-top: 8rem !important;
+  .principal h1 {
+    font-size: 1.2rem !important;
   }
-  .seccion_principal h1 {
-    font-size: 1rem !important;
-  }
-  .seccion_principal .fs-5 {
+  .principal .fs-5 {
     color: #040746;
     font-size: 0.6rem;
     font-weight: 300;
   }
-  .seccion_principal .explora {
+  .principal .explora {
     flex-direction: column;
     display: flex;
     background-color: #08364A;
@@ -826,13 +828,10 @@ body article {
     padding-left: 0;
     font-size: 1.5rem;
   }
-  .seccion_principal .explora .btn {
+  .principal .explora .btn {
     width: 5.5rem;
   }
   /**************************actividades******************************/
-  body .seccion_principal section {
-    margin-top: 2rem;
-  }
   body .seccion_principal mark {
     font-size: 1.3rem;
   }

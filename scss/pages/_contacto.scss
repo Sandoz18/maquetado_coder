@@ -1,12 +1,13 @@
 @import "../utilities/mixins";
 
+
 main{
+  
     section{          
-            .fs-2{             
-            font-weight: 600;
+            .fs-1{          
             @include texto;
             font-weight: 900;
-            font-size: 2.5rem;
+           
            
             
             }
