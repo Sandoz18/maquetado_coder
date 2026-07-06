@@ -339,12 +339,14 @@ body section .text-white {
   display: inline-block;
 }
 
-main section .fs-1 {
+main section .fs-2 {
+  font-weight: 600;
   color: #ff4400;
   font-family: "Seymour One", sans-serif;
   font-weight: 900;
   font-size: 2.5rem;
   font-weight: 900;
+  font-size: 2.5rem;
 }
 
 .principal {
