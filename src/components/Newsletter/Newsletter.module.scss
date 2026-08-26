@@ -1,0 +1,33 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.newsletter{    
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.newsletterTitle{
+    font-weight: 500;
+    font-size: 1.5rem;
+   color:v.$color-brand;
+}
+
+.newsletterSubtitle{
+   font-size: 1rem;
+}
+
+.inputNewsletter{
+  padding: 0.5rem 1rem; 
+  border:none;  
+}
+
+.buttonSubmit{
+    background-color: #065b22;
+    color:#ffff;
+    padding: 0.5rem 1.5rem;
+    border-radius:0 8px 8px 0;
+    border:none;
+}
+

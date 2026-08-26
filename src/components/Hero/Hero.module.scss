@@ -1,0 +1,90 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.heroContainer {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+
+
+  @include m.desktop {
+    height: 95vh;
+  }
+
+}
+
+.backgroundVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+}
+
+.heroOverlay {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  .heroTitle {
+    padding-top: 45px;
+    font-size: clamp(2.5rem, 5vw, 2.5rem);
+    line-height: 1.1;
+    font-size: 2.3rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+
+  }
+
+  .heroSubtitle {
+    color: #dddfe1;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .heroBtn {
+    color: v.$color-dark;
+    background-color: v.$color-brand;
+    border: none;
+    border-radius: 8px;
+    min-height: 34px;
+    padding: 0.8rem 1.5rem;
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem);
+    font-weight: 700;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin-top: 4rem;
+
+    &:hover {
+      background-color: #e5a900;
+      color: #164047;
+
+
+    }
+  }
+
+
+}

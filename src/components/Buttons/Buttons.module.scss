@@ -1,0 +1,15 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+
+.Button{
+
+background-color: aqua;
+
+    .btn-outline-success{
+    background-color: #03676e;
+    color: #ffffff;
+    border-radius: 5px;
+}
+}
+
