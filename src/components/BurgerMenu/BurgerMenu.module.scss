@@ -1,0 +1,45 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+
+.burgerMenu {
+    justify-content: center;
+    display: block;
+
+
+    .burgerButton {
+        border: none;
+        background-color: transparent;
+        color: v.$text-inverse;
+        text-align: center;
+        font-size: 2rem;
+
+    }
+
+    @include m.desktop {
+        display: none;
+    }
+}
+
+.modalAside {
+    position: fixed;
+    right: 0;
+    top: 0;
+    min-width: 90%;
+    min-height: 80%;
+    background-color: v.$color-dark;
+    color: v.$text-inverse;
+    z-index: 1000;
+}
+
+.closeButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    color: v.$text-inverse;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}

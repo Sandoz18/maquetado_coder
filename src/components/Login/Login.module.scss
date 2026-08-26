@@ -1,0 +1,26 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.Login{   
+    width: 80px;
+    height:80px;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    color:aliceblue;
+    margin-right:18px;
+}
+
+
+.LoginIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i{
+        font-size: 1.3rem;
+        margin-top: 25px;
+    }
+}
+
+

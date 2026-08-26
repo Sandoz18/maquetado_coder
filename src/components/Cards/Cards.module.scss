@@ -1,0 +1,96 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+
+    .card {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        width: 290px;
+        color: black;
+        border-radius: 8px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+        &:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+        }
+
+
+        @include m.desktop {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+
+        .img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            display: block;
+        }
+
+        .textContainer {
+            padding: 0 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        will-change: transform;
+        }
+
+        .titleBackground {
+            background-color: #ffffff;
+            padding: 0.6rem 2rem;
+            border-radius: 8px;
+            position: relative;
+            z-index: 100;
+            top: -20px;
+            margin-bottom: -20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+            .title {
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: v.$text-primary;
+                text-transform: uppercase;
+                margin-top: 0;
+            }
+        }
+
+        .description {
+            line-height: 1.4;
+            font-size: 0.85rem;
+            margin: 0.5rem 1.5rem;
+        }
+
+        .text {
+            font-weight: 300;
+            font-size: 0.8rem;
+        }
+
+        .button {
+            background-color: #566aaa;
+            color: white;
+            width: fit-content;
+            text-decoration: none;
+            padding: 0.5rem 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            align-self: center;
+        }
+    }
+}

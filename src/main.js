@@ -1,7 +1,0 @@
-import '../scss/style.scss';
-
-
-
-
-
-

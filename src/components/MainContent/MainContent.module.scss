@@ -1,0 +1,175 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.mainContent {  
+    background-color: v.$color-dark;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.mainTitle {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    color: v.$color-brand;
+
+}
+
+.mainSubtitle {   
+    color: #c3cdcd;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.mainText {
+    font-size: 1rem;
+    line-height: 1.2;
+    padding: 1.5rem;
+    text-align: center;  
+    max-width: 920px;
+    margin: 0 auto;
+   
+    
+
+
+}
+
+.mainFootertitle {
+    margin-top:2rem;
+  font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    color: v.$color-brand;
+}
+
+.mainFooterSubtitle{
+    font-size: 1rem;
+}
+
+//hashtags
+
+.hashtagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.hashtagButton {
+  background: transparent;
+  border: none;
+  color: #38bdf8;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+
+  &:hover:not(:disabled) {
+    background-color: rgba(56, 189, 248, 0.1);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.loadingText {
+  color: #ffffff;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.errorText {
+  color: #ef4444;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.resultCard {
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  border: 1px solid #334155;
+
+  .resultTitle {
+    color: #38bdf8;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .resultDescription {
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+//tarjeta de recomendación de la IA 
+.tarjetaRecomendacion {
+  position: relative;
+  background-color: #1a2332;
+  border: 1px solid #2b394e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.btnCerrar {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  color: #64748b;
+  font-size: 1.3rem;
+  cursor: pointer;
+
+  &:hover {
+    color: #f8fafc;
+  }
+}
+
+.badgeIa {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #38bdf8;
+  background-color: rgba(56, 189, 248, 0.1);
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 0.8rem;
+}
+
+.tituloRecomendacion {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.linkFotos {
+  display: inline-block;
+  color: #38bdf8;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+

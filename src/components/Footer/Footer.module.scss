@@ -1,0 +1,45 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.footer{    
+    width: 100%;
+    height: auto;
+    background-color:v.$color-dark;
+    color:v.$text-inverse;
+    border:none;
+    text-align: center;
+   
+    
+    
+
+    @include m.desktop{
+        display: flex;
+    justify-content: space-between;
+    }   
+    .centerContainer{
+        
+        text-align: center;   
+
+
+    }
+
+    .logoContainer{
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+    }
+
+    .social{       
+        box-sizing: border-box;
+        gap: 24px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 24px;
+       
+}
+}
+
+
+

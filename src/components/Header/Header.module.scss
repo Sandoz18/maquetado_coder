@@ -1,0 +1,49 @@
+@use "../../styles/variables.scss" as v;
+@use "../../styles/mixins" as m;
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    background: v.$color-dark;
+    padding: 1rem;
+    align-items: center;
+
+
+    @include m.desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .desktopNav {
+        display: none;
+
+        @include m.desktop {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+
+        }
+    }
+
+
+
+}
+
+.logoContainer {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 5em;
+    height: auto;
+}

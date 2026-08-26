@@ -1,0 +1,91 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.nav {
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+    background-color: transparent;
+
+
+
+    @include m.desktop {
+
+        justify-content: center;
+
+
+    }
+
+
+    .item {
+        text-align: center;
+        display: flex;
+        gap: 20px;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    .navList {
+        list-style-type: none;
+        color: v.$text-inverse;
+        padding: 0;
+        margin: 0;
+        margin-right: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+
+
+        @include m.desktop {
+            text-align: left;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            gap: 25px;
+
+        }
+
+        li {
+            a {
+                text-decoration: none;
+                color: v.$text-inverse;
+                font-weight: bold;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background-color: v.$text-accent;
+                    transition: width 0.3s ease;
+                }
+
+                &:hover {
+                    color: v.$text-accent;
+
+
+                    &::after {
+                        width: 100%;
+                        left: 0;
+                    }
+
+                }
+            }
+        }
+
+
+    }
+
+
+}
+
+.navLinks {
+    @include m.desktop {
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
