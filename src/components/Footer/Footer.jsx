@@ -3,7 +3,7 @@ import styles from './Footer.module.scss';
 import Logo from '../../assets/logo-01.png';
 import NavLinks from '../NavLinks/NavLinks';
 
-const socialLinks = [
+export const socialLinks = [
     { href: "#", label: 'Facebook', iconClass: 'bi bi-facebook' },
     { href: "#", label: 'Instagram', iconClass: 'bi bi-instagram' },
     { href: "#", label: 'TikTok', iconClass: 'bi bi-tiktok' }
