@@ -1,45 +1,59 @@
 @use "../../styles/variables" as v;
 @use "../../styles/mixins" as m;
 
-.footer{    
+.footer {
     width: 100%;
     height: auto;
-    background-color:v.$color-dark;
-    color:v.$text-inverse;
-    border:none;
-    text-align: center;
-   
-    
-    
+    background-color: v.$color-dark;
+    color: v.$text-inverse;
+    border: none;
+    text-align: center;    
+    padding: 4rem;
 
-    @include m.desktop{
+
+
+    @include m.desktop {
         display: flex;
-    justify-content: space-between;
-    }   
-    .centerContainer{
-        
-        text-align: center;   
-
-
+        justify-content: space-between;
     }
 
-    .logoContainer{
-        justify-content: center;
+    .centerContainer {
+
+        text-align: center;
+    }
+
+
+    .logoContainer {
+        align-self: flex-start;
+        display: flex;
         align-items: center;
-        background-color: aqua;
     }
 
-    .social{       
+    .logo {
+        width: 5em;
+        height: auto;
+    }
+
+    .social {
+        font-size: 1.5rem;
         box-sizing: border-box;
         gap: 24px;
-        display:flex;
+        display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
         padding-bottom: 24px;
-       
+
+    }
 }
+
+.mapaSitio{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: v.$color-brand;
 }
 
-
-
+.copy{
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}

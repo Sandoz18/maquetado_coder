@@ -19,12 +19,12 @@ export const Footer = () => {
             </div>
 
             <div className={styles.centerContainer}>
-                <h4>MAPA DEL SITIO</h4>
+                <h4 className={styles.mapaSitio}>MAPA DEL SITIO</h4>
                 <NavLinks />
                 <div className={styles.terms}>
                     <a href="/terminos-y-condiciones" className={styles.link}>Términos y Condiciones</a>
                 </div>
-                <p>&copy; 2026 Wunderlust. All rights reserved.</p>
+                <p className={styles.copy}>&copy; 2026 Wunderlust. All rights reserved.</p>
             </div>
 
             <div className={styles.social}>

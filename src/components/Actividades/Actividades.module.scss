@@ -1,0 +1,44 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+
+.actividadesContainer{
+    display:flex;
+    flex-direction: column;
+    margin-top:1.5rem;
+     text-align: center;
+   
+
+    .actividadestitle{
+        font-weight: 700;
+        font-size: 2rem;
+       
+        
+        @include m.desktop{
+            font-size: 2.5rem;
+        }
+    }
+
+    .actividadesSubtitle{
+        font-size: 1.2rem;
+        font-weight: 300;
+        
+    }
+}
+
+
+.videoContainer{
+    width: 100vw;
+    max-width: 100%;
+    height: max-content;
+    
+    .actividadesVideo{
+    width:100%;  
+    display:block;
+
+}
+
+
+}
+
+
