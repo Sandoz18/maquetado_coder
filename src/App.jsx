@@ -5,6 +5,7 @@ import { Whatsapp } from './components/Whatsapp/Whatsapp';
 import { Footer } from './components/Footer/Footer';
 import { Destinos } from './components/Destinos/Destinos';
 import {Actividades} from './components/Actividades/Actividades';
+import {Informacion}from './components/Informacion/Informacion';
 
 export function App() {
     return (
@@ -17,6 +18,7 @@ export function App() {
                 <Route path="/" element={<Inicio />} />
                 <Route path="/Destinos" element={<Destinos />} />
                 <Route path="/Actividades" element={<Actividades/>} />
+                 <Route path="/Informacion" element={<Informacion/>} />
             </Routes>
 
             <Footer />

@@ -1,0 +1,456 @@
+
+[
+  {
+    "id": 1,
+    "nombre": "Buenos Aires",
+    "provincia": "Buenos Aires",
+    "tipo": "Destino",
+    "descripcion": "La gran ciudad argentina, con arquitectura, cultura, gastronomía, tango y una intensa vida urbana.",
+    "actividades": [
+      "City Tour por Buenos Aires",
+      "Tango Show",
+      "Cena y Show de Tango",
+      "Tour por San Telmo y La Boca",
+      "Tour por Recoleta y Palermo",
+      "Visita al Cementerio de la Recoleta",
+      "Paseo en barco por el Río de la Plata",
+      "Tour gastronómico"
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Tigre",
+    "provincia": "Buenos Aires",
+    "tipo": "Destino",
+    "descripcion": "Destino cercano a Buenos Aires conocido por el Delta del Paraná, sus ríos y sus paseos en lancha.",
+    "actividades": [
+      "Paseo en lancha por el Delta",
+      "Excursión de día completo a Tigre",
+      "Tour por Puerto de Frutos",
+      "Navegación por el Delta del Paraná"
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Cataratas del Iguazú",
+    "provincia": "Misiones",
+    "tipo": "Destino",
+    "descripcion": "Una de las grandes maravillas naturales de Argentina, rodeada por la selva misionera.",
+    "actividades": [
+      "Visita al Parque Nacional Iguazú",
+      "Circuito Garganta del Diablo",
+      "Circuito Superior",
+      "Circuito Inferior",
+      "Gran Aventura",
+      "Paseo en lancha por las cataratas",
+      "Safari por la selva misionera",
+      "Excursión al lado brasileño de las cataratas"
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "Puerto Iguazú",
+    "provincia": "Misiones",
+    "tipo": "Destino",
+    "descripcion": "Ciudad turística ubicada junto a las Cataratas del Iguazú y la Triple Frontera.",
+    "actividades": [
+      "Visita a las Cataratas del Iguazú",
+      "Hito Tres Fronteras",
+      "Tour por la Triple Frontera",
+      "Minas de Wanda",
+      "Ruinas de San Ignacio"
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "Mendoza",
+    "provincia": "Mendoza",
+    "tipo": "Destino",
+    "descripcion": "Destino de montaña y vino, famoso por sus bodegas, viñedos y paisajes de los Andes.",
+    "actividades": [
+      "Tour de bodegas",
+      "Degustación de vinos",
+      "Ruta del vino",
+      "Alta Montaña",
+      "Visita al Aconcagua",
+      "Rafting",
+      "Cabalgata por los Andes",
+      "City Tour por Mendoza"
+    ]
+  },
+  {
+    "id": 6,
+    "nombre": "Aconcagua",
+    "provincia": "Mendoza",
+    "tipo": "Naturaleza",
+    "descripcion": "El Aconcagua es la montaña más alta de América y uno de los grandes atractivos naturales de Mendoza.",
+    "actividades": [
+      "Excursión al Parque Provincial Aconcagua",
+      "Trekking",
+      "Miradores del Aconcagua",
+      "Tour de Alta Montaña"
+    ]
+  },
+  {
+    "id": 7,
+    "nombre": "Bariloche",
+    "provincia": "Río Negro",
+    "tipo": "Destino",
+    "descripcion": "Destino patagónico rodeado de lagos, montañas y bosques, ideal durante todo el año.",
+    "actividades": [
+      "Circuito Chico",
+      "Cerro Campanario",
+      "Excursión al Cerro Catedral",
+      "Navegación por el Lago Nahuel Huapi",
+      "Isla Victoria y Bosque de Arrayanes",
+      "Ruta de los Siete Lagos",
+      "Rafting",
+      "Kayak",
+      "Trekking",
+      "Excursiones de nieve"
+    ]
+  },
+  {
+    "id": 8,
+    "nombre": "Villa La Angostura",
+    "provincia": "Neuquén",
+    "tipo": "Destino",
+    "descripcion": "Pequeña localidad de montaña rodeada de bosques, lagos y paisajes de la Patagonia.",
+    "actividades": [
+      "Ruta de los Siete Lagos",
+      "Bosque de Arrayanes",
+      "Navegación por el Lago Nahuel Huapi",
+      "Trekking",
+      "Cabalgatas",
+      "Excursiones de montaña"
+    ]
+  },
+  {
+    "id": 9,
+    "nombre": "San Martín de los Andes",
+    "provincia": "Neuquén",
+    "tipo": "Destino",
+    "descripcion": "Destino patagónico ubicado a orillas del Lago Lácar, rodeado de bosques y montañas.",
+    "actividades": [
+      "Ruta de los Siete Lagos",
+      "City Tour",
+      "Lago Lácar",
+      "Trekking",
+      "Kayak",
+      "Cabalgatas",
+      "Excursiones por la Cordillera"
+    ]
+  },
+  {
+    "id": 10,
+    "nombre": "Ushuaia",
+    "provincia": "Tierra del Fuego",
+    "tipo": "Destino",
+    "descripcion": "La ciudad más austral del mundo, rodeada por montañas, bosques, lagos y el Canal Beagle.",
+    "actividades": [
+      "Parque Nacional Tierra del Fuego",
+      "Navegación por el Canal Beagle",
+      "Faro Les Éclaireurs",
+      "Isla de los Lobos",
+      "Laguna Esmeralda",
+      "Tren del Fin del Mundo",
+      "Trekking",
+      "Excursión a los lagos Escondido y Fagnano"
+    ]
+  },
+  {
+    "id": 11,
+    "nombre": "El Calafate",
+    "provincia": "Santa Cruz",
+    "tipo": "Destino",
+    "descripcion": "Puerta de entrada al Parque Nacional Los Glaciares y al impresionante glaciar Perito Moreno.",
+    "actividades": [
+      "Glaciar Perito Moreno",
+      "Pasarelas del Perito Moreno",
+      "Safari Náutico",
+      "Minitrekking sobre el glaciar",
+      "Navegación por el Lago Argentino",
+      "Excursión Todo Glaciares",
+      "Estancia Patagónica"
+    ]
+  },
+  {
+    "id": 12,
+    "nombre": "Glaciar Perito Moreno",
+    "provincia": "Santa Cruz",
+    "tipo": "Naturaleza",
+    "descripcion": "Uno de los glaciares más famosos del mundo y uno de los principales atractivos de la Patagonia argentina.",
+    "actividades": [
+      "Pasarelas del glaciar",
+      "Safari Náutico",
+      "Minitrekking",
+      "Big Ice",
+      "Navegación frente al glaciar"
+    ]
+  },
+  {
+    "id": 13,
+    "nombre": "El Chaltén",
+    "provincia": "Santa Cruz",
+    "tipo": "Destino",
+    "descripcion": "Capital argentina del trekking, ubicada al pie del monte Fitz Roy.",
+    "actividades": [
+      "Laguna de los Tres",
+      "Laguna Capri",
+      "Chorrillo del Salto",
+      "Trekking al Fitz Roy",
+      "Trekking al Cerro Torre",
+      "Senderismo",
+      "Excursiones de montaña"
+    ]
+  },
+  {
+    "id": 14,
+    "nombre": "Salta",
+    "provincia": "Salta",
+    "tipo": "Destino",
+    "descripcion": "Ciudad colonial del norte argentino, rodeada de montañas, valles y paisajes únicos.",
+    "actividades": [
+      "City Tour por Salta",
+      "Quebrada de Humahuaca",
+      "Cafayate",
+      "Ruta del vino de altura",
+      "Cuesta del Obispo",
+      "Cachi",
+      "Salinas Grandes",
+      "Tren a las Nubes"
+    ]
+  },
+  {
+    "id": 15,
+    "nombre": "Cafayate",
+    "provincia": "Salta",
+    "tipo": "Destino",
+    "descripcion": "Localidad de los Valles Calchaquíes famosa por sus vinos de altura y sus paisajes.",
+    "actividades": [
+      "Ruta del vino",
+      "Visita a bodegas",
+      "Degustación de vinos",
+      "Quebrada de las Conchas",
+      "Anfiteatro",
+      "Garganta del Diablo"
+    ]
+  },
+  {
+    "id": 16,
+    "nombre": "Quebrada de Humahuaca",
+    "provincia": "Jujuy",
+    "tipo": "Destino",
+    "descripcion": "Paisaje cultural y natural del noroeste argentino, declarado Patrimonio de la Humanidad.",
+    "actividades": [
+      "Purmamarca",
+      "Cerro de los Siete Colores",
+      "Tilcara",
+      "Humahuaca",
+      "Hornocal",
+      "Tour por la Quebrada"
+    ]
+  },
+  {
+    "id": 17,
+    "nombre": "Purmamarca",
+    "provincia": "Jujuy",
+    "tipo": "Destino",
+    "descripcion": "Pueblo de la Quebrada de Humahuaca conocido por el Cerro de los Siete Colores.",
+    "actividades": [
+      "Cerro de los Siete Colores",
+      "Paseo por el pueblo",
+      "Paseo de los Colorados",
+      "Quebrada de Humahuaca",
+      "Mercado artesanal"
+    ]
+  },
+  {
+    "id": 18,
+    "nombre": "Salinas Grandes",
+    "provincia": "Jujuy",
+    "tipo": "Naturaleza",
+    "descripcion": "Extensa planicie de sal ubicada en la Puna argentina, uno de los paisajes más particulares del país.",
+    "actividades": [
+      "Excursión a Salinas Grandes",
+      "Tour por la Puna",
+      "Purmamarca y Salinas Grandes",
+      "Fotografía de paisajes"
+    ]
+  },
+  {
+    "id": 19,
+    "nombre": "Córdoba",
+    "provincia": "Córdoba",
+    "tipo": "Destino",
+    "descripcion": "Provincia de sierras, ríos, pueblos históricos y paisajes ideales para actividades al aire libre.",
+    "actividades": [
+      "City Tour por Córdoba",
+      "Camino de las Sierras",
+      "Villa General Belgrano",
+      "La Cumbrecita",
+      "Alta Gracia",
+      "Estancias Jesuíticas",
+      "Trekking",
+      "Cabalgatas"
+    ]
+  },
+  {
+    "id": 20,
+    "nombre": "Villa General Belgrano",
+    "provincia": "Córdoba",
+    "tipo": "Destino",
+    "descripcion": "Pueblo de las Sierras de Córdoba conocido por su arquitectura centroeuropea y su gastronomía.",
+    "actividades": [
+      "City Tour",
+      "Ruta de las Sierras",
+      "Visita a cervecerías",
+      "Circuitos gastronómicos",
+      "Excursiones por las sierras"
+    ]
+  },
+  {
+    "id": 21,
+    "nombre": "Mar del Plata",
+    "provincia": "Buenos Aires",
+    "tipo": "Destino",
+    "descripcion": "Principal destino costero argentino, conocido por sus playas, gastronomía y vida urbana.",
+    "actividades": [
+      "City Tour",
+      "Tour por las playas",
+      "Puerto de Mar del Plata",
+      "Excursiones gastronómicas",
+      "Visita a Sierra de los Padres"
+    ]
+  },
+  {
+    "id": 22,
+    "nombre": "Puerto Madryn",
+    "provincia": "Chubut",
+    "tipo": "Destino",
+    "descripcion": "Destino de la Patagonia atlántica reconocido por su fauna marina y la cercanía a Península Valdés.",
+    "actividades": [
+      "Península Valdés",
+      "Avistaje de ballenas",
+      "Punta Tombo",
+      "Snorkel con lobos marinos",
+      "Ecoturismo",
+      "City Tour"
+    ]
+  },
+  {
+    "id": 23,
+    "nombre": "Península Valdés",
+    "provincia": "Chubut",
+    "tipo": "Naturaleza",
+    "descripcion": "Reserva natural de enorme biodiversidad y uno de los principales destinos de fauna marina de Argentina.",
+    "actividades": [
+      "Avistaje de ballenas",
+      "Avistaje de fauna marina",
+      "Punta Norte",
+      "Caleta Valdés",
+      "Ecoturismo",
+      "Fotografía de naturaleza"
+    ]
+  },
+  {
+    "id": 24,
+    "nombre": "Rosario",
+    "provincia": "Santa Fe",
+    "tipo": "Destino",
+    "descripcion": "Ciudad junto al río Paraná conocida por su arquitectura, cultura, gastronomía y espacios verdes.",
+    "actividades": [
+      "City Tour",
+      "Monumento Nacional a la Bandera",
+      "Paseo por la costanera",
+      "Paseo en barco",
+      "Tour gastronómico"
+    ]
+  },
+  {
+    "id": 25,
+    "nombre": "Iberá",
+    "provincia": "Corrientes",
+    "tipo": "Naturaleza",
+    "descripcion": "Uno de los grandes humedales de Sudamérica, con una enorme diversidad de fauna y paisajes naturales.",
+    "actividades": [
+      "Safaris de fauna",
+      "Avistaje de aves",
+      "Paseos en lancha",
+      "Kayak",
+      "Cabalgatas",
+      "Fotografía de naturaleza"
+    ]
+  },
+  {
+    "id": 26,
+    "nombre": "Esteros del Iberá",
+    "provincia": "Corrientes",
+    "tipo": "Destino",
+    "descripcion": "Extenso sistema de humedales ideal para observar fauna silvestre y disfrutar del ecoturismo.",
+    "actividades": [
+      "Safari fotográfico",
+      "Avistaje de carpinchos",
+      "Avistaje de yacarés",
+      "Avistaje de aves",
+      "Paseo en lancha",
+      "Kayak"
+    ]
+  },
+  {
+    "id": 27,
+    "nombre": "San Antonio de Areco",
+    "provincia": "Buenos Aires",
+    "tipo": "Destino",
+    "descripcion": "Pueblo tradicional de la provincia de Buenos Aires, reconocido por su cultura gauchesca y sus estancias.",
+    "actividades": [
+      "Día de campo",
+      "Visita a estancia",
+      "Cabalgatas",
+      "Almuerzo criollo",
+      "Museos y patrimonio gauchesco"
+    ]
+  },
+  {
+    "id": 28,
+    "nombre": "Tandil",
+    "provincia": "Buenos Aires",
+    "tipo": "Destino",
+    "descripcion": "Ciudad serrana conocida por sus paisajes, actividades al aire libre y gastronomía regional.",
+    "actividades": [
+      "Circuito de las Sierras",
+      "Piedra Movediza",
+      "Trekking",
+      "Cabalgatas",
+      "Circuitos gastronómicos"
+    ]
+  },
+  {
+    "id": 29,
+    "nombre": "San Juan",
+    "provincia": "San Juan",
+    "tipo": "Destino",
+    "descripcion": "Destino de paisajes áridos, montañas, viñedos y formaciones geológicas únicas.",
+    "actividades": [
+      "Parque Provincial Ischigualasto",
+      "Valle de la Luna",
+      "Ruta del vino",
+      "Visita a bodegas",
+      "Excursión por la Cordillera"
+    ]
+  },
+  {
+    "id": 30,
+    "nombre": "Valle de la Luna",
+    "provincia": "San Juan",
+    "tipo": "Naturaleza",
+    "descripcion": "Paisaje desértico de formaciones geológicas extraordinarias dentro del Parque Provincial Ischigualasto.",
+    "actividades": [
+      "Circuito turístico por Ischigualasto",
+      "Excursión fotográfica",
+      "Tour geológico",
+      "Observación de paisajes"
+    ]
+  }
+]
+

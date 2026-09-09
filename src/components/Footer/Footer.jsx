@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Footer.module.scss';
 import Logo from '../../assets/logo-01.png';
 import NavLinks from '../NavLinks/NavLinks';
+import {Link} from 'react-router-dom';
 
 export const socialLinks = [
     { href: "#", label: 'Facebook', iconClass: 'bi bi-facebook' },
@@ -15,7 +16,9 @@ export const Footer = () => {
         <footer className={styles.footer}>
 
             <div className={styles.LogoContainer}>
+                <Link to="/">
                 <img className={styles.logo} src={Logo} alt="Logo" />
+                </Link>
             </div>
 
             <div className={styles.centerContainer}>

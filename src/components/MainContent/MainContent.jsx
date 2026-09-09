@@ -119,11 +119,9 @@ export const MainContent = () => {
 
       <h5 className={styles.mainFootertitle}>Descubrí Argentina con Wunderlust</h5>
       <h6 className={styles.mainFooterSubtitle}>
-        Planificá tu viaje perfecto con nosotros. ¡Tu próxima aventura te
-        espera! Explora el mundo con nuestra app. Descubre los mejores destinos,
-        lee reseñas de otros viajeros y reserva alojamientos y actividades que
-        se adapten a tus gustos. ¡Crea tu itinerario perfecto y vive experiencias
-        inolvidables!
+        Explorá nuevos destinos, descubrí lugares recomendados por otros
+         viajeros y encontrá alojamientos y actividades que se adapten a vos.
+          Armá tu itinerario y tené todo tu viaje organizado en un solo lugar.
       </h6>
 
       <Newsletter />

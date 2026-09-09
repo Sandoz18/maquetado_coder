@@ -52,15 +52,29 @@
 
 .mainFooterSubtitle{
     font-size: 1rem;
+    max-width: 920px;
+    margin: 0 auto;
+    text-align: start;
 }
 
 //hashtags
 
 .hashtagsContainer {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;  
+  width: 60vw; 
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+     margin:0 auto;
+
+
+  @include m.desktop{
+    flex-direction: row;
+   
+  }
 }
 
 .hashtagButton {
