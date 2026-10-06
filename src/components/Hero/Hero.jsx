@@ -1,5 +1,4 @@
 import bannerVideo from '../../assets/bannerOPT.m4v';
-import { MainContent } from '../MainContent/MainContent';
 import { useState } from 'react';
 import styles from './Hero.module.scss';
 import destinosArgentina from '../Home/destinosArgentina.json';
@@ -25,10 +24,9 @@ export const Hero = () => {
       <div className={styles.backgroundVideo}>
         <video
           autoPlay
-          muted
+          muted        
           playsInline
-          preload="metadata"
-          playsInline
+          preload="metadata"          
         >
           <source src={bannerVideo} type="video/mp4" />
           Tu navegador no soporta videos.
@@ -36,6 +34,7 @@ export const Hero = () => {
       </div>
 
       <div className={styles.heroOverlay}>
+        <div className={styles.heroCard}>
 
         <h1 className={styles.heroTitle}>
           Argentina te espera
@@ -44,12 +43,12 @@ export const Hero = () => {
         <h2 className={styles.heroSubtitle}>
           Vení a descubrirla
         </h2>
-
+        
         <div className={styles.searchWidget}>
           <div className={styles.searchInput}>
             <span className={styles.searchLabel}>¿A dónde querés ir?</span>
             <div className={styles.inputWrapper}>
-              <input className={styles.inputFantasma} value={textoFantasma} disabled></input>
+              <input className={styles.inputFantasma} value={textoFantasma} disabled readOnly/>
               <input className={styles.input}
                 type="text"
                 placeholder='Ingresá una Ciudad'
@@ -71,6 +70,7 @@ export const Hero = () => {
           <button className={styles.heroBtn}>
             Buscar
           </button>
+          </div>          
         </div>
       </div>
     </header>

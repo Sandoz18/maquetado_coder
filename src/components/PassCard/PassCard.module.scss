@@ -1,0 +1,143 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.passContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+
+
+  @include m.desktop {
+    flex-direction: row;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+
+  .passInfo,
+  .passCard {
+    width: 100%;
+  }
+
+  .passInfo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+    text-align: left;
+  }
+
+  .passTitle {
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffc107;
+    text-transform: uppercase;
+
+    @include m.desktop {
+      text-align: center;
+    }
+  }
+
+  .passSubtitle {
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #f5efef;
+    margin-bottom: 1.9rem;
+    line-height: 1.2rem;
+
+    @include m.desktop {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .passButton {
+    background-color: #2a8387;
+    color: #ffffff;
+    border: none;
+    border-radius: 24px;
+    padding: 1rem 2.3rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    width: fit-content;
+    margin-top: auto;
+    margin-bottom: 3rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #21686b;
+    }
+
+    @include m.desktop {
+      margin: 0 auto;
+      margin-bottom: 3rem;
+    }
+  }
+
+  .passCard {
+    min-height: 300px;
+    max-width: 350px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    box-sizing: border-box;
+    border-radius: 16px;
+    border: 1px solid #e0e0e0;
+    font-size: 1rem;
+    overflow: hidden;
+  }
+}
+
+.passHeader {
+  background-color: #e8f4f4;
+  padding: 1.2rem;
+}
+
+.cardPrice {
+  color: #2e7d32;
+  font-weight: 800;
+  text-align: right;
+  font-size: 1rem;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-top: 0.5rem;
+  text-transform:uppercase;
+}
+
+.cardSubtitle {
+  font-size: 0.8rem;
+}
+
+.cardList {
+  width: 100%;
+  list-style: none;
+  padding: 1.2rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.itemList {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  line-height: 1.1;
+  font-size: 0.95rem;
+
+  &::before {
+    content: "•";
+    color: #2e7d32;
+    font-size: 1.3rem;
+    line-height: 1;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+}

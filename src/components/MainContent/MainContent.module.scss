@@ -1,60 +1,65 @@
 @use "../../styles/variables" as v;
 @use "../../styles/mixins" as m;
 
-.mainContent {  
-    background-color: v.$color-dark;
-    min-height: 100vh;
-    width: 100%;
-    color: #fff;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 1.5rem;
+.mainContent {
+  background-color: v.$color-dark;
+  min-height: 100vh;
+  width: 100%;
+  color: #d5dbe3;
+  padding-top: 20px;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
 }
 
 .mainTitle {
-    font-size: 1.5rem;
-    width: 100%;
-    text-align: center;
-    color: v.$color-brand;
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+  width: 100%;
+  text-align: center;
+  color: v.$color-brand;
+
+
+  @include m.desktop{
+    font-size: 2;
+  }
 
 }
 
-.mainSubtitle {   
-    color: #c3cdcd;
-    font-size: 1rem;
-    text-align: center;
+.mainSubtitle {
+  color: #d5dbe3;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 300;
+
 }
 
 .mainText {
-    font-size: 1rem;
-    line-height: 1.2;
-    padding: 1.5rem;
-    text-align: center;  
-    max-width: 920px;
-    margin: 0 auto;
-   
-    
-
-
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 1.5rem;
+  text-align: center;
+  max-width: 920px;
+  margin: 0 auto;
 }
 
 .mainFootertitle {
-    margin-top:2rem;
+  margin-top: 5rem;
   font-size: 1.5rem;
-    width: 100%;
-    text-align: center;
-    color: v.$color-brand;
+  width: 100%;
+  text-align: center;
+  color: v.$color-brand;
 }
 
-.mainFooterSubtitle{
-    font-size: 1rem;
-    max-width: 920px;
-    margin: 0 auto;
-    text-align: start;
+.mainFooterSubtitle {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: start;
 }
 
 //hashtags
@@ -64,16 +69,17 @@
   flex-direction: column;
   flex-wrap: wrap;
   gap: 8px;
-  padding-bottom: 20px;  
-  width: 60vw; 
+  padding-bottom:4rem; 
+  padding-top:4rem; 
   font-size: 1.2rem;
   line-height: 1.2rem;
-     margin:0 auto;
+  margin: 0 auto;
 
 
-  @include m.desktop{
+  @include m.desktop {
     flex-direction: row;
-   
+    width:60%;
+
   }
 }
 
@@ -186,4 +192,3 @@
     text-decoration: underline;
   }
 }
-

@@ -25,12 +25,16 @@
     position: fixed;
     right: 0;
     top: 0;
-    min-width: 90%;
-    min-height: 80%;
+    width: 100%;
+    min-height: 50%;
     background-color: v.$color-dark;
     color: v.$text-inverse;
     z-index: 1000;
+    padding-top:5rem;
+    text-align: center;
 }
+
+
 
 .closeButton {
     position: absolute;

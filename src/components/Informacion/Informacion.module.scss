@@ -1,20 +1,42 @@
-.infoContainer{
-    background-color: aquamarine;    
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.infoContainer {
+    background-color: v.$color-dark;
+    color: #ffffff;
     text-align: center;
 
 
-    .infoTitle{
-        font-size: 2.5rem;
-        
+    .infoTitle {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.8px;
+       
+
+
+        @include m.desktop {
+            margin-bottom: 2rem;
+        }
+
     }
 
 
-    .infoText{
-        font-size: 1.2rem;
+    .infoText {
+        font-size: 1rem;
+        font-family: cursive;        
+        line-height: 1.5rem;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+
+        @include m.desktop {
+            font-size:1.3rem;
+            max-width: 60%;
+        }
     }
 
-    .nosotrosImg{
-        width:80%;
+    .nosotrosImg {
+        width: 60%;
         height: auto;
 
     }

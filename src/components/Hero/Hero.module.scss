@@ -3,28 +3,23 @@
 
 .heroContainer {
   width: 100%;
-  min-height: 400px;
+  min-height: 550px;
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-
-
+  gap:8px;
 
   @include m.desktop {
-    height: 95vh;
+    height: 80vh;
+    min-height: 600px;
   }
-
 }
 
 .backgroundVideo {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  inset:0;
+  z-index: 0;
 
   video {
     width: 100%;
@@ -33,63 +28,126 @@
     object-position: center;
   }
 
+  &::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background: linear-gradient(
+      180deg,
+      rgba(16, 21, 24, 0.5) 0%,
+      rgba(16, 21, 24, 0.2) 50%,
+      rgba(16, 21, 24, 0.7) 100%
+    );
+  }
 }
 
 .heroOverlay {
   position: relative;
   z-index: 1;
-  height: 100%;
+  height: 100%;  
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
   text-align: center;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+    
+  @include m.desktop{
+    justify-content: center;
+  }
 
   .heroTitle {
-    padding-top: 20px;
-    font-size: clamp(2rem, 5vw, 2rem);
-    line-height: 1;
-    font-size: 2.2rem;
-    font-weight: 800;    
-     font-family: var(--font-display);
+    font-size: clamp(1.6rem, 5vw, 2rem);
+    line-height: 1.1;
+    font-weight: 800;
+    font-family: var(--font-display);
     color: v.$color-brand;
+    margin-bottom: 0.5rem;
+
+    @include m.desktop {
+      font-size: 2.2rem;
+    
+    }
   }
 
   .heroSubtitle {
     color: #dddfe1;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 500;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1rem;
+
+    @include m.desktop {
+      font-size: 1.5rem;
+      margin-bottom: 4rem;
+    }
   }
 
-  .searchWidget{
-    margin: 0.8rem;
-    border-radius: 40px;
-    background-color: #ffffff;
+  .heroCard {
+    background: rgba(255, 255, 255, 0.12);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 10px;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 480px;   
+    box-shadow:0  20px 40px rgba(0, 0, 0, 0.3);
+
+
+    @include m.desktop {
+      max-width: 550px;
+      padding: 1rem 1.25rem;
+      
+
+    }
+  }
+
+  .searchWidget {   
+    border-radius: 25px;
+    background-color:transparent;
     display: flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content: space-between;
-    padding:0.5rem;
-    line-height: 1.2rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 0;
+    line-height: 1.1rem;
+    z-index: 2;
    
 
-    .searchInput{
-      border:none;
-      outline: none;
-      width: 100%;      
-      max-width:500px;
+    @include m.desktop {
+      background-color: #ffffff;     
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
       border-radius: 40px;
-     border-color: #ffffff;
+      padding: 0.5rem;
+      width: 100%;
+      max-width: 520px;
 
+    }
+
+    .searchInput {
+      border: none;
+      outline: none;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 40px;
+      border-color: #ffffff;   
       
     }
-   
 
-    .searchLabel{
-      border:none;
+    .searchLabel {
+      border: none;
+      color:#ffffff;
+      font-size:1rem;     
+      align-items: center; 
+
+     @include m.desktop{
+      color:#000000;
+     }
+      
     }
 
   }
@@ -106,49 +164,63 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: auto;
-    
+    width: 100%;
+
+    @include m.desktop{
+      width: auto;
+    }
+
 
     &:hover {
       background-color: #e5a900;
       color: #164047;
 
-
     }
   }
 
-
 }
 
- 
-     .input{
-      border:none;
-      outline: none;
-      text-align: center;
-      top:0;
-      left:0;
-      height: 100%;
-      width:100%;
-      background: transparent;
-      position:relative;
-      z-index: 1;
-      
-     }
 
-.inputWrapper{
-  position:relative;
-  height:24px;
-}
-
-.inputFantasma{
-  position: absolute;  
-  top:0; 
+.input {
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  text-align: center;
+  top: 0;
+  left: 0; 
+  height: 100%;
   width: 100%;
-  height:100%;
-  color:#aaa;
   background: transparent;
-  border:none;
+  position: relative;
+  z-index: 1;
+
+}
+
+.inputWrapper {
+  position:relative;
+  background-color: #ffff;
+ border-radius: 40px;
+  height: 44px;
+  margin:8px 0 0 0;
+  
+
+
+  @include m.desktop{
+    background-color: transparent;
+    height:30px;
+  }
+ 
+}
+
+.inputFantasma {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #aaa;
+  background: transparent;
+  border: none;
   pointer-events: none;
-  font:inherit;
-  padding:inherit;
+  font: inherit;
+  padding: inherit;
 }

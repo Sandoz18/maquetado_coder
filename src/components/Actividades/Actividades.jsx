@@ -9,10 +9,9 @@ export const Actividades = () => {
 
             <div className={styles.videoContainer}>
             <h3 className={styles.actividadestitle}>Descubrí Argentina</h3>
-            <p className={styles.ActividadesText}>Argentina lo tiene todo. Sumérgete en la belleza de los Andes y disfruta de caminatas desafiantes en El Chaltén o navega por los cristalinos lagos patagónicos. Explora los coloridos paisajes de la Quebrada de Humahuaca. Desde las Salinas Grandes hasta las Cataratas, cada rincón te sorprenderá. Disfruta de la tranquilidad en las orillas del Nahuel Huapi, rodeado de montañas nevadas y bosques milenarios.</p>
+            <p className={styles.actividadesText}>Argentina lo tiene todo. Sumérgete en la belleza de los Andes y disfruta de caminatas desafiantes en El Chaltén o navega por los cristalinos lagos patagónicos. Explora los coloridos paisajes de la Quebrada de Humahuaca. Desde las Salinas Grandes hasta las Cataratas, cada rincón te sorprenderá. Disfruta de la tranquilidad en las orillas del Nahuel Huapi, rodeado de montañas nevadas y bosques milenarios.</p>
             
                 <video className={styles.actividadesVideo}
-
                     autoPlay
                     muted
                     playsInline
@@ -25,11 +24,11 @@ export const Actividades = () => {
 
 
             <h3 className={styles.categoryTitle}>
-                Aprovechá nuestra selección de destinos recomendados para vos!
+              Recomendados para vos
             </h3>
            
              <div className={styles.senderismoBackground}>
-                <h4 className={styles.Text}>Compartí tu experiencia con Nosotros</h4>
+                <h4 className={styles.text}># Compartí tu experiencia</h4>
             </div>
             
 

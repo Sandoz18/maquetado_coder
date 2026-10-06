@@ -6,6 +6,7 @@ import { Footer } from './components/Footer/Footer';
 import { Destinos } from './components/Destinos/Destinos';
 import {Actividades} from './components/Actividades/Actividades';
 import {Informacion}from './components/Informacion/Informacion';
+import {TodasLasAtracciones} from './components/TodasLasAtracciones/TodasLasAtracciones';
 
 export function App() {
     return (
@@ -19,6 +20,7 @@ export function App() {
                 <Route path="/Destinos" element={<Destinos />} />
                 <Route path="/Actividades" element={<Actividades/>} />
                  <Route path="/Informacion" element={<Informacion/>} />
+                 <Route path="/TodasLasAtracciones" element={<TodasLasAtracciones/>} />
             </Routes>
 
             <Footer />

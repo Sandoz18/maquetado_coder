@@ -1,15 +1,22 @@
-:root{
+:root {
     --font-body: 'Inter', sans-serif;
     --font-display: 'Playfair Display', serif;
+     width:100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-*{
+*, *::before, *::after{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 body{
+    box-sizing: border-box;
     width:100%;
+    max-width: 100%;
+    overflow-x: hidden;
     height:100%;
     margin:0;
     padding:0;

@@ -35,7 +35,7 @@
         margin-right: 8px;
         display: flex;
         flex-direction: column;
-        gap: 18px;
+        gap: 28px;
 
 
 
@@ -53,6 +53,7 @@
                 text-decoration: none;
                 color: v.$text-inverse;
                 font-weight: bold;
+                display: inline-block;
 
                 &::after {
                     content: "";

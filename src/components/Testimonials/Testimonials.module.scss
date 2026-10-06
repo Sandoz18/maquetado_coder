@@ -1,0 +1,110 @@
+@use "../../styles/variables" as v;
+@use "../../styles/mixins" as m;
+
+.testimonialsTitle {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 200;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  margin: 2rem auto;
+  width:1200px;
+  padding:2rem;
+
+
+  @include m.desktop {
+    flex-direction: row;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #faf8f3;
+    border: 1px solid #ece8df;
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    flex: 1 1 0;
+    width: 280px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s;
+      margin-bottom: 0.5rem;
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+
+    @include m.desktop {
+      width: 220px;
+    }
+
+  }
+
+  .cardTitle {
+    color: #2a8387;
+    font-weight: 500;
+    font-size: 1.15rem;
+    margin: 0.5rem 0 0.5rem;
+
+  }
+
+  .cardText {
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    color: #555;
+    margin: 0 0 1.25rem;
+  }
+
+
+  .cardRating {
+    color: #e5a52b;
+    font-size: 1.25rem;
+    letter-spacing: 3px;
+    display: block;
+    margin-bottom: 0.4rem;
+    background: linear-gradient(180deg, #ffd873 0%, #e5a52b 55%, #b97a12 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0 1px 1px rgba(120, 70, 0, 0.35));
+  }
+
+
+  .avatar {
+    background-color: #2a8387;
+    color: #ece8df;
+    border-radius: 50%;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .cardAuthor {
+    position:relative;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    gap: 12px;
+    text-align: left;
+    margin-top: auto;
+    border-top: 1px solid #e4dfd3;
+    padding-top:1rem;
+  }
+
+  .authorInfo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+  }
+
+}

@@ -3,7 +3,8 @@ import styles from './MainContent.module.scss';
 import { Cards } from '../Cards/Cards.jsx';
 import { useEffect, useState } from 'react';
 import { Newsletter } from '../Newsletter/Newsletter.jsx';
-
+import { PassCard } from '../PassCard/PassCard.jsx';
+import {ExplorarAtracciones} from '../ExplorarAtracciones/ExplorarAtracciones.jsx';
 export const MainContent = () => {
   // Corrección 1: Booleans y null verdaderos (sin comillas)
   const [resultado, setResultado] = useState(null);
@@ -77,6 +78,9 @@ export const MainContent = () => {
         Argentina como nunca antes!
       </p>
 
+      <PassCard/>
+     
+
       {/* Contenedor de hashtags */}
       <div className={styles.hashtagsContainer}>
         {hashtags.map((tag) => (
@@ -124,7 +128,11 @@ export const MainContent = () => {
           Armá tu itinerario y tené todo tu viaje organizado en un solo lugar.
       </h6>
 
+
+     <ExplorarAtracciones/>
       <Newsletter />
+
+  
     </div>
   );
 };

@@ -32,9 +32,11 @@
     .logo {
         width: 5em;
         height: auto;
+        margin-top: 3rem;
     }
 
     .social {
+       
         font-size: 1.5rem;
         box-sizing: border-box;
         gap: 24px;
@@ -42,18 +44,23 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        padding-bottom: 24px;
+        
 
     }
 }
 
 .mapaSitio{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: v.$color-brand;
+    margin-bottom: 2rem;
 }
 
 .copy{
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
     font-size: 1rem;
+}
+
+.terms{
+   margin:1.2rem;
 }
