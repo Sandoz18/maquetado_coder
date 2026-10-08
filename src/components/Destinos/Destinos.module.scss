@@ -6,25 +6,29 @@
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
-    margin-top: 2rem;
+    
 }
 
 
 .destinosTitle {
-    font-size: 2.5rem;
-    font-weight: 800;
+    font-size: 2rem;
+    font-weight: 700;
     color: #224259;
-    margin: 8px 16px;
-    text-align: center;
-    letter-spacing: -1px;
+    margin: 16px;   
+    text-align: center;    
     line-height: 2rem;
 }
 
 .destinosText {
     text-align: center;
-    margin: 8px 16px;
-    width: 60%;
+    margin: 8px;
+    letter-spacing: 1px;
+    width: 80%;
     margin: 0 auto;
+    line-height: 1rem;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 $border-radius: 16px;
@@ -123,27 +127,47 @@ $transition-time: 0.4s ease;
 }
 
 .galleryContainer {
-    gap: 4px;
-    padding: 2px;
+    display:flex;
+    gap: 12px;
+    padding:0 16px 8px;
     width: 100%;
     box-sizing: border-box;
+    overflow-x: auto;
+     scroll-snap-type: x mandatory;
 
     @include m.desktop {
         display: grid;
-        grid-template-columns: repeat((3, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: 240px;
+        overflow:visible;
+        max-width:1600px;
+        margin:0 auto;
+        padding:2rem;
     }
 
     .galleryItem {
-        width: 100%;
-        height: 100%;
+        position:relative;
+        flex: 0 0 80%;
+        height: 280px;
+        margin:0;
         overflow: hidden;
-        border-radius: 10px;
+        border-radius: 16px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        transition: transform 0.3s ease;
+         scroll-snap-align: center;
+        //transition: transform 0.3s ease;
 
-        &:hover {
-            transform: translateY(-4px);
+       // &:hover {
+        //    transform: translateY(-4px);
+       // }
+
+        @include m.desktop{
+            flex:unset;
+            height:auto;
+
+            &first-child{
+                grid-column: span 2;
+                grid-row:span 2;
+            }
         }
     }
 
@@ -152,7 +176,38 @@ $transition-time: 0.4s ease;
         height: 100%;
         object-fit: cover;
         display: block;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
+       transition: transform 0.4s ease;
+    }
+
+    .galleryCaption{
+        position:absolute;
+        inset: auto 0 0 0;
+        padding:28px 12px 10px;
+        display:flex;
+        flex-direction: column;
+        text-align:left;
+        color:#ffff;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.65));
+        transition:opacity 0.25s, ease;
+
+        span{
+            font-size:0.85rem;
+            opacity:0.85;
+        }
+    }
+
+    @media (hover:hover){
+        .galleryCaption{
+            opacity:0;
+        }
+
+        .galleryItem:hover{
+            .galleryCaption{
+                opacity:1;
+            }
+            .galleryImage{
+                transform: scale(1.05);
+            }
+        }
     }
 }

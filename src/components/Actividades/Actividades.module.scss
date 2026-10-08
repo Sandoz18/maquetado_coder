@@ -5,45 +5,84 @@
 .actividadesContainer {
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
     text-align: center;
     margin-bottom: 2rem;
-    
+    z-index: 10;
+    position: relative;
+
+    .videoContainer {
+        display: flex;
+        flex-direction: column;
+       justify-content: flex-start;      
+        align-items: center;
+        height: 100vh;
+        width: 100%;       
+        position: relative;
+        overflow: hidden;
+        padding-top:2rem;
+
+
+        .actividadesVideo {
+            width: 100%;
+            height: 100%;            
+            object-fit: cover;           
+            position: absolute;
+            top:0;
+            left:0;
+            
+        }
+
+        &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45); 
+        z-index: 2;
+    }
+
+    }
+
+
+    .heroContent { 
+    position: relative;
+    z-index:3;
+    display: flex;
+    flex-direction:column;
+    align-items: center;   
+    text-align:center; 
+    max-width:600px;
+    padding:0 1.5rem;
+    margin:0 auto;
+}
 
 
     .actividadestitle {
         font-weight: 800;
-        font-size: 1.9rem;
-        padding-top: 1rem;
-        color: #048254;
-        text-transform: upperCase;
+        font-size: 2rem;       
+        color: #11ffa8;
+        text-transform: upperCase; 
+        position:static;   
 
 
         @include m.desktop {
+            display: flex;
+            flex-direction: column;
             font-size: 2.3rem;
-
+            text-align: center;
         }
-    }
-
-    .actividadesSubtitle {
-        font-size: 1.2rem;
-        font-weight: 300;
-        text-align: left;
-
-
     }
 
     .actividadesText {
         display: flex;
-        text-align: left;
         align-items: center;
         justify-content: center;
-        margin: 0 auto;
-        font-size: 1rem;
-        line-height: 1.2rem;
-        letter-spacing: 0.8px;
-        width: 80vw;
+        font-size: 1.2rem;
+        line-height: 1.2rem;        
+        width: 80vw;       
         margin-bottom: 1.5rem;
+        color:#edede9;
+       
+       
 
 
     }
@@ -62,24 +101,9 @@
     }
 }
 
-.videoContainer {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    position: relative;
-    overflow: hidden;
 
 
-    .actividadesVideo {
-        width: 100%;
-        height: 90%;
-        object-fit: cover;
-        display: block;
-    }
 
-}
 
 .sectionTitle {
     background-color: #10a875;
@@ -89,6 +113,7 @@
     font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+
 }
 
 .cardContainer {

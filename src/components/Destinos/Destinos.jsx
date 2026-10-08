@@ -8,10 +8,8 @@ export const Destinos = () => {
 
     return (
         <section className={styles.destinosContainer}>
-            <h1 className={styles.destinosTitle}>Tu próximo destino te espera!</h1>
-            <p className={styles.destinosText}>Lorem ipsum dolor sit,
-                amet consectetur adipisicing elit. Amet, quisquam totam explicabo,
-                atque ratione molestias distinctio fuga voluptatibus doloremque id officia iusto repellat quasi dignissimos nisi eos perspiciatis aspernatur similique.</p>
+            <h1 className={styles.destinosTitle}>Elegí próximo destino!</h1>
+            <p className={styles.destinosText}>Montañas, lagos, playas y glaciares te esperan. Contanos qué tipo de viajero sos y te ayudamos a armar la escapada ideal.</p>
             <DestinosCards />
             <ExploraArgentina />
             <Gallery/>

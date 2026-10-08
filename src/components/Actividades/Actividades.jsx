@@ -5,32 +5,33 @@ import imagenPortada from './../../assets/actividades/perito_moreno.mp4';
 export const Actividades = () => {
 
     return (
-        <div className={styles.actividadesContainer}>  
+        <div className={styles.actividadesContainer}>
 
             <div className={styles.videoContainer}>
-            <h3 className={styles.actividadestitle}>Descubrí Argentina</h3>
-            <p className={styles.actividadesText}>Argentina lo tiene todo. Sumérgete en la belleza de los Andes y disfruta de caminatas desafiantes en El Chaltén o navega por los cristalinos lagos patagónicos. Explora los coloridos paisajes de la Quebrada de Humahuaca. Desde las Salinas Grandes hasta las Cataratas, cada rincón te sorprenderá. Disfruta de la tranquilidad en las orillas del Nahuel Huapi, rodeado de montañas nevadas y bosques milenarios.</p>
-            
                 <video className={styles.actividadesVideo}
                     autoPlay
                     muted
+                    loop
                     playsInline
                     preload="metadata"
 
                 >
                     <source src={imagenPortada}></source>
                 </video>
+                <div className={styles.heroContent}>
+                <h3 className={styles.actividadestitle}>Descubrí Argentina</h3>
+                <p className={styles.actividadesText}>Argentina lo tiene todo. Sumérgete en la belleza de sus paisajes y  el pulso vibrante de Buenos Aires. Naturaleza, cultura, gastronomía y vida urbana en un solo destino.</p>
             </div>
-
+            </div>
 
             <h3 className={styles.categoryTitle}>
-              Recomendados para vos
+                Recomendados para vos
             </h3>
-           
-             <div className={styles.senderismoBackground}>
+
+            <div className={styles.senderismoBackground}>
                 <h4 className={styles.text}># Compartí tu experiencia</h4>
             </div>
-            
+
 
             <ActividadesCards />
         </div>
